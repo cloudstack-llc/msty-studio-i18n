@@ -4,6 +4,9 @@
   "conversations": "Conversations",
   "copyToClipboard": "Copy to Clipboard",
   "toCopyMarkdownDirectly": "to copy markdown directly",
+  "clickToCopyMarkdownDirectly": "Click to copy markdown directly",
+  "toShowMoreOptions": "to show more options",
+  "longPressOrAltClickForMoreOptions": "Long press or Alt+click for more options",
   "onMessage": "on message",
   "selectModel": "@:select a model | @:select models",
   "manageModels": "@:manage Models",
@@ -418,10 +421,28 @@
     "title": "Split Options",
     "addSplitChat": "Add Split Chat",
     "hideSplit": "Hide Split",
+    "copySplitToNewConversation": "Copy Split to New Conversation",
+    "moveSplitToNewConversation": "Move Split to New Conversation",
     "deleteSplit": "Delete Split",
     "removeSplit": "Remove Split",
     "splitRemoved": "Split removed",
     "splitReset": "Split reset",
+    "copySplitToNewConversationSuccess": {
+      "summary": "@:success",
+      "detail": "Split copied to new conversation"
+    },
+    "moveSplitToNewConversationSuccess": {
+      "summary": "@:success",
+      "detail": "Split moved to new conversation"
+    },
+    "copySplitToNewConversationError": {
+      "summary": "@:error",
+      "detail": "Failed to copy split to new conversation"
+    },
+    "moveSplitToNewConversationError": {
+      "summary": "@:error",
+      "detail": "Failed to move split to new conversation"
+    },
     "exportOrCopyChat": {
       "exportChat": "Export Chat",
       "copyChat": "Copy Chat",
@@ -1078,6 +1099,29 @@
     "title": "Settings",
     "general": "General",
     "defaultPrompts": "Default Prompts",
+    "prompts": {
+      "description": "Customize the prompts used for various AI operations",
+      "availablePrompts": "Available Prompts",
+      "customized": "Customized",
+      "customizedCount": "{count} customized",
+      "modified": "Modified",
+      "usingCustom": "Using Custom",
+      "usingDefault": "Using Default",
+      "clickToEdit": "Click to edit prompt",
+      "variables": "Variables",
+      "lastModified": "Last modified",
+      "selectPrompt": "Select a prompt to customize",
+      "clearContent": "Clear Content",
+      "resetToDefault": "Reset to Default",
+      "insertFromLibrary": "Insert from Library",
+      "saveChanges": "Save Changes",
+      "discardChanges": "Discard Changes",
+      "categories": {
+        "generation": "Content Generation",
+        "search": "Search & Synthesis",
+        "analysis": "Analysis & Extraction"
+      }
+    },
     "licenseAndAccess": "License and Access",
     "fontSize": "Font @:size",
     "teams": "Teams",
@@ -1166,11 +1210,31 @@
     "codeTheme": "Code Theme",
     "rtlSupport": {
       "title": "RTL Support",
-      "description": "Enable right-to-left text direction for languages like Arabic, Hebrew, and Persian"
+      "sectionDescription": "Enable right-to-left layouts for languages like Arabic, Hebrew, and Persian. The entire workspace updates instantly when toggled.",
+      "toggleLabel": "Enable RTL Layout",
+      "enabledHint": "Right-to-left layout is active across the app.",
+      "disabledHint": "The app is currently using a left-to-right layout."
     },
     "miniMap": {
       "title": "Mini Map",
       "description": "Enable the inline mini map message navigator with branch previews. When disabled, a simpler Top/Bottom navigator is used."
+    },
+    "language": {
+      "sectionTitle": "Language & Localization",
+      "sectionDescription": "Switch between interface languages, preview developer mode, or import a temporary locale file. If you want to contribute a translation, please visit https://github.com/cloudstack-llc/msty-studio-i18n",
+      "localeLabel": "Language",
+      "downloadTemplate": "Download Template",
+      "downloadBuiltInLocale": "Download this built-in locale JSON file.",
+      "downloadCustomLocale": "Download the current custom locale you imported.",
+      "downloadDeveloperTemplate": "Download an empty template based on the base locale.",
+      "importLocale": "Import Locale",
+      "importLocaleHint": "Imported locales last only until you restart or refresh the app.",
+      "importSuccessSummary": "Locale Imported",
+      "importSuccessDetail": "Now using {code}. Review the interface to confirm translations.",
+      "importError": "We couldn't import that locale file. Make sure it's valid JSON based on the template.",
+      "developerMode": {
+        "label": "Developer Mode"
+      }
     },
     "security": {
       "title": "Security",
@@ -1470,7 +1534,7 @@
         "title": "Maximum Result"
       },
       "successMessage": {
-        "detail": "@:rtd.title settings updated"
+        "detail": "Attachments detached"
       }
     }
   },
@@ -1574,7 +1638,10 @@
     },
     "brave": {
       "useLabel": "Use @:rtd.settings.brave",
-      "resultFilter": "Filter Results"
+      "resultFilter": "Filter Results",
+      "apiKey": {
+        "placeholder": "@:rtd.settings.brave @:apiKey"
+      }
     },
     "searXng": {
       "title": "SearXNG",
@@ -2429,7 +2496,9 @@
   },
   "modelMatchmaker": {
     "title": "Model Matchmaker",
-    "description": "@:modelMatchmaker.title helps you find the perfect AI model for any task. Simply adjust the @:modelMatchmaker.gravity for the strengths you need (like coding, reasoning, or math) and Msty will intelligently rank and recommend the best models from our curated list based on your unique requirements. Keep in mind that there are various factors that can affect the performance of a model, such as the quality of the data it was trained on, the @.lower:size of the model, and the complexity of the task.",
+    "description": "Adjust the gravity sliders for strengths like coding, reasoning, or math, and Matchmaker will rank and recommend the best models for your needs. Results may vary by data quality, model size, and task complexity.",
+    "ctaIntro": "Found your model?",
+    "ctaMessage": "Test and compare in Msty Studio.",
     "gravity": "Gravity",
     "remoteOnly": "Remote Only",
     "rankedModels": {
@@ -2532,6 +2601,20 @@
         "detail": "Strengths preset deleted."
       }
     }
+  },
+  "costCalculator": {
+    "title": "Model Cost Calculator",
+    "description": "Calculate and compare costs for AI models from OpenAI, Anthropic, Google, and more. Estimate your expenses based on input/output token usage and model pricing. These are estimates only and actual costs may vary.",
+    "tokenInputs": "Token Inputs",
+    "filters": "Filters",
+    "ctaIntro": "Found your model?",
+    "ctaMessage": "Test and compare in Msty Studio."
+  },
+  "vramCalculator": {
+    "title": "VRAM Calculator",
+    "description": "Check to see if a model fits your device's VRAM before downloading or running it. This calculator provides estimated VRAM requirements based on model architecture and size. Select one of the options below to get started.",
+    "ctaIntro": "Found your model?",
+    "ctaMessage": "Test and compare in Msty Studio."
   },
   "copyOrMoveItemToWorkspace": {
     "copyTitle": "Copy {item} to Workspaces",

@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "language": {
+      "developerMode": {
+        "label": "Developer Mode",
+        "description": "Developer mode shows raw i18n keys across the UI to surface missing or unlocalized strings."
+      }
+    }
+  }
+}
