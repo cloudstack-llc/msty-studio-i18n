@@ -221,7 +221,7 @@
       "title": "删除所有对话",
       "description": "您确定要删除 {projectName} 中的所有对话吗？此操作无法撤销。",
       "successMessage": {
-        "detail": "已删除{count}个对话 | 已删除{count}个对话",
+        "detail": "已删除 {count} 个对话 | 已删除 {count} 个对话",
         "empty": "没有可删除的对话"
       },
       "errorMessage": {
@@ -671,7 +671,7 @@
         "description": "对于大多数在线提供方，您需要从提供方网站获取 API 密钥。{findYourKey}",
         "findYourKey": "查找您的 API 密钥",
         "pros": {
-          "item1": "使用 OpenAI, Azure, Claude Sonnet, Google Gemini, Perplexity, Remote Ollama, Remote Msty 等",
+          "item1": "使用 OpenAI, Azure, Claude Sonnet, Google Gemini, Perplexity, 远端 Ollama, 远端 Msty 等",
           "item2": "无需下载模型即可开始",
           "item3": "一些供应商提供额外功能，如图像生成、网络搜索等"
         },
@@ -706,7 +706,7 @@
       "addLanguageModelsProvider": "添加提供方",
       "prosAndCons": {
         "pros": [
-          "使用 OpenAI GPT, Azure, Claude Sonnet, Google Gemini, Perplexity, Remote Msty, Remote Ollama 等。",
+          "使用 OpenAI GPT, Azure, Claude Sonnet, Google Gemini, Perplexity, 远端 Msty, 远端 Ollama 等。",
           "快速开始",
           "无需下载"
         ],
@@ -756,9 +756,9 @@
         "resourceName": "资源名称 (如果设置了 Base URL 将被忽略)",
         "apiVersion": "API @:version",
         "region": "AWS 区域",
-        "accessKeyId": "Access Key ID",
-        "secretAccessKey": "Secret Access Key",
-        "sessionToken": "Session Token (可选)",
+        "accessKeyId": "访问密钥 ID (Access Key ID)",
+        "secretAccessKey": "秘密访问密钥 (Secret Access Key)",
+        "sessionToken": "会话 Token (可选)",
         "notAllModelsCompatible": "并非所有模型都已通过 Msty 测试，它可能不支持提供方中可用的所有模型。",
         "enterAndManuallyFetchModels": "点击 '获取模型' 以从提供方检索可用模型（可能需要 API 密钥），或在下方手动添加模型。",
         "enterAndFetchModels": "输入您的 API 密钥以尝试从 {providerName} 检索所有可用模型，或手动添加自定义模型。",
@@ -914,345 +914,345 @@
     }
   },
   "stickyPrompt": {
-    "title": "Sticky Prompt",
-    "disableStickyPrompt": "Disable Sticky Prompt",
+    "title": "置顶提示词",
+    "disableStickyPrompt": "禁用置顶提示词",
     "editDialog": {
-      "title": "Edit Sticky Prompt",
-      "description": "When a 'sticky' prompt is pinned, it is added to the beginning of each new message while ignoring any previous ones. This effectively makes the conversation focused on one active context. System prompt is always included in the context."
+      "title": "编辑置顶提示词",
+      "description": "当‘置顶’提示词被固定时，它会被添加到每条新消息的开头，同时忽略之前的任何消息。这有效地使对话专注于一个活动上下文。系统提示词始终包含在上下文中。"
     }
   },
   "contextShield": {
-    "title": "@:context Shield",
-    "enableContextShield": "Enable @:contextShield.title",
-    "enableContextShieldWithSplitsSync": "Enable @:contextShield.title{'.'} Hold Option/Alt to @:contextShield.title all synced splits.",
-    "removeContextShield": "Remove @:contextShield.title",
-    "removeContextShieldWithSplitsSync": "Disable @:contextShield.title{'.'} Hold Option/Alt to remove @:contextShield.title from all synced splits.",
-    "breakContext": "Break @:context",
-    "customContext": "Custom @:context",
-    "generateContextSummary": "Generate @:context @:summary",
-    "contextSummary": "@:context @:summary",
-    "regenerateContextSummary": "Regenerate @:context @:summary",
-    "clearContextSummary": "Clear @:context @:summary",
-    "summaryDescriptionInfoHeader": "This summary is generated from the context of the conversations above and is included in the context when generating new messages below this shield.",
-    "contextShieldWithSummary": "@:contextShield.title with @:summary"
+    "title": "@:context保护盾",
+    "enableContextShield": "启用@:contextShield.title",
+    "enableContextShieldWithSplitsSync": "启用@:contextShield.title。按住 Option/Alt 以对所有同步拆分应用@:contextShield.title。",
+    "removeContextShield": "移除@:contextShield.title",
+    "removeContextShieldWithSplitsSync": "禁用@:contextShield.title。按住 Option/Alt 以从所有同步拆分中移除@:contextShield.title。",
+    "breakContext": "中断@:context",
+    "customContext": "自定义@:context",
+    "generateContextSummary": "生成@:context@:summary",
+    "contextSummary": "@:context@:summary",
+    "regenerateContextSummary": "重新生成@:context@:summary",
+    "clearContextSummary": "清除@:context@:summary",
+    "summaryDescriptionInfoHeader": "此摘要由上方对话的上下文生成，并在生成此保护盾下方的新消息时包含在上下文中。",
+    "contextShieldWithSummary": "带@:summary的@:contextShield.title"
   },
-  "data": "Data",
-  "advancedConfigurations": "Advanced Configurations",
+  "data": "数据",
+  "advancedConfigurations": "高级配置",
   "applicationInfo": {
-    "title": "Application Info",
+    "title": "应用信息",
     "appVersion": {
-      "title": "App Version",
-      "description": "The latest updates are checked periodically and you will be notified when a new update is available. You can also manually check for updates, which will then automatically install any available updates.",
-      "checkForUpdates": "Check and Apply Updates",
-      "enableAutoUpdates": "Enable Auto Updates",
-      "disableAutoUpdates": "Disable Auto Updates",
-      "viewChangelog": "View Changelog",
-      "checkingForUpdates": "Checking for updates...",
-      "errorCheckingUpdates": "Failed to check for updates",
-      "autoUpdatesEnabled": "Auto updates enabled",
-      "autoUpdatesDisabled": "Auto updates disabled",
-      "updateAvailable": "New update available",
-      "updateDownloading": "Downloading update...",
-      "noUpdatesAvailable": "You're on the latest version"
+      "title": "应用版本",
+      "description": "定期检查最新更新，并在有新更新可用时通知您。您也可以手动检查更新，然后自动安装任何可用更新。",
+      "checkForUpdates": "检查并应用更新",
+      "enableAutoUpdates": "启用自动更新",
+      "disableAutoUpdates": "禁用自动更新",
+      "viewChangelog": "查看更新日志",
+      "checkingForUpdates": "正在检查更新...",
+      "errorCheckingUpdates": "检查更新失败",
+      "autoUpdatesEnabled": "自动更新已启用",
+      "autoUpdatesDisabled": "自动更新已禁用",
+      "updateAvailable": "新更新可用",
+      "updateDownloading": "正在下载更新...",
+      "noUpdatesAvailable": "您使用的是最新版本"
     },
     "modelsInfo": {
-      "title": "Models Info",
-      "description": "Update your local model metadata. This information includes details about each model, but not the model files themselves. This applies to both locally stored and online models.",
-      "fetchLatest": "Fetch Latest Models Info",
-      "updated": "Models info updated successfully",
-      "errorUpdating": "Failed to update models info"
+      "title": "模型信息",
+      "description": "更新您的本地模型元数据。此信息包括每个模型的详细信息，但不包括模型文件本身。这适用于本地存储和在线模型。",
+      "fetchLatest": "获取最新模型信息",
+      "updated": "模型信息已成功更新",
+      "errorUpdating": "更新模型信息失败"
     },
     "appSettings": {
-      "title": "App Settings",
-      "description": "Resetting app settings to their defaults can help resolve potential issues. This will restore the default user preferences, such as appearance and models path, but will not delete any data, including chats or downloaded/imported models.",
-      "resetApp": "Reset App Settings",
+      "title": "应用设置",
+      "description": "将应用设置重置为默认值有助于解决潜在问题。这将恢复默认用户首选项，如外观和模型路径，但不会删除任何数据，包括聊天或下载/导入的模型。",
+      "resetApp": "重置应用设置",
       "resetConfirm": {
-        "header": "Reset App Settings",
-        "message": "Are you sure you want to reset all app settings to their defaults? This will restore default preferences but won't delete your data."
+        "header": "重置应用设置",
+        "message": "您确定要将所有应用设置重置为默认值吗？这将恢复默认首选项，但不会删除您的数据。"
       },
-      "resetSuccess": "App settings reset successfully",
-      "resetError": "Failed to reset app settings"
+      "resetSuccess": "应用设置重置成功",
+      "resetError": "重置应用设置失败"
     },
     "dataPaths": {
-      "title": "Data Paths",
-      "description": "All data, including models, conversations, settings, and logs, are stored locally on your device. Only modify the contents of these directories if you are familiar with the application's file structure.",
-      "appData": "App Data",
-      "appLogs": "App Logs",
-      "openInFinder": "Open in Finder"
+      "title": "数据路径",
+      "description": "所有数据，包括模型、对话、设置和日志，都本地存储在您的设备上。仅当您熟悉应用程序的文件结构时才修改这些目录的内容。",
+      "appData": "应用数据",
+      "appLogs": "应用日志",
+      "openInFinder": "在文件管理器中打开"
     },
     "helpAndDiscussions": {
-      "title": "Help & Discussions",
-      "description": "Connect with our community on Discord to get support, share your feedback, and stay informed.",
-      "sayHi": "Say Hi!",
-      "viewDocs": "View Docs"
+      "title": "帮助与讨论",
+      "description": "在 Discord 上连接我们的社区以获得支持、分享您的反馈并保持最新状态。",
+      "sayHi": "打个招呼！",
+      "viewDocs": "查看文档"
     }
   },
   "logViewer": {
-    "title": "Log Viewer",
-    "description": "View and analyze application logs in real-time. Use filters and search to troubleshoot issues efficiently.",
-    "searchPlaceholder": "Search Logs...",
-    "refresh": "Refresh Logs",
-    "autoRefreshOn": "Stop Auto-Refresh",
-    "autoRefreshOff": "Enable Auto-Refresh",
-    "pause": "Stop Auto-Scroll",
-    "resume": "Resume Auto-Scroll",
-    "copy": "Copy Logs to Clipboard",
-    "download": "Download Logs",
-    "clearTemporarily": "Clear Logs Display",
-    "clearPermanently": "Clear Logs File",
-    "showAllLogs": "Show All Logs",
+    "title": "日志查看器",
+    "description": "实时查看和分析应用程序日志。使用过滤器和搜索来高效地排查问题。",
+    "searchPlaceholder": "搜索日志...",
+    "refresh": "刷新日志",
+    "autoRefreshOn": "停止自动刷新",
+    "autoRefreshOff": "启用自动刷新",
+    "pause": "停止自动滚动",
+    "resume": "恢复自动滚动",
+    "copy": "复制日志到剪切板",
+    "download": "下载日志",
+    "clearTemporarily": "清除日志显示",
+    "clearPermanently": "清除日志文件",
+    "showAllLogs": "显示所有日志",
     "clearPermanentlyConfirmation": {
-      "header": "Clear Log File",
-      "message": "Are you sure you want to clear the log file? This will permanently delete all log entries."
+      "header": "清除日志文件",
+      "message": "您确定要清除日志文件吗？这将永久删除所有日志条目。"
     },
-    "loading": "Loading logs...",
-    "noLogs": "No logs available",
-    "noMatchingLogs": "No logs match the current filters",
-    "totalLines": "{count} total line | {count} total lines",
-    "filteredLines": "{count} filtered line | {count} filtered lines",
-    "copiedToClipboard": "Logs copied to clipboard",
-    "downloaded": "Logs downloaded successfully",
-    "clearedPermanently": "Log file cleared successfully",
-    "errorLoading": "Failed to load logs",
-    "errorCopying": "Failed to copy logs",
-    "errorDownloading": "Failed to download logs",
-    "errorClearing": "Failed to clear logs",
+    "loading": "正在加载日志...",
+    "noLogs": "无可用日志",
+    "noMatchingLogs": "无日志匹配当前过滤器",
+    "totalLines": "{count}行总计 | {count}行总计",
+    "filteredLines": "{count}行筛选 | {count}行筛选",
+    "copiedToClipboard": "日志已复制到剪切板",
+    "downloaded": "日志下载成功",
+    "clearedPermanently": "日志文件清除成功",
+    "errorLoading": "加载日志失败",
+    "errorCopying": "复制日志失败",
+    "errorDownloading": "下载日志失败",
+    "errorClearing": "清除日志失败",
     "levels": {
-      "all": "All Levels",
-      "error": "Error",
-      "warn": "Warning",
-      "info": "Info",
-      "debug": "Debug"
+      "all": "所有级别",
+      "error": "错误",
+      "warn": "警告",
+      "info": "信息",
+      "debug": "调试"
     }
   },
   "notifications": {
-    "title": "Notifications",
-    "description": "Review and manage application notifications including errors, warnings, and info events.",
-    "searchPlaceholder": "Search Notifications...",
-    "searchingAllLogs": "Searching all notifications in database",
-    "refresh": "Refresh Notifications",
-    "autoRefreshOn": "Auto-Refresh Enabled",
-    "autoRefreshOff": "Enable Auto-Refresh",
-    "copy": "Copy All to Clipboard",
-    "copyLog": "Copy Notification",
-    "download": "Download Notifications",
-    "clearPermanently": "Clear All Notifications",
+    "title": "通知",
+    "description": "查看和管理应用程序通知，包括错误、警告和信息事件。",
+    "searchPlaceholder": "搜索通知...",
+    "searchingAllLogs": "正在搜索数据库中的所有通知",
+    "refresh": "刷新通知",
+    "autoRefreshOn": "自动刷新已启用",
+    "autoRefreshOff": "启用自动刷新",
+    "copy": "复制全部到剪切板",
+    "copyLog": "复制通知",
+    "download": "下载通知",
+    "clearPermanently": "清除所有通知",
     "clearPermanentlyConfirmation": {
-      "header": "Clear Notifications",
-      "message": "Are you sure you want to permanently delete all notifications? This action cannot be undone."
+      "header": "清除通知",
+      "message": "您确定要永久删除所有通知吗？此操作无法撤销。"
     },
-    "loading": "Loading notifications...",
-    "loadingMore": "Loading more...",
-    "endOfList": "End of list",
-    "noLogs": "No notifications available",
-    "totalLogs": "{count} notification | {count} notifications",
-    "displayedLogs": "Showing {count}",
-    "copiedToClipboard": "Notification copied to clipboard",
-    "downloaded": "Notifications downloaded successfully",
-    "clearedPermanently": "Notifications cleared successfully",
-    "deleted": "Notification deleted successfully",
-    "errorLoading": "Failed to load notifications",
-    "errorCopying": "Failed to copy notification",
-    "errorDownloading": "Failed to download notifications",
-    "errorClearing": "Failed to clear notifications",
-    "errorDeleting": "Failed to delete notification",
+    "loading": "正在加载通知...",
+    "loadingMore": "正在加载更多...",
+    "endOfList": "列表末尾",
+    "noLogs": "无可用通知",
+    "totalLogs": "{count}个通知 | {count}个通知",
+    "displayedLogs": "显示 {count} 个",
+    "copiedToClipboard": "通知已复制到剪切板",
+    "downloaded": "通知下载成功",
+    "clearedPermanently": "通知清除成功",
+    "deleted": "通知删除成功",
+    "errorLoading": "加载通知失败",
+    "errorCopying": "复制通知失败",
+    "errorDownloading": "下载通知失败",
+    "errorClearing": "清除通知失败",
+    "errorDeleting": "删除通知失败",
     "purge": {
-      "label": "Purge Notifications",
-      "olderThan1Day": "Older than 1 day",
-      "olderThan7Days": "Older than 7 days",
-      "olderThan15Days": "Older than 15 days",
-      "olderThan30Days": "Older than 30 days",
-      "all": "All",
-      "confirmHeader": "Purge Notifications",
-      "confirmMessageDays": "Are you sure you want to delete notifications older than {days} days? This action cannot be undone.",
-      "purge": "Purge",
-      "purged": "Notifications purged successfully",
-      "errorPurging": "Failed to purge notifications"
+      "label": "清理通知",
+      "olderThan1Day": "超过 1 天",
+      "olderThan7Days": "超过 7 天",
+      "olderThan15Days": "超过 15 天",
+      "olderThan30Days": "超过 30 天",
+      "all": "全部",
+      "confirmHeader": "清理通知",
+      "confirmMessageDays": "您确定要删除超过 {days} 天的通知吗？此操作无法撤销。",
+      "purge": "清理",
+      "purged": "通知清理成功",
+      "errorPurging": "清理通知失败"
     },
     "levels": {
-      "all": "All Levels",
-      "error": "Errors",
-      "warn": "Warnings",
-      "info": "Info"
+      "all": "所有级别",
+      "error": "错误",
+      "warn": "警告",
+      "info": "信息"
     }
   },
   "sidebar": {
     "expandGroup": "展开{group}",
     "collapseGroup": "折叠{group}",
-    "showExtraItems": "Show extra items",
-    "hideExtraItems": "Hide extra items",
+    "showExtraItems": "显示额外项目",
+    "hideExtraItems": "隐藏额外项目",
     "groups": {
-      "modelsPrompts": "Models & Prompts",
-      "personasTools": "Personas & Tools",
-      "knowledgeInsights": "Knowledge & Insights",
-      "system": "System"
+      "modelsPrompts": "模型与提示词",
+      "personasTools": "角色与工具",
+      "knowledgeInsights": "知识与洞察",
+      "system": "系统"
     },
     "appUpdater": {
-      "version": "Version {version}",
-      "restartToApply": "Restart to Apply Updates",
-      "restart": "Restart Now",
-      "downloading": "Downloading Update...",
-      "viewChangelog": "View Changelog",
-      "openingChangelog": "Opening Changelog...",
-      "errorHint": "Update error - click for details",
-      "readyHint": "Update ready - restart to apply",
-      "downloadingHint": "Downloading update... {percent}%",
+      "version": "版本 {version}",
+      "restartToApply": "重启以应用更新",
+      "restart": "立即重启",
+      "downloading": "正在下载更新...",
+      "viewChangelog": "查看更新日志",
+      "openingChangelog": "正在打开更新日志...",
+      "errorHint": "更新错误 - 点击查看详情",
+      "readyHint": "更新就绪 - 重启以应用",
+      "downloadingHint": "正在下载更新... {percent}%",
       "errorDialog": {
-        "header": "Update Error",
-        "message": "An error occurred while updating: {error}",
-        "downloadManually": "Download Manually"
+        "header": "更新错误",
+        "message": "更新时发生错误：{error}",
+        "downloadManually": "手动下载"
       }
     }
   },
   "showInNativeFileManager": {
-    "mac": "Show in Finder",
-    "win": "Show in File Explorer",
-    "lin": "Show in File Manager"
+    "mac": "在访达中显示",
+    "win": "在文件资源管理器中显示",
+    "lin": "在文件管理器中显示"
   },
   "settings": {
-    "title": "Settings",
-    "general": "General",
-    "defaultPrompts": "Default Prompts",
+    "title": "设置",
+    "general": "常规",
+    "defaultPrompts": "默认提示词",
     "prompts": {
-      "description": "These prompts shape how titles are generated, search queries are built, knowledge is retrieved, and context is summarized. Changes are saved to this device’s global settings (master database) and apply across all workspaces (not per workspace).",
-      "availablePrompts": "Available Prompts",
-      "customized": "Customized",
-      "customizedCount": "{count} customized",
-      "modified": "Modified",
-      "usingCustom": "Using Custom",
-      "usingDefault": "Using Default",
-      "clickToEdit": "Click to edit prompt",
-      "variables": "Variables",
-      "lastModified": "Last modified",
-      "selectPrompt": "Select a prompt to customize",
-      "clearContent": "Clear Content",
-      "resetToDefault": "Reset to Default",
-      "insertFromLibrary": "Insert from Library",
-      "saveChanges": "Save Changes",
-      "discardChanges": "Discard Changes",
+      "description": "这些提示词决定了标题生成、搜索查询构建、知识检索和上下文总结的方式。更改将保存到此设备的全局设置（主数据库）中，并应用于所有工作空间（而非每个工作空间独立）。",
+      "availablePrompts": "可用提示词",
+      "customized": "已自定义",
+      "customizedCount": "{count} 个已自定义",
+      "modified": "已修改",
+      "usingCustom": "使用自定义",
+      "usingDefault": "使用默认",
+      "clickToEdit": "点击以编辑提示词",
+      "variables": "变量",
+      "lastModified": "最后修改",
+      "selectPrompt": "选择要自定义的提示词",
+      "clearContent": "清除内容",
+      "resetToDefault": "重置为默认",
+      "insertFromLibrary": "从库中插入",
+      "saveChanges": "保存更改",
+      "discardChanges": "放弃更改",
       "categories": {
-        "generation": "Content Generation",
-        "search": "Search & Synthesis",
-        "analysis": "Analysis & Extraction"
+        "generation": "内容生成",
+        "search": "搜索与合成",
+        "analysis": "分析与提取"
       }
     },
-    "licenseAndAccess": "License and Access",
-    "fontSize": "Font @:size",
-    "teams": "Teams",
-    "appearance": "Appearance",
-    "setupService": "Setup {service}",
+    "licenseAndAccess": "许可证与访问",
+    "fontSize": "字体@:size",
+    "teams": "团队",
+    "appearance": "外观",
+    "setupService": "设置{service}",
     "dataBackup": {
-      "title": "@:data Backup",
-      "description": "Manage your data backup settings. You can export your data for backup, clear it, or restore from a backup file."
+      "title": "@:data备份",
+      "description": "管理您的数据备份设置。您可以导出数据进行备份、清除数据或从备份文件恢复。"
     },
     "dataBackupReminderInterval": {
-      "title": "@:data Backup Reminder Interval",
-      "description": "How often to remind you to backup your data."
+      "title": "@:data备份提醒间隔",
+      "description": "提醒您备份数据的频率。"
     },
     "dataMigrate": {
-      "action": "Migrate",
-      "title": "Studio Migration",
+      "action": "迁移",
+      "title": "Studio 迁移",
       "itemsToMigrate": {
-        "label": "Step 2: Select Items to Migrate",
-        "action": "Select Items"
+        "label": "步骤 2：选择要迁移的项目",
+        "action": "选择项目"
       },
       "pointsToRemember": {
-        "activeWorkspace": "You can import Prompt Library Prompts, Remote Model Providers, Conversations, and Attachments into the current workspace you are in. If you want to import into a different workspace, please switch to that workspace first.",
-        "remoteModelProviders": "Migrating remote model providers will NOT carry over API keys, they must be re-entered. Some legacy models may not be supported in Studio.",
-        "attachmentsMigration": "If migrating attachments, first zip the attachments folder. You can migrate attachments separately after migrating the database or together with the database."
+        "activeWorkspace": "您可以将提示词库提示词、远程模型提供方、对话和附件导入到您当前的活动工作空间中。如果要导入到不同的工作空间，请先切换到该工作空间。",
+        "remoteModelProviders": "迁移远程模型提供方不会迁移 API 密钥，必须重新输入。Studio 可能不支持某些旧版模型。",
+        "attachmentsMigration": "如果迁移附件，请先压缩附件文件夹。您可以在迁移数据库后单独迁移附件，也可以与数据库一起迁移。"
       },
       "databaseMigration": {
-        "title": "Database Migration",
-        "label": "Step 1: Select Msty App 1.x Database File",
-        "action": "Drag and drop your Msty Database file"
+        "title": "数据库迁移",
+        "label": "步骤 1：选择 Msty App 1.x 数据库文件",
+        "action": "拖放您的 Msty 数据库文件"
       },
       "attachmentsMigration": {
-        "title": "Attachments Migration",
-        "migrate": "Migrate Separately",
-        "label": "Step 3: Add Zipped Attachments Folder",
-        "success": "Successfully migrated the attachments",
-        "error": "Failed to migrate the attachments",
-        "action": "Drag and drop your zipped attachments folder"
+        "title": "附件迁移",
+        "migrate": "单独迁移",
+        "label": "步骤 3：添加压缩的附件文件夹",
+        "success": "附件迁移成功",
+        "error": "附件迁移失败",
+        "action": "拖放您压缩的附件文件夹"
       },
       "missingDataWarning": {
-        "description": "Please select a database file and at least one table to migrate",
-        "title": "Missing Data"
+        "description": "请选择一个数据库文件和至少一个要迁移的表",
+        "title": "缺失数据"
       },
-      "description": "Migrate your data from Msty App 1.x into Studio. Imported data will not overwrite existing data.",
+      "description": "从 Msty App 1.x 迁移数据到 Studio。导入的数据不会覆盖现有数据。",
       "successMessage": "成功迁移{item}",
       "errorMessage": "迁移{item}失败",
-      "migrationInProgress": "Migration In Progress...",
+      "migrationInProgress": "迁移进行中...",
       "migrationComplete": "{item}迁移完成",
       "migrationFail": "{item}迁移失败",
       "migratingItem": "正在迁移{item}...",
       "migrationError": {
-        "title": "Migration Error",
-        "action": "View Details",
-        "message": "Message",
-        "cause": "Cause"
+        "title": "迁移错误",
+        "action": "查看详情",
+        "message": "消息",
+        "cause": "原因"
       }
     },
-    "colorPreference": "Color Preference",
-    "accentColor": "Accent Color",
-    "dark": "Dark",
-    "light": "Light",
-    "default": "Default",
-    "system": "System",
-    "baseColor": "Base Color",
-    "emerald": "Emerald",
-    "lime": "Lime",
-    "green": "Green",
-    "red": "Red",
-    "orange": "Orange",
-    "amber": "Amber",
-    "yellow": "Yellow",
-    "teal": "Teal",
-    "cyan": "Cyan",
-    "sky": "Sky",
-    "indigo": "Indigo",
-    "violet": "Violet",
-    "purple": "Purple",
-    "fuchsia": "Fuchsia",
-    "pink": "Pink",
-    "rose": "Rose",
-    "slate": "Slate",
-    "gray": "Gray",
-    "zinc": "Zinc",
-    "stone": "Stone",
-    "sandy": "Sandy",
-    "lighter": "Lighter",
-    "codeTheme": "Code Theme",
+    "colorPreference": "颜色偏好",
+    "accentColor": "强调色",
+    "dark": "深色",
+    "light": "浅色",
+    "default": "默认",
+    "system": "跟随系统",
+    "baseColor": "基础色",
+    "emerald": "祖母绿",
+    "lime": "莱姆绿",
+    "green": "绿色",
+    "red": "红色",
+    "orange": "橙色",
+    "amber": "琥珀色",
+    "yellow": "黄色",
+    "teal": "蓝绿色",
+    "cyan": "青色",
+    "sky": "天蓝色",
+    "indigo": "靛蓝色",
+    "violet": "紫罗兰",
+    "purple": "紫色",
+    "fuchsia": "品红",
+    "pink": "粉色",
+    "rose": "玫瑰红",
+    "slate": "板岩灰",
+    "gray": "灰色",
+    "zinc": "锌灰",
+    "stone": "石灰",
+    "sandy": "沙色",
+    "lighter": "更浅",
+    "codeTheme": "代码主题",
     "rtlSupport": {
-      "title": "RTL Support",
-      "sectionDescription": "Enable right-to-left layouts for languages like Arabic, Hebrew, and Persian. The entire workspace updates instantly when toggled.",
-      "toggleLabel": "Enable RTL Layout",
-      "enabledHint": "Right-to-left layout is active across the app.",
-      "disabledHint": "The app is currently using a left-to-right layout."
+      "title": "从右到左语言支持",
+      "sectionDescription": "为阿拉伯语、希伯来语和波斯语等语言启用从右到左的布局。切换时整个工作空间将立即更新。",
+      "toggleLabel": "启用 RTL 布局",
+      "enabledHint": "从右到左布局在整个应用程序中已激活。",
+      "disabledHint": "应用程序当前使用从左到右布局。"
     },
     "miniMap": {
-      "title": "Mini Map",
-      "description": "Enable the inline mini map message navigator with branch previews. When disabled, a simpler Top/Bottom navigator is used."
+      "title": "迷你地图",
+      "description": "启用带有分支预览的内嵌迷你地图消息导航器。禁用时，使用更简单的顶部/底部导航器。"
     },
     "language": {
-      "sectionTitle": "Language & Localization",
-      "sectionDescription": "Switch between interface languages, preview developer mode, or import a temporary locale file. If you want to contribute a translation, please visit https://github.com/cloudstack-llc/msty-studio-i18n",
-      "localeLabel": "Language",
-      "downloadTemplate": "Download Template",
-      "downloadBuiltInLocale": "Download this built-in locale JSON file.",
-      "downloadCustomLocale": "Download the current custom locale you imported.",
-      "downloadDeveloperTemplate": "Download an empty template based on the base locale.",
-      "importLocale": "Import Locale",
-      "importLocaleHint": "Imported locales last only until you restart or refresh the app.",
-      "importSuccessSummary": "Locale Imported",
-      "importSuccessDetail": "Now using {code}. Review the interface to confirm translations.",
-      "importError": "We couldn't import that locale file. Make sure it's valid JSON based on the template.",
+      "sectionTitle": "语言与本地化",
+      "sectionDescription": "切换界面语言，预览开发者模式，或导入临时本地化文件。如果您想贡献翻译，请访问 https://github.com/cloudstack-llc/msty-studio-i18n",
+      "localeLabel": "语言",
+      "downloadTemplate": "下载模板",
+      "downloadBuiltInLocale": "下载此内置本地化 JSON 文件。",
+      "downloadCustomLocale": "下载您当前导入的自定义本地化文件。",
+      "downloadDeveloperTemplate": "下载基于基础本地化的空模板。",
+      "importLocale": "导入本地化文件",
+      "importLocaleHint": "导入的本地化文件仅持续到您重启或刷新应用程序为止。",
+      "importSuccessSummary": "本地化文件已导入",
+      "importSuccessDetail": "现在使用 {code}。检查界面以确认翻译。",
+      "importError": "我们无法导入该本地化文件。请确保它是基于模板的有效 JSON。",
       "developerMode": {
-        "label": "Developer Mode"
+        "label": "开发者模式"
       }
     },
     "security": {
-      "title": "Security",
-      "subtitle": "Configure security settings for the application"
+      "title": "安全",
+      "subtitle": "配置应用程序的安全设置"
     },
     "webSecurity": {
       "title": "禁用网络安全",
@@ -1260,92 +1260,92 @@
       "applyAndRestart": "应用并重启"
     },
     "fontStyle": {
-      "title": "Font Style",
+      "title": "字体样式",
       "galaxyFarAway": "Galaxy Far Away",
       "everythingEverywhere": "Everything Everywhere",
       "homeAlone": "Home Alone",
       "lordOfTheLoops": "Lord of the Loops"
     },
     "renderingModules": {
-      "title": "Rendering Modules",
-      "selectPlaceholder": "@:select Rendering Modules"
+      "title": "渲染模块",
+      "selectPlaceholder": "@:select渲染模块"
     },
     "remoteToolsConnector": {
-      "description": "Allow Msty Studio web to connect to this device to run remote tools and access local models. This service must be actively running to allow remote connections.",
-      "allowRemoteToolsConnection": "Enable Service",
+      "description": "允许 Msty Studio Web 连接到此设备以运行远程工具和访问本地模型。此服务必须正在运行以允许远程连接。",
+      "allowRemoteToolsConnection": "启用服务",
       "connectionToken": {
-        "title": "Connection Token",
-        "rememberToken": "Remember Token",
-        "placeholder": "Enter a strong connection token",
-        "description": "This token is used to authenticate the connection between Msty Studio and this app when connecting remotely. You can regenerate it at any time to invalidate the previous token. Make sure to use a strong token and keep it secret.",
+        "title": "连接 Token",
+        "rememberToken": "记住 Token",
+        "placeholder": "输入强连接 Token",
+        "description": "此 Token 用于在远程连接时验证 Msty Studio 与此应用程序之间的连接。您可以随时重新生成它以使之前的 Token 无效。请确保使用强 Token 并保密。",
         "successMessage": {
-          "detail": "Remote Service is now active"
+          "detail": "远程服务现已激活"
         },
         "errorMessage": {
-          "summary": "Error Enabling Connector",
-          "detail": "Failed to enable Remote Service. Please check the logs for more details"
+          "summary": "启用连接器出错",
+          "detail": "启用远程服务失败。请检查日志以获取更多详细信息"
         },
-        "copyConnectionInfo": "Copy Local URL",
-        "copyTunnelConnectionInfo": "Copy Tunnel URL",
+        "copyConnectionInfo": "复制本地 URL",
+        "copyTunnelConnectionInfo": "复制隧道 URL",
         "stopSuccessMessage": {
-          "detail": "Remote Service is now disabled"
+          "detail": "远程服务现已禁用"
         }
       },
-      "enableTunneling": "Enable Tunneling (Experimental)"
+      "enableTunneling": "启用隧道 (实验性)"
     },
-    "copyLocalURL": "Copy Local URL",
+    "copyLocalURL": "复制本地 URL",
     "localAI": {
       "notInstalled": {
-        "description": "Set up @:localAIService to run AI models locally on your device."
+        "description": "设置@:localAIService以在您的设备上本地运行 AI 模型。"
       },
       "modelsLocation": {
-        "title": "Models Location",
+        "title": "模型位置",
         "description": "配置您的本地AI服务模型存储位置。"
       },
       "existingModels": {
-        "title": "Use Existing Models",
-        "description": "Use models you already have without downloading them again."
+        "title": "使用现有模型",
+        "description": "使用您已有的模型，无需再次下载。"
       },
       "serviceConfigurations": {
-        "title": "@:service Configurations",
-        "description": "These configurations are applied to the @:localAIService when it starts. @:localAIService will automatically restart after you save any changes.",
+        "title": "@:service配置",
+        "description": "这些配置在@:localAIService启动时应用。保存任何更改后，@:localAIService将自动重启。",
         "configurePortNumber": {
-          "title": "Configure Port Number",
-          "description": "Port number for @:localAIService{'.'} Leave empty to use default."
+          "title": "配置端口号",
+          "description": "@:localAIService的端口号。留空以使用默认值。"
         },
         "maximumParallelChats": {
-          "title": "Maximum Parallel Chats",
-          "description": "Maximum number of concurrent chat sessions (when using split mode)."
+          "title": "最大并行聊天数",
+          "description": "最大并发聊天会话数（使用拆分模式时）。"
         },
         "maximumLoadedModels": {
-          "title": "Maximum Loaded Models",
-          "description": "Maximum number of LLMs loaded at the same time. Keeping more models in memory speeds up initial responses but uses more system resources."
+          "title": "最大加载模型数",
+          "description": "同时加载的最大 LLM 数量。将更多模型保留在内存中可加快初始响应速度，但会占用更多系统资源。"
         },
         "enableNetworkAccess": {
-          "title": "Enable Network Access",
-          "description": "Allow other devices on your network to access this @:localAIService through this device’s IP address."
+          "title": "启用网络访问",
+          "description": "允许网络上的其他设备通过此设备的 IP 地址访问此@:localAIService。"
         },
         "allowedNetworkOrigins": {
-          "title": "Allowed Network Origins",
-          "description": "List permitted network origins here (comma-separated). Each entry must begin with http:// or https://. Use * to permit all origins.",
-          "placeholder": "e.g. https://msty.studio, http://localhost:3000, *"
+          "title": "允许的网络来源",
+          "description": "在此处列出允许的网络来源（逗号分隔）。每个条目必须以 http:// 或 https:// 开头。使用 * 允许所有来源。",
+          "placeholder": "例如 https://msty.studio, http://localhost:3000, *"
         },
         "allowMstyStudioAccess": {
-          "title": "Allow Access from Msty Studio",
-          "description": "Allow connections from Msty Studio Web to this app so it can access @:localAIService{'.'}"
+          "title": "允许从 Msty Studio 访问",
+          "description": "允许从 Msty Studio Web 连接到此应用以访问@:localAIService{'.'} "
         },
         "captureServiceLogs": {
-          "title": "Capture @:service Logs",
-          "description": "Enable logging to capture service data for debugging. Use this option only when necessary."
+          "title": "捕获@:service日志",
+          "description": "启用日志记录以捕获服务数据进行调试。仅在必要时使用此选项。"
         },
         "advancedConfiguration": {
-          "description": "Enter valid JSON to set environment variables for the @:localAIService{'.'}"
+          "description": "输入有效的 JSON 以设置@:localAIService的环境变量。"
         },
         "unsavedChanges": {
           "message": "您在@:localAIService配置中有未保存的更改。保存后，@:localAIService将使用新配置重启。",
-          "saveChanges": "Save Changes and Restart Service",
+          "saveChanges": "保存更改并重启服务",
           "successMessage": {
-            "detail": "@:localAIService Configurations saved and service restarted"
+            "detail": "@:localAIService配置已保存且服务已重启"
           },
           "errorMessage": {
             "detail": "保存@:localAIService配置失败。请检查日志以获取更多详细信息。"
@@ -1353,19 +1353,19 @@
         }
       },
       "modelConfigurations": {
-        "title": "@:model Configurations",
-        "description": "These configurations get applied to all models during chat sessions.",
+        "title": "@:model配置",
+        "description": "这些配置在聊天会话期间应用于所有模型。",
         "keepAliveTimeout": {
-          "title": "Model Keep-Alive Timeout",
-          "description": "Time (in minutes) after which the model will be unloaded from memory if not used."
+          "title": "模型保活超时",
+          "description": "模型未使用时从内存中卸载的时间（分钟）。"
         },
         "advancedConfiguration": {
-          "description": "Enter valid JSON to pass extra parameters to models during chat sessions."
+          "description": "输入有效的 JSON 以在聊天会话期间向模型传递额外参数。"
         },
         "unsavedChanges": {
           "message": "您在@:settings.localAI.modelConfigurations.title中有未保存的更改。请确保在开始新聊天会话前保存它们。",
           "successMessage": {
-            "detail": "@:settings.localAI.modelConfigurations.title saved"
+            "detail": "@:settings.localAI.modelConfigurations.title已保存"
           },
           "errorMessage": {
             "detail": "保存@:settings.localAI.modelConfigurations.title失败。请检查日志以获取更多详细信息。"
@@ -1381,277 +1381,277 @@
     },
     "mlx": {
       "notInstalled": {
-        "description": "Set @:mlxService to run optimized AI models on your Apple Silicon Mac."
+        "description": "设置@:mlxService以在您的 Apple Silicon Mac 上运行优化的 AI 模型。"
       },
       "modelsLocation": {
-        "title": "Models Location",
-        "description": "Configure where your MLX models are stored."
+        "title": "模型位置",
+        "description": "配置您的 MLX 模型存储位置。"
       },
       "existingModels": {
-        "title": "Use Existing Models",
-        "description": "Use models you already have without downloading them again."
+        "title": "使用现有模型",
+        "description": "使用您已有的模型，无需再次下载。"
       },
-      "openSettings": "Open MLX Settings",
+      "openSettings": "打开 MLX 设置",
       "manageModels": {
-        "title": "Manage MLX Models",
-        "description": "Browse, install, and manage MLX models optimized for Apple Silicon.",
-        "openModelHub": "Open MLX Models Hub"
+        "title": "管理 MLX 模型",
+        "description": "浏览、安装和管理针对 Apple Silicon 优化的 MLX 模型。",
+        "openModelHub": "打开 MLX 模型中心"
       },
       "compatibility": {
-        "title": "System Compatibility",
-        "description": "Check if your system is compatible with MLX.",
-        "checkAgain": "Check Again",
+        "title": "系统兼容性",
+        "description": "检查您的系统是否与 MLX 兼容。",
+        "checkAgain": "再次检查",
         "status": {
-          "notChecked": "Not checked",
-          "compatible": "Compatible",
-          "notCompatible": "Not compatible"
+          "notChecked": "未检查",
+          "compatible": "兼容",
+          "notCompatible": "不兼容"
         },
         "requirements": {
-          "title": "MLX Requirements:",
+          "title": "MLX 要求：",
           "appleSilicon": "Apple Silicon Mac (M1, M2, M3, M4)",
-          "macOS13": "macOS 13.0 or later",
-          "unifiedMemory": "Unified memory architecture"
+          "macOS13": "macOS 13.0 或更高版本",
+          "unifiedMemory": "统一内存架构"
         }
       }
     }
   },
-  "mlxService": "MLX Service",
-  "settingsAndConfigs": "Settings and Configs",
-  "prompts": "Prompts",
-  "apiKeys": "API Keys",
+  "mlxService": "MLX 服务",
+  "settingsAndConfigs": "设置与配置",
+  "prompts": "提示词",
+  "apiKeys": "API 密钥",
   "workspaces": {
-    "createNewWorkspace": "Create New Workspace",
-    "switchWorkspace": "Switch Workspace",
-    "switchToCustomWorkspace": "Switch to {workspaceName} Workspace",
-    "hideWorkspaceTray": "Hide Workspace Tray",
-    "showWorkspaceTray": "Show Workspace Tray",
+    "createNewWorkspace": "创建新工作空间",
+    "switchWorkspace": "切换工作空间",
+    "switchToCustomWorkspace": "切换到 {workspaceName} 工作空间",
+    "hideWorkspaceTray": "隐藏工作空间托盘",
+    "showWorkspaceTray": "显示工作空间托盘",
     "switchAction": {
       "successMessage": {
-        "summary": "Workspace switched!",
-        "detail": "{workspaceName} is now the active workspace"
+        "summary": "工作空间已切换！",
+        "detail": "{workspaceName} 现在是活动工作空间"
       }
     },
-    "deleteWorkspace": "Delete Workspace",
-    "workspaceIsActive": "Workspace {workspaceName} is active",
-    "currentActiveWorkspace": "Your current active Workspace is: {workspaceName}",
+    "deleteWorkspace": "删除工作空间",
+    "workspaceIsActive": "工作空间 {workspaceName} 处于活动状态",
+    "currentActiveWorkspace": "您当前的活动工作空间是：{workspaceName}",
     "workspaceForm": {
-      "newTitle": "New Workspace",
-      "editTitle": "Edit Workspace",
-      "workspaceName": "Workspace Name",
-      "whatToCopy": "What to copy from {activeWorkspace} workspace?",
-      "createAndSwitch": "Create and Switch",
-      "duplicateWorkspaceName": "Workspace name already exists",
-      "invalidWorkspaceName": "Invalid or duplicate workspace name",
+      "newTitle": "新工作空间",
+      "editTitle": "编辑工作空间",
+      "workspaceName": "工作空间名称",
+      "whatToCopy": "从 {activeWorkspace} 工作空间复制什么？",
+      "createAndSwitch": "创建并切换",
+      "duplicateWorkspaceName": "工作空间名称已存在",
+      "invalidWorkspaceName": "无效或重复的工作空间名称",
       "updateSuccessMessage": {
         "summary": "@:success",
-        "detail": "Workspace updated"
+        "detail": "工作空间已更新"
       },
       "updateErrorMessage": {
         "summary": "@:error",
-        "detail": "Failed to update Workspace"
+        "detail": "更新工作空间失败"
       },
       "createSuccessMessage": {
         "summary": "@:success",
-        "detail": "Workspace created"
+        "detail": "工作空间已创建"
       },
       "createErrorMessage": {
         "summary": "@:error",
-        "detail": "Failed to create Workspace"
+        "detail": "创建工作空间失败"
       }
     },
     "deleteConfirmation": {
-      "header": "Delete Workspace",
-      "message": "Are you sure you want to delete {workspaceName}? All data associated with this workspace will be deleted. This action cannot be undone.",
-      "downloadWorkspaceData": "下载工作空间数据",
+      "header": "删除工作空间",
+      "message": "您确定要删除 {workspaceName} 吗？与此工作空间关联的所有数据都将被删除。此操作无法撤销。",
+      "downloadWorkspaceData": "@:download工作空间@:data",
       "successMessage": {
-        "detail": "Workspace {workspaceName} deleted"
+        "detail": "工作空间 {workspaceName} 已删除"
       },
       "errorMessage": {
         "summary": "@:error",
-        "detail": "Failed to delete Workspace"
+        "detail": "删除工作空间失败"
       }
     },
     "exportWorkspace": {
-      "title": "@:export Workspace",
+      "title": "@:export工作空间",
       "successMessage": {
         "summary": "@:success",
-        "detail": "Workspace {workspaceName} data exported as {fileName}"
+        "detail": "工作空间 {workspaceName} 数据已导出为 {fileName}"
       },
       "errorMessage": {
         "summary": "@:error",
-        "detail": "Failed to export Workspace {workspaceName}"
+        "detail": "导出工作空间 {workspaceName} 失败"
       }
     },
     "importWorkspace": {
-      "title": "@:import Workspace",
-      "dragAndDropMessage": "Drag and drop a zipped Msty Workspace file to import and create a new Workspace. In case of duplicate names, the imported workspace will be renamed. You can change it later.",
+      "title": "@:import工作空间",
+      "dragAndDropMessage": "拖放压缩的 Msty 工作空间文件以导入并创建新工作空间。如果名称重复，导入的工作空间将被重命名。您可以稍后更改它。",
       "successMessage": {
         "summary": "@:success",
-        "detail": "Workspace {workspaceName} has been imported"
+        "detail": "工作空间 {workspaceName} 已导入"
       },
       "errorMessage": {
         "summary": "@:error",
-        "detail": "Failed to import Workspace"
+        "detail": "导入工作空间失败"
       }
     }
   },
   "attachments": {
-    "title": "Attachments",
-    "documents": "Documents",
-    "images": "Images",
-    "webpages": "Webpages",
-    "youTubeLinks": "YouTube Links",
-    "dropThem": "Drop Them!",
-    "selectAll": "@:select all",
-    "deselectAll": "Deselect all",
-    "dragAnDropHere": "Drag-and-drop {attachmentType} here",
-    "orClickToBrowse": "or click to browse",
-    "addDocumentTypes": "Add {documentTypes} as well as some other code files",
-    "addImageTypes": "Add .png, .jpg, or jpeg images",
-    "dragAndDropOrBrowseMore": "Drag-and-drop or browse more",
-    "commaSeparatedUrls": "or paste comma-separated URLs",
-    "manageTooltip": "Click to manage attached {attachmentType}",
-    "modelMayNotSupportImages": "Selected model may not support image attachments.",
-    "documentsAttachedCount": "{count} document attached | {count} documents attached",
-    "imagesAttachedCount": "{count} image attached | {count} images attached",
-    "webpagesAttachedCount": "{count} webpage attached | {count} webpages attached",
-    "webpageLinks": "a webpage link | webpage links",
-    "holdKeyToShareWithSyncedSplits": "Hold {key} to share with Synced Splits",
-    "youTubeLinksAttachedCount": "{count} YouTube link attached | {count} YouTube links attached",
+    "title": "附件",
+    "documents": "文档",
+    "images": "图像",
+    "webpages": "网页",
+    "youTubeLinks": "YouTube 链接",
+    "dropThem": "放下它们！",
+    "selectAll": "全选",
+    "deselectAll": "取消全选",
+    "dragAnDropHere": "将{attachmentType}拖放到此处",
+    "orClickToBrowse": "或点击浏览",
+    "addDocumentTypes": "添加 {documentTypes} 以及其他一些代码文件",
+    "addImageTypes": "添加 .png, .jpg, 或 jpeg 图像",
+    "dragAndDropOrBrowseMore": "拖放或浏览更多",
+    "commaSeparatedUrls": "或粘贴逗号分隔的 URL",
+    "manageTooltip": "点击管理已附加的{attachmentType}",
+    "modelMayNotSupportImages": "所选模型可能不支持图像附件。",
+    "documentsAttachedCount": "{count} 个文档已附加 | {count} 个文档已附加",
+    "imagesAttachedCount": "{count} 个图像已附加 | {count} 个图像已附加",
+    "webpagesAttachedCount": "{count} 个网页已附加 | {count} 个网页已附加",
+    "webpageLinks": "网页链接 | 网页链接",
+    "holdKeyToShareWithSyncedSplits": "按住 {key} 以与同步拆分共享",
+    "youTubeLinksAttachedCount": "{count} 个 YouTube 链接已附加 | {count} 个 YouTube 链接已附加",
     "dropFiles": {
       "errorMessage": {
         "summary": "@:error",
-        "detail": "Failed to attach files"
+        "detail": "附加文件失败"
       }
     },
     "dropWebpages": {
       "errorMessage": {
         "summary": "@:error",
-        "detail": "Failed to attach webpages"
+        "detail": "附加网页失败"
       }
     },
     "dropYouTubeLinks": {
       "errorMessage": {
         "summary": "@:error",
-        "detail": "Failed to import YouTube links info. {errorMessage}"
+        "detail": "导入 YouTube 链接信息失败。{errorMessage}"
       }
     },
     "detachAll": {
-      "title": "Detach all",
+      "title": "全部分离",
       "confirm": {
-        "header": "Detach All",
-        "message": "Are you sure you want to detach all {attachmentType}? These {attachmentType} will not be available in the conversation anymore across all splits.",
+        "header": "全部分离",
+        "message": "您确定要分离所有{attachmentType}吗？这些{attachmentType}将不再在所有拆分的对话中可用。",
         "acceptLabel": "@:delete"
       },
       "maxResult": {
-        "title": "Maximum Result"
+        "title": "最大结果"
       },
       "successMessage": {
-        "detail": "Attachments detached"
+        "detail": "附件已分离"
       }
     }
   },
   "jinaAPI": {
-    "manageJinaAPIKeys": "Manage Jina API Keys",
-    "jinaApiKeyRequired": "A valid Jina API Key is required to use this feature. You can visit the following link to get one for free:",
+    "manageJinaAPIKeys": "管理 Jina API 密钥",
+    "jinaApiKeyRequired": "需要有效的 Jina API 密钥才能使用此功能。您可以访问以下链接免费获取一个：",
     "willUseJina": {
-      "description": "You currently have {count} Jina API key(s) added. You can add add more keys and Msty will pick a random valid key to use for the request."
+      "description": "您当前已添加 {count} 个 Jina API 密钥。您可以添加更多密钥，Msty 将随机选择一个有效的密钥用于请求。"
     },
     "jinaAPIKeyForm": {
-      "newTitle": "New Jina API Key",
-      "editTitle": "Edit Jina API Key",
-      "availableKeys": "Available Keys",
-      "reVerifyKey": "Key is {status}. Click to re-verify",
-      "verifyKeyAndAdd": "Verify Key and Add",
-      "newDescription": "Add a new Jina API key to use with the Jina Reader and Search endpoints. You can add multiple keys and verify them to ensure they are valid. When using the keys, Msty will pick a random valid key to use for the request.",
+      "newTitle": "新 Jina API 密钥",
+      "editTitle": "编辑 Jina API 密钥",
+      "availableKeys": "可用密钥",
+      "reVerifyKey": "密钥状态为{status}。点击重新验证",
+      "verifyKeyAndAdd": "验证密钥并添加",
+      "newDescription": "添加新的 Jina API 密钥以用于 Jina Reader 和 Search 端点。您可以添加多个密钥并验证它们以确保有效。使用密钥时，Msty 将随机选择一个有效的密钥用于请求。",
       "keyIsGood": {
-        "summary": "All Good!",
-        "detail": "Key seems to be valid and ready to use"
+        "summary": "一切正常！",
+        "detail": "密钥似乎有效且可供使用"
       },
       "successMessage": {
         "summary": "@:success",
-        "detail": "Jina API Key added"
+        "detail": "Jina API 密钥已添加"
       },
       "errorMessage": {
-        "summary": "Error{status}!",
-        "detail": "Failed to add Jina API Key. Please check the API key and make sure it is valid."
+        "summary": "错误{status}！",
+        "detail": "添加 Jina API 密钥失败。请检查 API 密钥并确保其有效。"
       }
     }
   },
   "rtd": {
     "title": "实时数据",
-    "contexts": "@:rtd.title Contexts",
-    "enableRTD": "Configure @:rtd.title",
+    "contexts": "@:rtd.title上下文",
+    "enableRTD": "配置@:rtd.title",
     "removeSource": {
       "successMessage": {
-        "detail": "Source removed"
+        "detail": "来源已移除"
       },
       "errorMessage": {
         "summary": "@:error",
-        "detail": "Failed to remove source"
+        "detail": "移除来源失败"
       }
     },
     "updateSource": {
       "errorMessage": {
         "summary": "@:error",
-        "detail": "Failed to update source"
+        "detail": "更新来源失败"
       }
     },
-    "searchProvider": "Search Provider",
+    "searchProvider": "搜索提供方",
     "jina": "Jina",
-    "useRemoteConnector": "Use @:remoteToolsConnector.title",
-    "noSources": "No sources available",
+    "useRemoteConnector": "使用@:remoteToolsConnector.title",
+    "noSources": "无可用来源",
     "settings": {
       "maxResult": {
-        "title": "Maximum Result"
+        "title": "最大结果"
       },
       "saveAsDefaultProvider": {
-        "title": "Save {providerName} as default search provider",
+        "title": "将 {providerName} 保存为默认搜索提供方",
         "successMessage": {
-          "summary": "{providerName} it is!",
-          "detail": "{providerName} is now the default search provider"
+          "summary": "就是 {providerName}！",
+          "detail": "{providerName} 现在是默认搜索提供方"
         }
       },
-      "autoWithFallback": "Auto with Fallback",
+      "autoWithFallback": "自动（带回退）",
       "google": "Google",
       "brave": "Brave",
       "ecosia": "Ecosia",
       "customSearchQuery": {
-        "title": "Custom Search Query",
-        "placeholder": "This query will be used for searching. Leave it empty to use the prompt as a query"
+        "title": "自定义搜索查询",
+        "placeholder": "此查询将用于搜索。留空以使用提示词作为查询"
       },
       "limitByDomain": {
-        "title": "Limit by Domain",
-        "placeholder": "e.g. reddit.com or gov or (site:reddit.com OR site:gov)",
-        "commaDelimitedPlaceholder": "Enter comma separated domains e.g. reddit.com,wikipedia.com"
+        "title": "按域名限制",
+        "placeholder": "例如 reddit.com 或 gov 或 (site:reddit.com OR site:gov)",
+        "commaDelimitedPlaceholder": "输入逗号分隔的域名，例如 reddit.com,wikipedia.com"
       },
       "extraOperators": {
-        "title": "Extra Operators"
+        "title": "额外运算符"
       },
       "dateRange": {
-        "title": "Search Date Range",
-        "placeholder": "After date - Before date"
+        "title": "搜索日期范围",
+        "placeholder": "此日期之后 - 此日期之前"
       },
       "successMessage": {
-        "detail": "@:rtd.title Enabled"
+        "detail": "@:rtd.title已启用"
       },
       "types": {
         "api": "API",
         "rtc": "@:remoteToolsConnector.title"
       }
     },
-    "useJinaLabel": "Use @:rtd.jina",
+    "useJinaLabel": "使用@:rtd.jina",
     "google": {
-      "useLabel": "Use @:rtd.settings.google",
+      "useLabel": "使用@:rtd.settings.google",
       "apiKey": {
         "placeholder": "@:rtd.settings.google @:apiKey"
       },
-      "cseIdLabel": "Custom Search Engine ID",
+      "cseIdLabel": "自定义搜索引擎 ID",
       "cseIdPlaceholder": "@:rtd.settings.google @:rtd.google.cseIdLabel"
     },
     "brave": {
-      "useLabel": "Use @:rtd.settings.brave",
-      "resultFilter": "Filter Results",
+      "useLabel": "使用@:rtd.settings.brave",
+      "resultFilter": "过滤结果",
       "apiKey": {
         "placeholder": "@:rtd.settings.brave @:apiKey"
       }
@@ -1659,236 +1659,236 @@
     "searXng": {
       "title": "SearXNG",
       "engines": {
-        "title": "Engines",
-        "placeholder": "Comma-separated list of engines to use e.g. google, brave etc."
+        "title": "引擎",
+        "placeholder": "逗号分隔的引擎列表，例如 google, brave 等。"
       },
       "extraParams": {
-        "title": "Extra Params",
-        "placeholder": "Add extra params. This should be a valid JSON object."
+        "title": "额外参数",
+        "placeholder": "添加额外参数。这应该是一个有效的 JSON 对象。"
       },
-      "notice": "Your SearXNG server must have JSON enabled as well as be served over HTTPS. For a workaround over HTTP on some browsers, check out our docs at https://docs.msty.studio",
-      "useLabel": "Use @:rtd.searXng.title"
+      "notice": "您的 SearXNG 服务器必须启用 JSON 且通过 HTTPS 提供服务。有关某些浏览器上的 HTTP 解决方法，请查看我们的文档 https://docs.msty.studio",
+      "useLabel": "使用@:rtd.searXng.title"
     },
     "tavily": {
       "title": "Tavily",
-      "useLabel": "Use @:rtd.tavily.title",
+      "useLabel": "使用@:rtd.tavily.title",
       "searchTopic": {
-        "title": "Search Topic",
-        "placeholder": "Category of search",
-        "general": "General",
-        "news": "News",
-        "finance": "Finance"
+        "title": "搜索主题",
+        "placeholder": "搜索类别",
+        "general": "常规",
+        "news": "新闻",
+        "finance": "金融"
       },
       "apiKey": {
-        "placeholder": "Enter @:rtd.tavily.title @:apiKey"
+        "placeholder": "输入@:rtd.tavily.title @:apiKey"
       },
       "searchDepth": {
-        "title": "Search Depth",
-        "placeholder": "Depth of the search",
-        "advanced": "Advance",
-        "basic": "Basic"
+        "title": "搜索深度",
+        "placeholder": "搜索深度",
+        "advanced": "高级",
+        "basic": "基础"
       },
       "timeRange": {
-        "title": "Time Range",
-        "placeholder": "Time range back from the current date"
+        "title": "时间范围",
+        "placeholder": "从当前日期回溯的时间范围"
       }
     },
     "exa": {
       "title": "Exa",
-      "useLabel": "Use @:rtd.exa.title",
+      "useLabel": "使用@:rtd.exa.title",
       "apiKey": {
-        "placeholder": "Enter @:rtd.exa.title @:apiKey"
+        "placeholder": "输入@:rtd.exa.title @:apiKey"
       }
     },
     "ollama": {
       "title": "Ollama",
-      "useLabel": "Use @:rtd.ollama.title",
+      "useLabel": "使用@:rtd.ollama.title",
       "apiKey": {
-        "placeholder": "Enter @:rtd.ollama.title @:apiKey"
+        "placeholder": "输入@:rtd.ollama.title @:apiKey"
       }
     },
     "disableRTD": {
-      "label": "Disable @:rtd.title",
+      "label": "禁用@:rtd.title",
       "successMessage": {
-        "detail": "@:rtd.title disabled"
+        "detail": "@:rtd.title已禁用"
       },
       "errorMessage": {
         "summary": "@:error",
-        "detail": "Failed to disable @:rtd.title"
+        "detail": "禁用@:rtd.title失败"
       }
     }
   },
   "remoteToolsConnector": {
-    "title": "Remote Service",
-    "connectionRequired": "To use this feature, you need to connect with @:remoteToolsConnector.title{'.'}",
-    "experimentalInfo": "RTD is experimental and may not work as expected.",
-    "isConnectedTooltip": "@:remoteToolsConnector.title - Connected",
-    "isDisconnectedTooltip": "@:remoteToolsConnector.title - Disconnected",
-    "connectNow": "@:connect with @:remoteToolsConnector.title",
-    "connectFirst": "@:connect @:remoteToolsConnector.title first",
-    "reconnectNow": "@:reconnect with @:remoteToolsConnector.title",
-    "disconnectNow": "@:disconnect Now",
-    "checkHealth": "Check Connection Health",
-    "connectionDetails": "Edit Connection Details",
-    "noPermissionPolicy": "You do not have permission to access this feature",
+    "title": "远程服务",
+    "connectionRequired": "要使用此功能，您需要连接@:remoteToolsConnector.title。",
+    "experimentalInfo": "RTD 是实验性的，可能无法按预期工作。",
+    "isConnectedTooltip": "@:remoteToolsConnector.title - 已连接",
+    "isDisconnectedTooltip": "@:remoteToolsConnector.title - 已断开",
+    "connectNow": "连接@:remoteToolsConnector.title",
+    "connectFirst": "先连接@:remoteToolsConnector.title",
+    "reconnectNow": "重新连接@:remoteToolsConnector.title",
+    "disconnectNow": "立即断开连接",
+    "checkHealth": "检查连接健康状况",
+    "connectionDetails": "编辑连接详情",
+    "noPermissionPolicy": "您没有权限访问此功能",
     "connect": {
       "form": {
-        "title": "Connect to @:remoteToolsConnector.title",
-        "saveAndConnect": "Save and Connect",
-        "rememberConnectionInfo": "Remember @:connectionInfo"
+        "title": "连接到@:remoteToolsConnector.title",
+        "saveAndConnect": "保存并连接",
+        "rememberConnectionInfo": "记住@:connectionInfo"
       },
       "import": {
         "title": "@:import @:connectionInfo",
-        "dragAndDropMessage": "Drag and drop Msty Remote Connection Config file to import and connect to @:remoteToolsConnector.title{'.'}",
+        "dragAndDropMessage": "拖放 Msty 远程连接配置文件以导入并连接到@:remoteToolsConnector.title。",
         "successMessage": {
-          "detail": "@:connectionInfo imported"
+          "detail": "@:connectionInfo已导入"
         },
         "errorMessage": {
-          "detail": "Failed to import @:connectionInfo"
+          "detail": "导入@:connectionInfo失败"
         }
       },
       "export": {
-        "title": "Export Saved @:connectionInfo",
+        "title": "导出已保存的@:connectionInfo",
         "successMessage": {
-          "detail": "@:connectionInfo exported"
+          "detail": "@:connectionInfo已导出"
         },
         "errorMessage": {
-          "detail": "Failed to export @:connectionInfo"
+          "detail": "导出@:connectionInfo失败"
         }
       },
       "successMessage": {
-        "summary": "Connected!",
-        "detail": "@:remoteToolsConnector.title connected at {url}"
+        "summary": "已连接！",
+        "detail": "@:remoteToolsConnector.title已连接至 {url}"
       },
       "errorMessage": {
-        "summary": "Connection @:error",
-        "detail": "Failed to connect with @:remoteToolsConnector.title{'.'} Make sure the @:remoteToolsConnector.title is running and accessible at the provided URL.",
-        "tokenMissing": "Token is missing. Please check the token and try again."
+        "summary": "连接@:error",
+        "detail": "连接@:remoteToolsConnector.title失败。请确保@:remoteToolsConnector.title正在运行且可通过提供的 URL 访问。",
+        "tokenMissing": "Token 缺失。请检查 Token 并重试。"
       },
-      "forgetConnectionInfo": "Forget Previous @:connectionInfo",
+      "forgetConnectionInfo": "忘记之前的@:connectionInfo",
       "forgetSuccessMessage": {
-        "detail": "@:connectionInfo forgotten"
+        "detail": "@:connectionInfo已忘记"
       },
       "toolCommandPaths": {
-        "title": "Tool Command Paths",
-        "description": "If you are using Toolsets, set the paths to the commands you are using.",
-        "selectPlaceholder": "@:select or enter a command",
-        "pathPlaceholder": "Enter full path to the command",
-        "assignPath": "Assign @:path"
+        "title": "工具命令路径",
+        "description": "如果您正在使用工具集，请设置您正在使用的命令的路径。",
+        "selectPlaceholder": "@:select或输入一个命令",
+        "pathPlaceholder": "输入命令的完整路径",
+        "assignPath": "分配@:path"
       }
     },
     "disconnect": {
       "successMessage": {
-        "summary": "Disconnected!",
-        "detail": "Disconnected from @:remoteToolsConnector.title"
+        "summary": "已断开！",
+        "detail": "已从@:remoteToolsConnector.title断开连接"
       }
     }
   },
   "forge": {
     "forgeMode": {
-      "title": "Forge Mode",
-      "description": "Forge mode gives you a blank canvas and a powerful writer to create, edit, style and refine content freely."
+      "title": "锻造模式",
+      "description": "锻造模式为您提供了一个空白画布和一个强大的作家，可以自由地创建、编辑、样式化和完善内容。"
     },
-    "title": "Forge",
-    "forgeContent": "@:forge.title Content",
-    "forgingContent": "Forging Content",
-    "editRawMarkdown": "Edit Raw Markdown",
-    "disabledEditRawMarkdown": "This content has been forged. Raw markdown editing is not allowed.",
+    "title": "锻造",
+    "forgeContent": "@:forge.title内容",
+    "forgingContent": "正在锻造内容",
+    "editRawMarkdown": "编辑原始 Markdown",
+    "disabledEditRawMarkdown": "此内容已被锻造。不允许编辑原始 Markdown。",
     "saveChanges": {
-      "title": "Save Changes",
+      "title": "保存更改",
       "successMessage": {
-        "detail": "Changes saved"
+        "detail": "更改已保存"
       },
       "errorMessage": {
         "summary": "@:error",
-        "detail": "Failed to save changes"
+        "detail": "保存更改失败"
       }
     },
     "placeholders": {
-      "writeSomething": "Write something or type / for options...",
-      "detailsSummary": "Enter details summary"
+      "writeSomething": "写点什么或输入 / 查看选项...",
+      "detailsSummary": "输入详细摘要"
     },
     "prompts": {
-      "simplify": "Simplify",
-      "fixSpellingAndGrammar": "Fix Spelling & Grammar",
-      "makeShorter": "Make Shorter",
-      "makeLonger": "Make Longer",
-      "tldr": "TL;DR;",
-      "emojify": "Emojify",
+      "simplify": "简化",
+      "fixSpellingAndGrammar": "修复拼写和语法",
+      "makeShorter": "更短",
+      "makeLonger": "更长",
+      "tldr": "太长不看 (TL;DR)",
+      "emojify": "添加表情符号",
       "changeTone": {
-        "title": "@:change Tone",
-        "academic": "Academic",
-        "business": "Business",
-        "casual": "Casual",
-        "childFriendly": "Child Friendly",
-        "conversational": "Conversational",
-        "emotional": "Emotional",
-        "humorous": "Humorous",
-        "informative": "Informative",
-        "inspirational": "Inspirational",
-        "professional": "Professional",
-        "narrative": "Narrative",
-        "objective": "Objective",
-        "persuasive": "Persuasive",
-        "poetic": "Poetic"
+        "title": "更改语气",
+        "academic": "学术",
+        "business": "商务",
+        "casual": "休闲",
+        "childFriendly": "儿童友好",
+        "conversational": "对话",
+        "emotional": "情感",
+        "humorous": "幽默",
+        "informative": "信息",
+        "inspirational": "励志",
+        "professional": "专业",
+        "narrative": "叙述",
+        "objective": "客观",
+        "persuasive": "有说服力",
+        "poetic": "诗意"
       }
     },
-    "clearFormatting": "Clear Formatting",
-    "bold": "Bold",
-    "italic": "Italic",
-    "underline": "Underline",
-    "strikethrough": "Strikethrough",
-    "code": "Code",
-    "codeBlock": "Code Block",
-    "blockQuote": "Blockquote",
-    "undo": "Undo",
-    "redo": "Redo",
-    "texts": "Texts",
-    "paragraph": "Paragraph",
-    "heading1": "Heading 1",
-    "heading2": "Heading 2",
-    "heading3": "Heading 3",
-    "lists": "Lists",
-    "bulletList": "Bullet List",
-    "numberedList": "Numbered List",
-    "taskList": "Task List",
-    "whatToForgePlaceholder": "What do you want to forge today?",
-    "forgeWriter": "Forge Writer",
+    "clearFormatting": "清除格式",
+    "bold": "粗体",
+    "italic": "斜体",
+    "underline": "下划线",
+    "strikethrough": "删除线",
+    "code": "代码",
+    "codeBlock": "代码块",
+    "blockQuote": "引用",
+    "undo": "撤销",
+    "redo": "重做",
+    "texts": "文本",
+    "paragraph": "段落",
+    "heading1": "标题 1",
+    "heading2": "标题 2",
+    "heading3": "标题 3",
+    "lists": "列表",
+    "bulletList": "无序列表",
+    "numberedList": "有序列表",
+    "taskList": "任务列表",
+    "whatToForgePlaceholder": "您今天想锻造什么？",
+    "forgeWriter": "锻造作家",
     "inlinePrompt": {
-      "placeholder": "Type your custom prompt...",
-      "ask": "Ask",
-      "askTooltip": "Ask the model to generate a response based on a custom prompt"
+      "placeholder": "输入您的自定义提示词...",
+      "ask": "提问",
+      "askTooltip": "要求模型根据自定义提示词生成响应"
     },
-    "forgeCanvas": "@:forge.title Canvas",
-    "newForgeCanvas": "New @:forge.forgeCanvas",
-    "addNewForgeCanvas": "Add New @:forge.forgeCanvas"
+    "forgeCanvas": "@:forge.title画布",
+    "newForgeCanvas": "新@:forge.forgeCanvas",
+    "addNewForgeCanvas": "添加新@:forge.forgeCanvas"
   },
-  "preview": "Preview",
-  "prompt": "Prompt | Prompts",
-  "discard": "Discard",
-  "insert": "Insert",
-  "regenerate": "Regenerate",
-  "rewrite": "Rewrite",
-  "exit": "Exit",
-  "customPrompt": "Custom Prompt",
+  "preview": "预览",
+  "prompt": "提示词 | 提示词",
+  "discard": "放弃",
+  "insert": "插入",
+  "regenerate": "重新生成",
+  "rewrite": "重写",
+  "exit": "退出",
+  "customPrompt": "自定义提示词",
   "markdown": "Markdown",
   "json": "JSON",
-  "invalidJson": "Invalid @:json",
-  "downloadMarkdown": "@:download as @:markdown file",
-  "downloadJson": "@:download as @:json file",
-  "formattedHTML": "Formatted HTML",
-  "downloadHTML": "@:download as HTML file",
-  "copyMarkdownToClipboard": "Copy @:markdown to Clipboard",
-  "copyHTMLToClipboard": "Copy HTML to Clipboard",
+  "invalidJson": "无效的 JSON",
+  "downloadMarkdown": "下载为 Markdown 文件",
+  "downloadJson": "下载为 JSON 文件",
+  "formattedHTML": "格式化 HTML",
+  "downloadHTML": "下载为 HTML 文件",
+  "copyMarkdownToClipboard": "复制 Markdown 到剪切板",
+  "copyHTMLToClipboard": "复制 HTML 到剪切板",
   "copiedToClipboard": {
-    "summary": "Copied!",
-    "markdownDetail": "Content copied to clipboard as @:markdown",
-    "htmlDetail": "Content copied to clipboard as HTML",
-    "jsonDetail": "Content copied to clipboard as @:json",
+    "summary": "已复制！",
+    "markdownDetail": "内容已作为 Markdown 复制到剪切板",
+    "htmlDetail": "内容已作为 HTML 复制到剪切板",
+    "jsonDetail": "内容已作为 JSON 复制到剪切板",
     "itemCopied": "{item}已复制到剪切板"
   },
-  "exportJsonToClipboard": "Content exported to clipboard as @:json",
-  "variable": "Variable | Variables",
+  "exportJsonToClipboard": "内容已作为 JSON 导出到剪切板",
+  "variable": "变量 | 变量",
   "pinItem": {
     "title": "已固定{item}",
     "action": "固定{item}",
@@ -1926,14 +1926,14 @@
       "detail": "{item}已取消默认"
     }
   },
-  "model": "Model",
-  "modelSettings": "@:model Settings",
-  "syncSplit": "Sync @:split",
-  "name": "Name",
-  "split": "Split | Splits",
-  "template": "Template | Templates",
-  "discardChanges": "Discard Changes",
-  "applyChanges": "Apply Changes",
+  "model": "模型",
+  "modelSettings": "@:model设置",
+  "syncSplit": "同步@:split",
+  "name": "名称",
+  "split": "拆分 | 拆分",
+  "template": "模板 | 模板",
+  "discardChanges": "放弃更改",
+  "applyChanges": "应用更改",
   "splitPreset": {
     "title": "Split @:preset | Split @:preset",
     "selectPlaceholder": "@:select a @:preset",
@@ -2003,516 +2003,516 @@
     }
   },
   "toolbox": {
-    "title": "Toolbox",
-    "toolsUsageWillSkip": "Msty @:remoteToolsConnector.title is not running; tools usage will be skipped.",
+    "title": "工具箱",
+    "toolsUsageWillSkip": "Msty @:remoteToolsConnector.title未运行；将跳过工具使用。",
     "tools": {
-      "title": "Tool | Tools",
-      "description": "A collection of tools to help you with your LLM work.",
-      "availableTools": "Available Tools",
-      "availableToolsets": "Available Toolsets",
-      "setDefaultParams": "Set Default Parameters",
-      "setParams": "Set Parameters",
-      "missingThisDependency": "This dependency seems to be missing from your environment. Without this, the tool may not work as expected.",
+      "title": "工具 | 工具",
+      "description": "帮助您进行 LLM 工作的工具集合。",
+      "availableTools": "可用工具",
+      "availableToolsets": "可用工具集",
+      "setDefaultParams": "设置默认参数",
+      "setParams": "设置参数",
+      "missingThisDependency": "您的环境中似乎缺少此依赖项。如果没有它，工具可能无法按预期工作。",
       "defaultParamsForm": {
-        "header": "Default Parameters for {toolName}",
-        "description": "These parameters will be used globally for all instances of {toolName} tool. You can override these when creating a toolset.",
+        "header": "{toolName} 的默认参数",
+        "description": "这些参数将全局用于 {toolName} 工具的所有实例。您可以在创建工具集时覆盖这些参数。",
         "args": {
-          "label": "Arguments",
-          "description": "@:select an @:argument and set its value. Leave it blank to skip setting a value.",
+          "label": "参数 (Arguments)",
+          "description": "@:select一个@:argument并设置其值。留空以跳过设置值。",
           "customArg": {
-            "label": "Custom @:argument",
-            "description": "Enter the name of the new @:argument{'.'} Separate multiple arguments with a comma.",
-            "placeholder": "eg. --arg1, someArg, -verbose"
+            "label": "自定义@:argument",
+            "description": "输入新@:argument的名称。用逗号分隔多个参数。",
+            "placeholder": "例如 --arg1, someArg, -verbose"
           }
         },
         "env": {
-          "label": "Environment Variables",
-          "description": "@:select or enter a new Environment @:variable and set its value.",
-          "addEnv": "Add Environment @:variable",
-          "selectPlaceholder": "@:select an Environment @:variable",
-          "enterNew": "Add a new Environment @:variable"
+          "label": "环境变量",
+          "description": "@:select或输入一个新的环境变量@:variable并设置其值。",
+          "addEnv": "添加环境变量@:variable",
+          "selectPlaceholder": "@:select一个环境变量@:variable",
+          "enterNew": "添加一个新的环境变量@:variable"
         },
         "successMessage": {
-          "saveDetail": "Default parameters saved for {toolName}."
+          "saveDetail": "{toolName} 的默认参数已保存。"
         },
         "errorMessage": {
-          "saveDetail": "Failed to save default parameters."
+          "saveDetail": "保存默认参数失败。"
         }
       },
       "addNewTool": {
-        "title": "Add New Tool",
-        "description": "Add your own MCP compatible tool to the toolbox. Once added, you can add it to a toolset, set parameters, and use it with a model.",
-        "namePlaceholder": "Give it a name (uses the tool ID by default)",
+        "title": "添加新工具",
+        "description": "将您自己的 MCP 兼容工具添加到工具箱。添加后，您可以将其添加到工具集，设置参数，并与模型一起使用。",
+        "namePlaceholder": "给它一个名字（默认使用工具 ID）",
         "id": {
-          "label": "Tool ID",
-          "placeholder": "Unique tool identifier (auto-filled if detected from config)"
+          "label": "工具 ID",
+          "placeholder": "唯一工具标识符（如果从配置中检测到则自动填充）"
         },
-        "duplicateId": "Tool with this ID already exists. Please enter a unique ID.",
+        "duplicateId": "具有此 ID 的工具已存在。请输入唯一的 ID。",
         "successMessage": {
           "summary": "@:success",
-          "detail": "Tool added to the toolbox. You can now add it to a toolset and use it with a model."
+          "detail": "工具已添加到工具箱。您现在可以将其添加到工具集并与模型一起使用。"
         },
         "successMessageWithToolset": {
           "summary": "@:success",
-          "detail": "Tool added to the toolbox and a matching toolset was created. It's ready to use with a model."
+          "detail": "工具已添加到工具箱，并创建了匹配的工具集。已准备好与模型一起使用。"
         },
         "errorMessage": {
           "summary": "@:error",
-          "detail": "Failed to add tool to the toolbox. {error}"
+          "detail": "添加工具到工具箱失败。{error}"
         },
         "toolConfig": {
-          "label": "Tool Configuration",
-          "placeholder": "Enter or paste tool configuration JSON. Accepts direct config or wrapped formats (will auto-extract toolId)",
-          "showExampleTitle": "Show me an example of a tool configuration",
-          "explanation": "The tool configuration accepts multiple formats including wrapped configs with mcpServers. It will auto-extract the toolId and name when possible. Must contain at minimum {command}. Dynamic arguments need to be wrapped in curly braces {curly} like so: {argExample}. Similarly, dynamic environment variables can be set using {envVarLabel}."
+          "label": "工具配置",
+          "placeholder": "输入或粘贴工具配置 JSON。接受直接配置或包装格式（将自动提取工具 ID）",
+          "showExampleTitle": "显示工具配置示例",
+          "explanation": "工具配置接受多种格式，包括带有 mcpServers 的包装配置。它将尽可能自动提取 toolId 和名称。必须至少包含 {command}。动态参数需要像这样包裹在花括号 {curly} 中：{argExample}。同样，可以使用 {envVarLabel} 设置动态环境变量。"
         },
         "autoCreateToolset": {
-          "label": "Auto-create toolset with same name"
+          "label": "自动创建同名工具集"
         }
       },
       "editTool": {
-        "title": "Edit Tool",
-        "description": "Update the name, notes, and configuration of the tool.",
+        "title": "编辑工具",
+        "description": "更新工具的名称、笔记和配置。",
         "successMessage": {
           "summary": "@:success",
-          "detail": "Tool @:updatedSuccess"
+          "detail": "工具@:updatedSuccess"
         },
         "errorMessage": {
           "summary": "@:error",
-          "detail": "@:failedToUpdate tool."
+          "detail": "@:failedToUpdate工具。"
         }
       },
       "emptyPlaceholder": {
-        "description1": "Use external MCP tools powered by Msty @:remoteToolsConnector.title to extend your models' capabilities and enhance your LLM experience.",
-        "description2": "You can get started by importing many of the tools that Msty ships with or adding your own tools.",
-        "description3": "Note: These tools are not provided, tested, or maintained by Msty. We are merely providing a platform to use these and allowing to import them as a convenience. PLEASE USE THEM AT YOUR OWN RISK. Msty is not responsible for any issues that may arise from using these tools. Also, for support, please reach out to the tool's author."
+        "description1": "使用由 Msty @:remoteToolsConnector.title提供支持的外部 MCP 工具来扩展您的模型能力并增强您的 LLM 体验。",
+        "description2": "您可以通过导入 Msty 附带的许多工具或添加您自己的工具来开始。",
+        "description3": "注意：这些工具不是由 Msty 提供、测试或维护的。我们只是提供一个使用这些工具的平台，并允许导入它们以方便使用。请自行承担使用风险。Msty 不对因使用这些工具而产生的任何问题负责。另外，如需支持，请联系工具作者。"
       },
       "importTools": {
-        "title": "Import Default @:toolbox.tools.title",
+        "title": "导入默认@:toolbox.tools.title",
         "successMessage": {
-          "detail": "{count} default tools imported successfully. You can create toolsets and use them with a model."
+          "detail": "{count} 个默认工具已成功导入。您可以创建工具集并与模型一起使用。"
         },
         "successMessageWithToolsets": {
-          "detail": "{count} default tools imported successfully and {toolsetCount} corresponding toolsets auto-created."
+          "detail": "{count} 个默认工具已成功导入，并自动创建了 {toolsetCount} 个相应的工具集。"
         },
         "errorMessage": {
-          "detail": "Failed to import default @:toolbox.tools.title"
+          "detail": "导入默认@:toolbox.tools.title失败"
         }
       },
       "deleteConfirmation": {
-        "header": "Delete Tool",
-        "description": "Are you sure you want to delete {toolName}?",
+        "header": "删除工具",
+        "description": "您确定要删除 {toolName} 吗？",
         "successMessage": {
           "summary": "@:success",
-          "detail": "Tool deleted"
+          "detail": "工具已删除"
         },
         "errorMessage": {
           "summary": "@:error",
-          "detail": "@:failedToDelete tool"
+          "detail": "@:failedToDelete工具"
         }
       },
       "deleteAll": {
-        "confirmationHeader": "Delete All Tools",
-        "confirmationMessage": "Are you sure you want to delete all tools? This action cannot be undone.",
-        "successMessage": "All tools have been deleted successfully",
-        "errorMessage": "Failed to delete all tools"
+        "confirmationHeader": "删除所有工具",
+        "confirmationMessage": "您确定要删除所有工具吗？此操作无法撤销。",
+        "successMessage": "所有工具已成功删除",
+        "errorMessage": "删除所有工具失败"
       },
-      "copiedToClipboard": "Tool configuration copied to clipboard",
+      "copiedToClipboard": "工具配置已复制到剪切板",
       "viewToolsUsage": {
-        "title": "View Tools Usage",
+        "title": "查看工具使用情况",
         "noToolCalls": {
-          "title": "No Tool Calls Found",
-          "description": "It seems there were some tools being able to the model but it did not make any tool calls. This could be because the model did not need to use any tools."
+          "title": "未找到工具调用",
+          "description": "似乎有一些工具可供模型使用，但它没有进行任何工具调用。这可能是因为模型不需要使用任何工具。"
         }
       }
     },
     "toolsets": {
-      "title": "Toolset | Toolsets",
+      "title": "工具集 | 工具集",
       "emptyPlaceholder": {
-        "title": "No Toolsets found",
-        "description": "Toolsets are a collection of tools with parameters. You can create a toolset and add tools to it. When chatting with a model, you can select one or multiple toolsets to use with the model."
+        "title": "未找到工具集",
+        "description": "工具集是带有参数的工具集合。您可以创建一个工具集并向其中添加工具。与模型聊天时，您可以选择一个或多个工具集与模型一起使用。"
       },
-      "addSomeTools": "Please add some tools to get started.",
-      "noTools": "No tools in this toolset",
+      "addSomeTools": "请添加一些工具以开始。",
+      "noTools": "此工具集中没有工具",
       "addNewToolset": {
-        "title": "Add New @:toolbox.toolsets.title",
-        "description": "Create a new toolset to group tools together. You can add tools to the toolset and use it with a model. Make sure to set/overwrite the parameters for each tool in the toolset by clicking {icon} button.",
+        "title": "添加新@:toolbox.toolsets.title",
+        "description": "创建一个新工具集以将工具分组。您可以向工具集添加工具并与模型一起使用。确保通过点击 {icon} 按钮为工具集中的每个工具设置/覆盖参数。",
         "setParams": {
-          "title": "Set Parameters for {toolName}",
-          "description": "Set parameters for the {toolName} tool. You can override the default parameters set for the tool."
+          "title": "为 {toolName} 设置参数",
+          "description": "为 {toolName} 工具设置参数。您可以覆盖为该工具设置的默认参数。"
         },
         "successMessage": {
           "summary": "@:success",
-          "saveDetail": "Toolset saved and added to the toolbox. You can now use it with a model."
+          "saveDetail": "工具集已保存并添加到工具箱。您现在可以与模型一起使用它。"
         },
         "errorMessage": {
           "summary": "@:error",
-          "saveDetail": "@:failedToSave toolset."
+          "saveDetail": "@:failedToSave工具集。"
         }
       },
       "editToolset": {
-        "title": "Edit Toolset",
-        "description": "Edit the name and notes of the toolset. You can also add or remove tools from the toolset and tweak the parameters for each tool by clicking {icon} button.",
+        "title": "编辑工具集",
+        "description": "编辑工具集的名称和笔记。您还可以从工具集中添加或移除工具，并通过点击 {icon} 按钮调整每个工具的参数。",
         "successMessage": {
           "summary": "@:success",
-          "detail": "Toolset @:updatedSuccess"
+          "detail": "工具集@:updatedSuccess"
         },
         "errorMessage": {
           "summary": "@:error",
-          "detail": "@:failedToUpdate toolset."
+          "detail": "@:failedToUpdate工具集。"
         }
       },
       "deleteConfirmation": {
-        "header": "Delete Toolset",
-        "description": "Are you sure you want to delete {toolsetName}?",
+        "header": "删除工具集",
+        "description": "您确定要删除 {toolsetName} 吗？",
         "successMessage": {
           "summary": "@:success",
-          "detail": "Toolset deleted"
+          "detail": "工具集已删除"
         },
         "errorMessage": {
           "summary": "@:error",
-          "detail": "@:failedToDelete toolset"
+          "detail": "@:failedToDelete工具集"
         }
       },
       "deleteAll": {
-        "confirmationHeader": "Delete All Toolsets",
-        "confirmationMessage": "Are you sure you want to delete all toolsets? This action cannot be undone.",
-        "successMessage": "All toolsets have been deleted successfully",
-        "errorMessage": "Failed to delete all toolsets"
+        "confirmationHeader": "删除所有工具集",
+        "confirmationMessage": "您确定要删除所有工具集吗？此操作无法撤销。",
+        "successMessage": "所有工具集已成功删除",
+        "errorMessage": "删除所有工具集失败"
       },
       "export": {
-        "title": "Export @:toolbox.toolsets.title",
-        "description": "For security, sensitive configuration values can be removed before exporting. Select which environment variables and arguments to scrub for each tool.",
-        "envVarsToScrub": "Environment variables to scrub",
-        "argsToScrub": "Arguments to scrub",
-        "scrubCustomArgs": "Scrub custom arguments string",
-        "selectEnvVarsPlaceholder": "Select environment variables to remove values",
-        "selectArgsPlaceholder": "Select arguments to remove values",
-        "noScrubbableData": "No configuration data to scrub",
-        "sensitiveDataNote": "Common sensitive values are pre-selected for your security.",
-        "copiedToClipboard": "Toolset configuration copied to clipboard",
-        "downloadedAsJson": "Toolset configuration downloaded",
-        "fetchError": "Failed to fetch toolset data for export"
+        "title": "导出@:toolbox.toolsets.title",
+        "description": "为了安全起见，可以在导出之前移除敏感配置值。选择每个工具要清洗的环境变量和参数。",
+        "envVarsToScrub": "要清洗的环境变量",
+        "argsToScrub": "要清洗的参数",
+        "scrubCustomArgs": "清洗自定义参数字符串",
+        "selectEnvVarsPlaceholder": "选择要移除值的环境变量",
+        "selectArgsPlaceholder": "选择要移除值的参数",
+        "noScrubbableData": "无敏感配置数据可清洗",
+        "sensitiveDataNote": "为了您的安全，已预选常见敏感值。",
+        "copiedToClipboard": "工具集配置已复制到剪切板",
+        "downloadedAsJson": "工具集配置已下载",
+        "fetchError": "获取工具集数据以导出失败"
       },
       "import": {
-        "missingTools": "Some tools were not found and skipped: {tools}"
+        "missingTools": "未找到并跳过了一些工具：{tools}"
       },
-      "noOfTools": "{count} tool | {count} tools",
-      "viewToolsAndNotes": "View Tools & Notes",
+      "noOfTools": "{count} 个工具 | {count} 个工具",
+      "viewToolsAndNotes": "查看工具与笔记",
       "console": {
-        "title": "Tool Console",
-        "description": "You can use this console to test {toolName} and see the output. You can also use it to test the tool with different parameters.",
-        "listTools": "List {toolName}'s Features",
-        "missingRequiredArgument": "Missing {count} Required @:argument",
-        "continueWithMissingArgs": "@:continue with Missing @:argument",
-        "viewSourceOnGitHub": "View Source on GitHub",
+        "title": "工具控制台",
+        "description": "您可以使用此控制台测试 {toolName} 并查看输出。您还可以使用不同的参数测试工具。",
+        "listTools": "列出 {toolName} 的功能",
+        "missingRequiredArgument": "缺少 {count} 个必填@:argument",
+        "continueWithMissingArgs": "@:continue且缺少@:argument",
+        "viewSourceOnGitHub": "在 GitHub 上查看源码",
         "toolCall": {
-          "title": "Tool Call",
-          "description": "Add the required properties to call {featureName}. You can add extra properties if you want. Be careful with calling the tool just like that esp. without the right values.",
-          "selectPlaceholder": "@:select a property",
-          "enterNew": "Add a new property",
-          "execute": "Execute @:toolbox.toolsets.console.toolCall"
+          "title": "工具调用",
+          "description": "添加调用 {featureName} 所需的属性。如果需要，可以添加额外属性。直接调用工具时要小心，尤其是在没有正确值的情况下。",
+          "selectPlaceholder": "@:select一个属性",
+          "enterNew": "添加一个新属性",
+          "execute": "执行@:toolbox.toolsets.console.toolCall"
         }
       },
-      "manageTooltip": "Click to manage used toolsets",
-      "noModelSupport": "@:select model may not support tools.",
-      "toolsetsUsedCount": "{count} Active Toolset | {count} Active Toolsets"
+      "manageTooltip": "点击管理使用的工具集",
+      "noModelSupport": "@:select模型可能不支持工具。",
+      "toolsetsUsedCount": "{count} 个活动工具集 | {count} 个活动工具集"
     }
   },
   "liveContexts": {
-    "liveContextsUsedCount": "{count} Active Live Context | {count} Active Live Contexts",
-    "title": "Live @:context",
-    "contexts": "Live Contexts",
+    "liveContextsUsedCount": "{count} 个活动实时上下文 | {count} 个活动实时上下文",
+    "title": "实时上下文",
+    "contexts": "实时上下文",
     "addNew": {
-      "title": "Add New @:liveContexts.title",
-      "description": "Create a new @:liveContexts.title source to add external data context to your conversation.",
+      "title": "添加新@:liveContexts.title",
+      "description": "创建一个新@:liveContexts.title源，以向您的对话添加外部数据上下文。",
       "errorMessage": {
-        "detail": "Failed to add @:liveContexts.title"
+        "detail": "添加@:liveContexts.title失败"
       },
       "successMessage": {
-        "detail": "@:liveContexts.title added"
+        "detail": "@:liveContexts.title已添加"
       }
     },
     "edit": {
-      "title": "Edit @:liveContexts.title"
+      "title": "编辑@:liveContexts.title"
     },
-    "promptPlaceholder": "Prompt to use e.g. use the following live context data in your response",
-    "endpointDetails": "Endpoint Details",
-    "method": "Method",
+    "promptPlaceholder": "使用的提示词，例如“在您的回复中使用以下实时上下文数据”",
+    "endpointDetails": "端点详情",
+    "method": "方法",
     "url": "URL",
-    "customHeaders": "Custom Headers",
-    "hasBody": "Has Body",
-    "customProcessing": "Custom Processing",
-    "promptTemplate": "Prompt Template",
+    "customHeaders": "自定义标头",
+    "hasBody": "有主体",
+    "customProcessing": "自定义处理",
+    "promptTemplate": "提示词模板",
     "requestHeaders": {
-      "title": "Request Headers",
-      "description": "Add request headers as a JSON object. This will be sent with the request to the API endpoint.",
+      "title": "请求标头",
+      "description": "添加请求标头作为 JSON 对象。这将随请求一起发送到 API 端点。",
       "placeholder": "{'{'}\n  \"Authorization\": \"Bearer YOUR_API_KEY\"\n{'}'}"
     },
     "requestBody": {
-      "title": "Request Body",
-      "description": "Add request body as a JSON object. This will be sent with the request to the API endpoint.",
+      "title": "请求主体",
+      "description": "添加请求主体作为 JSON 对象。这将随请求一起发送到 API 端点。",
       "placeholder": "{'{'}\n  \"key\": \"value\"\n{'}'}"
     },
     "processingFunction": {
-      "title": "Processing Function",
-      "description": "Add a processing function to transform the response data before using it in the conversation. The function should return a string.",
+      "title": "处理函数",
+      "description": "添加处理函数以在对话中使用响应数据之前对其进行转换。该函数应返回一个字符串。",
       "placeholderHeader": "function process({'{'}data{'}'}) {'{'}",
       "placeholder": "  // process the input and return a string\n  return JSON.stringify(data)",
       "placeholderFooter": "{'}'}"
     },
     "update": {
       "successMessage": {
-        "detail": "@:liveContexts.title updated"
+        "detail": "@:liveContexts.title已更新"
       },
       "errorMessage": {
-        "detail": "Failed to update @:liveContexts.title"
+        "detail": "更新@:liveContexts.title失败"
       }
     },
     "deleteConfirmation": {
-      "header": "Delete @:liveContexts.title",
-      "description": "Are you sure you want to delete {liveContextName}?",
+      "header": "删除@:liveContexts.title",
+      "description": "您确定要删除 {liveContextName} 吗？",
       "successMessage": {
-        "detail": "@:liveContexts.title deleted"
+        "detail": "@:liveContexts.title已删除"
       },
       "errorMessage": {
-        "detail": "Failed to delete @:liveContexts.title"
+        "detail": "删除@:liveContexts.title失败"
       }
     },
     "emptyPlaceholder": {
-      "title": "No @:liveContexts.title found",
-      "description": "@:liveContexts.title are external data contexts that you can add to your conversation. You can create a new @:liveContexts.title source and use it with a model."
+      "title": "未找到@:liveContexts.title",
+      "description": "@:liveContexts.title是您可以添加到对话中的外部数据上下文。您可以创建一个新@:liveContexts.title源并与模型一起使用。"
     },
     "deleteAll": {
-      "confirmationHeader": "Delete All @:liveContexts.contexts",
-      "confirmationMessage": "Are you sure you want to delete all live contexts? This action cannot be undone.",
-      "successMessage": "All live contexts have been deleted successfully",
-      "errorMessage": "Failed to delete all live contexts"
+      "confirmationHeader": "删除所有@:liveContexts.contexts",
+      "confirmationMessage": "您确定要删除所有实时上下文吗？此操作无法撤销。",
+      "successMessage": "所有实时上下文已成功删除",
+      "errorMessage": "删除所有实时上下文失败"
     },
     "export": {
-      "title": "Export @:liveContexts.title",
-      "headerScrubDescription": "For security, sensitive header values can be removed before exporting. Select which headers to scrub.",
-      "selectHeadersToScrub": "Headers to scrub",
-      "selectHeadersPlaceholder": "Select headers to remove values",
-      "sensitiveHeadersNote": "Common sensitive headers are pre-selected for your security.",
-      "copiedToClipboard": "Live context configuration copied to clipboard",
-      "downloadedAsJson": "Live context configuration downloaded"
+      "title": "导出@:liveContexts.title",
+      "headerScrubDescription": "为了安全起见，可以在导出之前移除敏感标头值。选择要清洗的标头。",
+      "selectHeadersToScrub": "要清洗的标头",
+      "selectHeadersPlaceholder": "选择要移除值的标头",
+      "sensitiveHeadersNote": "为了您的安全，已预选常见敏感标头。",
+      "copiedToClipboard": "实时上下文配置已复制到剪切板",
+      "downloadedAsJson": "实时上下文配置已下载"
     }
   },
   "modes": {
-    "mode": "Mode | Modes",
+    "mode": "模式 | 模式",
     "title": "@:modes.mode",
-    "exitMode": "Exit {mode} @:modes.mode",
+    "exitMode": "退出 {mode} @:modes.mode",
     "zenMode": {
-      "title": "Zen",
-      "quote": "a state of calm attentiveness",
-      "newConversation": "New @:modes.zenMode.title @:conversation.title"
+      "title": "禅",
+      "quote": "平静专注的状态",
+      "newConversation": "新@:modes.zenMode.title@:conversation.title"
     },
     "vaporMode": {
-      "title": "@:modes.vaporMode.vapor @:modes.mode",
-      "vapor": "Vapor",
-      "description": "Conversations will not be saved in your history and will disappear when you turn it off or navigate away",
-      "willDisappearTooltip": "This will disappear when you turn off @:modes.vaporMode.vapor @:modes.mode or navigate away",
-      "exitVaporMode": "Exit @:modes.vaporMode.vapor @:modes.mode",
-      "enterVaporMode": "Enter @:modes.vaporMode.vapor @:modes.mode",
+      "title": "@:modes.vaporMode.vapor@:modes.mode",
+      "vapor": "蒸汽",
+      "description": "对话将不会保存在您的历史记录中，并且在您关闭它或离开时会消失",
+      "willDisappearTooltip": "当您关闭@:modes.vaporMode.vapor@:modes.mode或离开时，此内容将消失",
+      "exitVaporMode": "退出@:modes.vaporMode.vapor@:modes.mode",
+      "enterVaporMode": "进入@:modes.vaporMode.vapor@:modes.mode",
       "preserverChat": {
-        "saveConversation": "@:save @:conversation.title",
+        "saveConversation": "@:save@:conversation.title",
         "successMessage": {
-          "detail": "@:modes.vaporMode.vapor chat has been preserved"
+          "detail": "@:modes.vaporMode.vapor聊天已保存"
         },
         "errorMessage": {
-          "detail": "Failed to preserve @:modes.vaporMode.vapor chat"
+          "detail": "保存@:modes.vaporMode.vapor聊天失败"
         }
       }
     },
     "focusMode": {
-      "title": "Focus @:modes.mode"
+      "title": "专注@:modes.mode"
     },
     "normalMode": {
-      "title": "Normal @:modes.mode"
+      "title": "正常@:modes.mode"
     }
   },
   "searchForm": {
-    "query": "Query",
-    "title": "Search Items",
+    "query": "查询",
+    "title": "搜索项目",
     "noResults": {
-      "title": "No results found",
-      "description": "Try searching for a different term"
+      "title": "未找到结果",
+      "description": "尝试搜索不同的术语"
     },
     "entity": {
       "conversationTextMessages": "@:conversation.title",
-      "promptsLibraryPrompts": "Prompt | Prompts"
+      "promptsLibraryPrompts": "提示词 | 提示词"
     },
-    "foundResultsCount": "Found {count} result | Found {count} results",
+    "foundResultsCount": "找到 {count} 个结果 | 找到 {count} 个结果",
     "labels": {
-      "title": "Search {entity}",
-      "description": "Look up {entity} quickly using keywords",
+      "title": "搜索 {entity}",
+      "description": "使用关键词快速查找 {entity}",
       "tips": {
         "default": {
-          "description": "Search matches all words by default (e.g., {example} → matches text containing both words in any order)",
-          "example": "blue car"
+          "description": "默认搜索匹配所有单词（例如，{example} → 匹配包含任意顺序的两个单词的文本）",
+          "example": "蓝色 汽车"
         },
         "partial": {
-          "description": "Use {operator} for partial matches (e.g., {example})",
+          "description": "使用 {operator} 进行部分匹配（例如，{example}）",
           "operator": "*",
-          "example": "run* → runs, running"
+          "example": "跑* → 跑步, 奔跑"
         },
         "or": {
-          "description": "@:user {operator} to match any term (e.g., {example})",
+          "description": "@:user {operator} 以匹配任何术语（例如，{example}）",
           "operator": "OR",
-          "example": "apple OR orange"
+          "example": "苹果 OR 橙子"
         },
         "exact": {
-          "description": "Use double quotes {operator} for exact matches (e.g., {example})",
+          "description": "使用双引号 {operator} 进行精确匹配（例如，{example}）",
           "operator": "\"\"",
-          "example": "\"blue car\""
+          "example": "\"蓝色 汽车\""
         },
         "specialCharacters": {
-          "description": "Use {operator} to escape special characters (e.g., {example})",
+          "description": "使用 {operator} 转义特殊字符（例如，{example}）",
           "operator": "\"\"",
           "example": "\"C++\", \"node.js\""
         }
       }
     }
   },
-  "clearSearch": "Clear Search",
-  "helpfulTips": "Helpful Tips",
-  "hideSearch": "Hide Search",
+  "clearSearch": "清除搜索",
+  "helpfulTips": "实用技巧",
+  "hideSearch": "隐藏搜索",
   "bookmarkItem": {
-    "action": "Bookmark {item}",
-    "jump": "Jump to Bookmarked {item}",
-    "title": "Bookmarked {item}",
+    "action": "收藏{item}",
+    "jump": "跳转到已收藏的{item}",
+    "title": "已收藏的{item}",
     "successMessage": {
-      "detail": "{item} bookmarked"
+      "detail": "{item}已收藏"
     },
     "errorMessage": {
       "summary": "@:error",
-      "detail": "Unable to bookmark {item}"
+      "detail": "无法收藏{item}"
     },
     "deletedInfoMessage": {
-      "detail": "Bookmarked {item} has been deleted"
+      "detail": "已收藏的{item}已被删除"
     },
     "emptyState": {
-      "title": "No bookmarks available.",
-      "description": "Get started by bookmarking {item}"
+      "title": "没有可用的书签。",
+      "description": "通过收藏{item}开始"
     }
   },
   "removeBookmarkedItem": {
-    "action": "Remove Bookmarked {item}",
+    "action": "移除已收藏的{item}",
     "successMessage": {
-      "detail": "{item} removed from bookmarks"
+      "detail": "{item}已从书签中移除"
     },
     "errorMessage": {
       "summary": "@:error",
-      "detail": "Unable to remove {item} from bookmarks"
+      "detail": "无法从书签中移除{item}"
     }
   },
   "turnstile": {
-    "title": "Turnstile | Turnstiles",
-    "newTurnstile": "New @:turnstile.title",
-    "queueEntry": "Add to Queue",
-    "selectPlaceholder": "@:select a @:turnstile.title",
-    "addQueueWithAlt": "Click to open or Alt+Click to add to queue",
-    "entriesQueued": "No Queued @:entry | {count}/{total} @:entry Queued | {count}/{total} @:entry Queued",
-    "emptyQueueMessage": "Once your prompt is ready, click @:turnstile.queueEntry to add an entry to the queue.",
-    "manageSavedTurnstiles": "Manage Saved Turnstiles",
+    "title": "转门 | 转门",
+    "newTurnstile": "新@:turnstile.title",
+    "queueEntry": "添加到队列",
+    "selectPlaceholder": "@:select一个@:turnstile.title",
+    "addQueueWithAlt": "点击打开或 Alt+点击以添加到队列",
+    "entriesQueued": "无排队@:entry | {count}/{total} @:entry已排队 | {count}/{total} @:entry已排队",
+    "emptyQueueMessage": "一旦您的提示词准备就绪，点击@:turnstile.queueEntry以添加条目到队列。",
+    "manageSavedTurnstiles": "管理已保存的转门",
     "saveForm": {
-      "title": "Save @:turnstile.title As",
+      "title": "另存@:turnstile.title为",
       "successMessage": {
-        "detail": "@:turnstile.title has been saved."
+        "detail": "@:turnstile.title已保存。"
       },
       "errorMessage": {
-        "detail": "Failed to save turnstile."
+        "detail": "保存转门失败。"
       }
     },
     "loadTurnstiles": {
-      "title": "Load @:turnstile.title",
+      "title": "加载@:turnstile.title",
       "successMessage": {
-        "summary": "@:turnstile.title Loaded!",
-        "detail": "{count} entry loaded and enqueued. | {count} entries are loaded and enqueued."
+        "summary": "@:turnstile.title已加载！",
+        "detail": "{count} 个条目已加载并排队。"
       },
       "errorMessage": {
         "summary": "@:error",
-        "detail": "Failed to load turnstile."
+        "detail": "加载转门失败。"
       }
     },
     "clearQueue": {
-      "title": "Clear Queue",
+      "title": "清除队列",
       "clearQueueConfirmation": {
-        "message": "Are you sure you want to clear the queue? This will remove all the messages you have added."
+        "message": "您确定要清除队列吗？这将移除您添加的所有消息。"
       }
     },
     "newEntry": {
-      "title": "New Entry"
+      "title": "新条目"
     },
     "invalidEntriesMessage": {
-      "summary": "Invalid Entries",
-      "detail": "Some entries are invalid or missing required fields. Please correct them before continuing."
+      "summary": "无效条目",
+      "detail": "某些条目无效或缺少必填字段。请在继续之前更正它们。"
     },
     "metaSendMissingRootNode": {
-      "detail": "Couldn't run {metaType}. Please make sure that it is not the first entry in the queue."
+      "detail": "无法运行 {metaType}。请确保它不是队列中的第一个条目。"
     },
     "update": {
       "successMessage": {
-        "detail": "@:turnstile.title has been updated."
+        "detail": "@:turnstile.title已更新。"
       },
       "errorMessage": {
-        "detail": "Failed to update turnstile. Have you set prompt and model?"
+        "detail": "更新转门失败。您设置提示词和模型了吗？"
       }
     },
     "save": {
       "successMessage": {
-        "detail": "@:turnstile.title has been saved."
+        "detail": "@:turnstile.title已保存。"
       },
       "errorMessage": {
-        "detail": "Failed to save turnstile. Have you set prompt and model?"
+        "detail": "保存转门失败。您设置提示词和模型了吗？"
       }
     },
     "delete": {
-      "selected": "Delete Selected @:turnstile.title | Delete Selected @:turnstile.title",
+      "selected": "删除选中的@:turnstile.title | 删除选中的@:turnstile.title",
       "deleteConfirmation": {
-        "header": "Delete @:turnstile.title",
-        "description": "Are you sure you want to delete {turnstileName}? | Are you sure you want to delete {count} turnstiles?"
+        "header": "删除@:turnstile.title",
+        "description": "您确定要删除 {turnstileName} 吗？ | 您确定要删除 {count} 个转门吗？"
       }
     },
     "empty": {
-      "title": "No @:turnstile.title Available.",
-      "description": "Get started by adding or importing a new @:turnstile.title{'.'}"
+      "title": "没有可用的@:turnstile.title。",
+      "description": "通过添加或导入新@:turnstile.title开始。"
     },
     "new": "@:new @:turnstile.title",
     "entryIndex": "@:entry {index}",
-    "addContinue": "Add @:message.renderingActions.continueGeneration",
-    "addRegenerate": "Add @:regenerate",
-    "addPersona": "Add @:persona.title",
-    "addShield": "Add @:contextShield.title",
-    "addShieldWithSummary": "Add @:contextShield.contextShieldWithSummary",
+    "addContinue": "添加@:message.renderingActions.continueGeneration",
+    "addRegenerate": "添加@:regenerate",
+    "addPersona": "添加@:persona.title",
+    "addShield": "添加@:contextShield.title",
+    "addShieldWithSummary": "添加@:contextShield.contextShieldWithSummary",
     "import": {
-      "title": "Import @:turnstile.title",
-      "dragAndDropMessage": "Drag and drop a zipped Msty @:turnstile.title to import and create new turnstiles. In case of duplicate names, the imported turnstiles will be renamed. You can change it later.",
+      "title": "导入@:turnstile.title",
+      "dragAndDropMessage": "拖放压缩的 Msty @:turnstile.title以导入并创建新转门。如果名称重复，导入的转门将被重命名。您可以稍后更改它。",
       "successMessage": {
-        "detail": "Turnstiles imported"
+        "detail": "转门已导入"
       },
       "errorMessage": {
-        "detail": "Failed to import turnstiles"
+        "detail": "导入转门失败"
       }
     },
     "export": {
-      "title": "Export @:turnstile.title",
-      "selected": "Export Selected @:turnstile.title | Export Selected @:turnstile.title",
+      "title": "导出@:turnstile.title",
+      "selected": "导出选中的@:turnstile.title | 导出选中的@:turnstile.title",
       "successMessage": {
-        "detail": "@:turnstile.title exported as {fileName} | @:turnstile.title exported as {fileName}"
+        "detail": "@:turnstile.title已导出为 {fileName} | @:turnstile.title已导出为 {fileName}"
       },
       "errorMessage": {
-        "detail": "Failed to export @:turnstile.title | Failed to export @:turnstile.title"
+        "detail": "导出@:turnstile.title失败 | 导出@:turnstile.title失败"
       }
     }
   },
   "modelMatchmaker": {
     "title": "模型匹配器",
-    "description": "调整编码、推理或数学等优势的重力滑块，匹配器将根据您的需求排名并推荐最佳模型。结果可能因数据质量、模型大小和任务复杂性而异。",
+    "description": "调整编码、推理或数学等优势的权重滑块，匹配器将根据您的需求排名并推荐最佳模型。结果可能因数据质量、模型大小和任务复杂性而异。",
     "ctaIntro": "找到您的模型了吗？",
     "ctaMessage": "在 Msty Studio 中测试和比较。",
-    "gravity": "重力",
+    "gravity": "权重",
     "remoteOnly": "仅限远程",
     "rankedModels": {
       "title": "排名模型",
@@ -2593,7 +2593,7 @@
     "normalizedScore": "归一化分数",
     "resetStrengths": "重置优势",
     "savePresetForm": {
-      "title": "@:save Strengths As @:preset",
+      "title": "将优势保存为@:preset",
       "errorMessage": {
         "detail": "保存优势预设失败。"
       },
@@ -2605,8 +2605,8 @@
       }
     },
     "deletePresetConfirm": {
-      "title": "Delete @:preset",
-      "message": "Are you sure you want to delete {presetName}?",
+      "title": "删除@:preset",
+      "message": "您确定要删除 {presetName} 吗？",
       "errorMessage": {
         "detail": "删除优势预设失败。"
       },
@@ -2630,34 +2630,34 @@
     "ctaMessage": "在 Msty Studio 中测试和比较。"
   },
   "copyOrMoveItemToWorkspace": {
-    "copyTitle": "Copy {item} to Workspaces",
-    "copyOrMoveTitle": "Copy/Move {item} to Workspaces",
-    "selectWorkspaces": "@:select Workspaces",
-    "availableWorkspaces": "Available Workspaces",
-    "actionLabel": "Action",
+    "copyTitle": "复制{item}到工作空间",
+    "copyOrMoveTitle": "复制/移动{item}到工作空间",
+    "selectWorkspaces": "@:select工作空间",
+    "availableWorkspaces": "可用工作空间",
+    "actionLabel": "操作",
     "inputLabel": {
-      "copy": "Copy {item} to one or more workspaces.",
-      "copyOrMove": "Copy/Move {item} to one or more workspaces.",
-      "edit": "Sync this provider to one or more workspaces. If this provider was copied before, it will be updated. If not, it will be added."
+      "copy": "将{item}复制到一个或多个工作空间。",
+      "copyOrMove": "复制/移动{item}到一个或多个工作空间。",
+      "edit": "将此提供方同步到一个或多个工作空间。如果此提供方之前已复制，它将被更新。如果没有，它将被添加。"
     },
     "successMessage": {
-      "copyDetail": "{item} copied to {count} workspace | {item} copied to {count} workspaces",
-      "moveDetail": "{item} moved to {count} workspace | {item} moved to {count} workspaces"
+      "copyDetail": "{item}已复制到 {count} 个工作空间 | {item}已复制到 {count} 个工作空间",
+      "moveDetail": "{item}已移动到 {count} 个工作空间 | {item}已移动到 {count} 个工作空间"
     },
     "errorMessage": {
-      "copyDetail": "Failed to copy {item} to {count} workspace | Failed to copy {item} to {count} workspaces",
-      "moveDetail": "Failed to move {item} to {count} workspace | Failed to move {item} to {count} workspaces"
+      "copyDetail": "复制{item}到 {count} 个工作空间失败 | 复制{item}到 {count} 个工作空间失败",
+      "moveDetail": "移动{item}到 {count} 个工作空间失败 | 移动{item}到 {count} 个工作空间失败"
     },
     "partialCopyWarningMessage": {
-      "summary": "Partially Copied",
-      "detail": "Could not copy {item} to {count} workspace | Could not copy {item} to {count} workspaces"
+      "summary": "部分复制",
+      "detail": "无法将{item}复制到 {count} 个工作空间 | 无法将{item}复制到 {count} 个工作空间"
     },
     "partialMovedWarningMessage": {
-      "summary": "Partially Moved",
-      "detail": "Could not move {item} to {count} workspace | Could not move {item} to {count} workspaces"
+      "summary": "部分移动",
+      "detail": "无法将{item}移动到 {count} 个工作空间 | 无法将{item}移动到 {count} 个工作空间"
     },
-    "existingCopiesInfo": "Some workspaces({workspaces}) were skipped because {item} already exists in them",
-    "skippingExistingCopies": "Already existing copies of {item} will be skipped."
+    "existingCopiesInfo": "跳过了一些工作空间 ({workspaces})，因为{item}已存在于其中",
+    "skippingExistingCopies": "将跳过已存在的{item}副本。"
   },
   "assignment": "分配 | 分配",
   "modelSquad": {
@@ -3002,7 +3002,7 @@
   },
   "team": {
     "label": "团队 | 团队",
-    "createTeam": "@:create @:team.label",
+    "createTeam": "创建@:team.label",
     "inviteUserLabel": "邀请用户",
     "overview": "概览",
     "usersLabel": "用户",
@@ -3104,9 +3104,9 @@
       "invitationInfo": "登录链接将发送到上面提供的电子邮件。",
       "invitation": {
         "successMessage": {
-          "detail": "已邀请用户 {email}。"
+          "detail": "用户 {email} 已邀请。"
         },
-        "invalidEmail": "@:invalid @:email",
+        "invalidEmail": "@:email无效",
         "errorMessageUserExist": "用户已存在",
         "errorMessage": {
           "summary": "@:error",
@@ -4050,7 +4050,7 @@
       "contentDistribution": "内容分布",
       "contentContribution": "{label} 贡献了所有块的 {percentage}%",
       "processingIssue": "处理问题",
-      "lowEfficiency": "{label} 效率低 ({efficiency}%) ",
+      "lowEfficiency": "{label} 效率低 ({efficiency}%)",
       "dataQualityIssue": "数据质量问题",
       "highSkipRates": "{count} 种内容类型跳过率高",
       "contentDiversity": "内容多样性",
@@ -4456,148 +4456,5 @@
     "updated": "个人资料图片已更新。",
     "updateFailed": "更新图像失败。请重试。",
     "changeHint": "点击更改个人资料图片"
-  },
-  "localModels": {},
-  "featured": {},
-  "ollamaModels": {},
-  "huggingfaceModels": {},
-  "modelsLocation": {},
-  "modelInstall": {},
-  "errorMessage": {},
-  "alreadyInstalledErrorMessage": {},
-  "abortInstalling": {},
-  "successMessage": {},
-  "deleteConfirmation": {},
-  "mlxModels": {},
-  "abortedMessage": {},
-  "mlxCommunityModels": {},
-  "rankedModels": {},
-  "strengthsLabel": {},
-  "ca": {},
-  "aca": {},
-  "daa": {},
-  "ifa": {},
-  "jak": {},
-  "la": {},
-  "ma": {},
-  "pp": {},
-  "ra": {},
-  "sim": {},
-  "stg": {},
-  "sum": {},
-  "tu": {},
-  "mit": {},
-  "mot": {},
-  "ics": {},
-  "ocs": {},
-  "savePresetForm": {},
-  "loadedMessage": {},
-  "deletePresetConfirm": {},
-  "tasks": {},
-  "dialog": {},
-  "errors": {},
-  "scrubbing": {},
-  "info": {},
-  "categories": {},
-  "empty": {},
-  "messages": {},
-  "folderForm": {},
-  "updateSuccessMessage": {},
-  "updateErrorMessage": {},
-  "createSuccessMessage": {},
-  "createErrorMessage": {},
-  "autoResponder": {},
-  "contextMessageCount": {},
-  "unit": {},
-  "emptyState": {},
-  "successMessageWithToolsets": {},
-  "partialError": {},
-  "policies": {},
-  "forgeMode": {},
-  "platformWeb": {},
-  "platformDesktop": {},
-  "licenceAndAccess": {},
-  "invitationVerification": {},
-  "invitation": {},
-  "fetch": {},
-  "inputLabels": {},
-  "backup": {},
-  "restore": {},
-  "quickSelect": {},
-  "confirmation": {},
-  "errrorMessage": {},
-  "deleteAllPrompt": {},
-  "copyErrorMessage": {},
-  "promptForm": {},
-  "clearAll": {},
-  "modelsPath": {},
-  "quickPromptDialog": {},
-  "serviceHealth": {},
-  "serviceAction": {},
-  "restartSuccessMessage": {},
-  "serviceStatus": {},
-  "serviceEndpoint": {},
-  "serviceVersion": {},
-  "forceUpdate": {},
-  "removeService": {},
-  "serviceConfigurations": {},
-  "enableNetworkAccess": {},
-  "allowMstyStudioAccess": {},
-  "captureServiceLogs": {},
-  "resetAllConfirm": {},
-  "help": {},
-  "example": {},
-  "developerNotes": {},
-  "splitRemoval": {},
-  "noMessageSelectedWarning": {},
-  "exportOrCopyMessage": {},
-  "action": {},
-  "composeProgress": {},
-  "itemStatus": {},
-  "cloudShare": {},
-  "saveEdits": {},
-  "knowledgeStackForm": {},
-  "deleteAllKnowledgeStack": {},
-  "chunksConsole": {},
-  "similarityFilter": {},
-  "deleteChunk": {},
-  "searchType": {},
-  "tooltip": {},
-  "addon": {},
-  "buckets": {},
-  "obsidianVaults": {},
-  "youTubeLinks": {},
-  "itemActions": {},
-  "loadMode": {},
-  "static": {},
-  "dynamic": {},
-  "sync": {},
-  "syncMode": {},
-  "analytics": {},
-  "timings": {},
-  "stats": {},
-  "contentTypes": {},
-  "piiScrubbing": {},
-  "labels": {},
-  "querySettingsDetails": {},
-  "highSyncCount": {},
-  "syncEnabled": {},
-  "highDynamicUsage": {},
-  "dynamicEnabled": {},
-  "staticOnly": {},
-  "mixedModes": {},
-  "composeSettings": {},
-  "placeholders": {},
-  "chunkingMethod": {},
-  "overlapping": {},
-  "chunkSize": {},
-  "chunkSizesToIgnore": {},
-  "querySettings": {},
-  "similarityThreshold": {},
-  "searchTypes": {},
-  "chunks": {},
-  "retrievalMode": {},
-  "chunksVisualizer": {},
-  "showcase": {},
-  "licenses": {}
+  }
 }
