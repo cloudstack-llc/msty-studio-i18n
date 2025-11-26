@@ -19,33 +19,14 @@ echo "Source: $SOURCE_FILE"
 echo "------------------------------------------------"
 echo "Available translation files:"
 
-# Collect valid files (excluding source)
-files=(*.json)
-options=()
-i=0
+# Hardcoded for this run as requested
+TARGET_FILE="zh_CN.json"
 
-for file in "${files[@]}"; do
-    if [ "$file" != "$SOURCE_FILE" ]; then
-        options+=("$file")
-        echo "[$i] $file"
-        ((i++))
-    fi
-done
-
-if [ ${#options[@]} -eq 0 ]; then
-    echo "No other JSON files found to validate."
-    exit 0
-fi
-
-echo "------------------------------------------------"
-read -p "Select a file number to validate (0-$(( ${#options[@]} - 1 ))): " selection
-
-if [[ ! "$selection" =~ ^[0-9]+$ ]] || [ "$selection" -ge "${#options[@]}" ] || [ "$selection" -lt 0 ]; then
-    echo "Invalid selection."
+if [ ! -f "$TARGET_FILE" ]; then
+    echo "Error: Target file $TARGET_FILE not found."
     exit 1
 fi
 
-TARGET_FILE="${options[$selection]}"
 echo "------------------------------------------------"
 echo "Validating '$TARGET_FILE' against '$SOURCE_FILE'..."
 
