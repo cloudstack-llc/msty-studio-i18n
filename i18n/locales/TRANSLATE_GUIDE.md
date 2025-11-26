@@ -72,9 +72,35 @@ Consistency is key. Use the following standard translations for core application
     *   *English:* "Light" (Theme) -> *Chinese:* "亮色主题" (Light Color Theme)
     *   *English:* "Dark" (Theme) -> *Chinese:* "暗色主题" (Dark Color Theme)
 
+### Grammar & Voice
+*   **Active Voice:** Prefer active voice for status messages.
+    *   *Bad:* `"Model provider {name} added"` -> `"模型提供方 {name} 已添加"`
+    *   *Good:* `"Model provider {name} added"` -> `"已添加模型提供方 {name}"`
+    *   *Bad:* `"{item} deleted"` -> `"{item} 已删除"`
+    *   *Good:* `"{item} deleted"` -> `"已删除 {item}"`
+
 ## 4. Common Patterns
 
 *   **"Toggle {item}"** -> `"开关{item}"`
 *   **"Select {item}"** -> `"选择{item}"`
 *   **"Fetch {item}"** -> `"获取{item}"`
 *   **"Manage {item}"** -> `"管理{item}"`
+
+## 5. Specific Rules & Corrections
+
+### Spacing with Variables
+*   **General Rule:** Do **NOT** add spaces between Chinese characters and variables, especially if the variable content is likely to be Chinese or a generic item.
+    *   *Correct:* `"{item}设置完成"`
+    *   *Incorrect:* `"{item} 设置完成"`
+    *   *Correct:* `"已导入{count}个模型"`
+    *   *Incorrect:* `"已导入 {count} 个模型"`
+*   **Exception:** You may keep a space if the variable is expected to be an English Proper Noun (like a Provider Name).
+    *   *Example:* `"已添加模型提供方 {providerName}"`
+
+### Acronyms
+*   **CORS:** Translate/Explain as `"CORS (跨来源资源共享)"` where appropriate in descriptions/settings. For simple labels, "CORS" might suffice if space is limited, but prefer the explanation.
+*   **Local AI:** Translate as `"本地AI服务"`.
+
+### Terminology Updates
+*   **Provider:** "模型提供商" or "提供方" (Provider).
+*   **Local AI:** "本地AI服务".

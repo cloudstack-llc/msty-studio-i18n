@@ -818,42 +818,42 @@
       "description": "此提供方用于在 Apple Silicon Mac 上运行 MLX 模型。大多数情况下，您不需要更改默认端点。如果这样做，请确保 MLX 服务正在运行并且可以通过提供的 URL 访问。"
     },
     "localModels": {
-      "title": "@:localAI Models",
-      "noCompatibleProviders": "There are no compatible providers available to manage Local Models. Please add at least one provider of type Msty Remote or Ollama Remote to use Local Models.",
-      "activeDownloads": "{count} Active Download | {count} Active Downloads",
+      "title": "@:localAI模型",
+      "noCompatibleProviders": "没有兼容的提供方可用于管理本地模型。请添加至少一个 Msty Remote 或 Ollama Remote 类型的提供方以使用本地模型。",
+      "activeDownloads": "{count}个正在下载 | {count}个正在下载",
       "featured": {
         "title": "精选模型"
       },
       "installed": {
         "title": "已安装模型"
       },
-      "customOllamaModelPlaceholder": "Or Install model by tag e.g. {example}",
+      "customOllamaModelPlaceholder": "或通过标签安装模型，例如 {example}",
       "alreadyInstalledErrorMessage": {
-        "summary": "Already Installed",
-        "detail": "Model {modelName} is already installed"
+        "summary": "已安装",
+        "detail": "模型 {modelName} 已安装"
       },
       "abortInstalling": {
-        "title": "Abort Installation of {modelName}",
+        "title": "中止安装 {modelName}",
         "successMessage": {
-          "detail": "Installation of {modelName} aborted"
+          "detail": "{modelName}安装已中止"
         }
       },
       "deleteConfirmation": {
-        "header": "Uninstall Model",
-        "message": "Are you sure you want to uninstall {modelName}?",
+        "header": "卸载模型",
+        "message": "您确定要卸载 {modelName} 吗？",
         "successMessage": {
-          "detail": "Model removed"
+          "detail": "模型已移除"
         },
         "errorMessage": {
-          "detail": "Failed to uninstall model"
+          "detail": "卸载模型失败"
         }
       },
       "modelInstall": {
         "successMessage": {
-          "detail": "Model {modelName} is ready to use"
+          "detail": "模型 {modelName} 已准备就绪"
         },
         "errorMessage": {
-          "detail": "Failed to install model {modelName}",
+          "detail": "安装模型 {modelName} 失败",
           "newerVersion": "{modelName} 需要更新版本的本地AI服务。请从 设置 > 本地AI服务 > 服务版本 > ... > 强制更新本地AI服务 进行更新"
         }
       },
@@ -862,54 +862,54 @@
       },
       "huggingfaceModels": {
         "title": "Hugging Face 模型",
-        "searchPlaceholder": "Search by author, model, or paste a Hugging Face repo URL",
-        "searchPlaceholderAlt": "Find models by name, author, or URL. Or get started with one of the model families below.",
-        "searching": "Searching for models..."
+        "searchPlaceholder": "按作者、模型搜索，或粘贴 Hugging Face 仓库 URL",
+        "searchPlaceholderAlt": "按名称、作者或 URL 查找模型。或从下方的模型系列开始。",
+        "searching": "正在搜索模型..."
       }
     },
     "mlxModels": {
-      "title": "MLX Models",
-      "notAppleSilicon": "MLX models are only supported on Apple Silicon Macs (M1, M2, M3, M4, etc.). Your current device is not compatible.",
-      "noCompatibleProviders": "There are no compatible MLX providers available. Please add at least one MLX provider to use MLX Models.",
-      "activeDownloads": "{count} Active MLX Download | {count} Active MLX Downloads",
-      "learnMore": "Learn More about MLX",
+      "title": "MLX 模型",
+      "notAppleSilicon": "MLX 模型仅支持 Apple Silicon Mac (M1, M2, M3, M4 等)。您当前的设备不兼容。",
+      "noCompatibleProviders": "没有可用的兼容 MLX 提供方。请添加至少一个 MLX 提供方以使用 MLX 模型。",
+      "activeDownloads": "{count}个活跃 MLX 下载 | {count}个活跃 MLX 下载",
+      "learnMore": "了解更多关于 MLX",
       "featured": {
-        "title": "Featured MLX Models"
+        "title": "精选 MLX 模型"
       },
       "installed": {
-        "title": "Installed MLX Models"
+        "title": "已安装 MLX 模型"
       },
       "alreadyInstalledErrorMessage": {
-        "summary": "Already Installed",
-        "detail": "MLX Model {modelName} is already installed"
+        "summary": "已安装",
+        "detail": "MLX 模型 {modelName} 已安装"
       },
       "deleteConfirmation": {
-        "header": "Uninstall MLX Model",
-        "message": "Are you sure you want to uninstall {modelName}?",
+        "header": "卸载 MLX 模型",
+        "message": "您确定要卸载 {modelName} 吗？",
         "successMessage": {
-          "detail": "MLX Model removed"
+          "detail": "MLX 模型已移除"
         },
         "errorMessage": {
-          "detail": "Failed to uninstall MLX model"
+          "detail": "卸载 MLX 模型失败"
         }
       },
       "modelInstall": {
         "successMessage": {
-          "detail": "MLX Model {modelName} is ready to use"
+          "detail": "MLX 模型 {modelName} 已准备就绪"
         },
         "errorMessage": {
-          "detail": "Failed to install MLX model {modelName}"
+          "detail": "安装 MLX 模型 {modelName} 失败"
         },
         "abortedMessage": {
-          "detail": "Downloading of MLX model {modelName} was aborted"
+          "detail": "MLX 模型 {modelName} 下载已中止"
         }
       },
       "mlxCommunityModels": {
-        "title": "MLX Community Models",
-        "searchTitle": "Search MLX Community Models",
-        "searchPlaceholder": "Search MLX models from HuggingFace mlx-community",
-        "searchPlaceholderAlt": "Find MLX optimized models from HuggingFace. Or get started with one of the model families below.",
-        "searching": "Searching for MLX models..."
+        "title": "MLX 社区模型",
+        "searchTitle": "搜索 MLX 社区模型",
+        "searchPlaceholder": "从 HuggingFace mlx-community 搜索 MLX 模型",
+        "searchPlaceholderAlt": "从 HuggingFace 查找 MLX 优化模型。或从下方的模型系列开始。",
+        "searching": "正在搜索 MLX 模型..."
       }
     }
   },
@@ -2508,126 +2508,126 @@
     }
   },
   "modelMatchmaker": {
-    "title": "Model Matchmaker",
-    "description": "Adjust the gravity sliders for strengths like coding, reasoning, or math, and Matchmaker will rank and recommend the best models for your needs. Results may vary by data quality, model size, and task complexity.",
-    "ctaIntro": "Found your model?",
-    "ctaMessage": "Test and compare in Msty Studio.",
-    "gravity": "Gravity",
-    "remoteOnly": "Remote Only",
+    "title": "模型匹配器",
+    "description": "调整编码、推理或数学等优势的重力滑块，匹配器将根据您的需求排名并推荐最佳模型。结果可能因数据质量、模型大小和任务复杂性而异。",
+    "ctaIntro": "找到您的模型了吗？",
+    "ctaMessage": "在 Msty Studio 中测试和比较。",
+    "gravity": "重力",
+    "remoteOnly": "仅限远程",
     "rankedModels": {
-      "title": "Ranked Models",
-      "emptyMessage": "No models found. Try adjusting your requirements."
+      "title": "排名模型",
+      "emptyMessage": "未找到模型。尝试调整您的要求。"
     },
     "strengthsLabel": {
       "ca": {
-        "title": "Coding",
-        "description": "The ability to write code in a programming language."
+        "title": "编码",
+        "description": "用编程语言编写代码的能力。"
       },
       "aca": {
-        "title": "Agentic Coding",
-        "description": "The agentic ability to write code in a programming language."
+        "title": "代理编码",
+        "description": "用编程语言编写代码的代理能力。"
       },
       "daa": {
-        "title": "@:data Analysis",
-        "description": "The ability to analyze data and generate insights."
+        "title": "@:data分析",
+        "description": "分析数据并生成见解的能力。"
       },
       "ifa": {
-        "title": "Instructions Following",
-        "description": "The ability to follow instructions and perform tasks."
+        "title": "指令遵循",
+        "description": "遵循指令并执行任务的能力。"
       },
       "jak": {
-        "title": "GOAT: Generalist of All Trades",
-        "description": "The ability to perform a wide range of tasks."
+        "title": "全能选手",
+        "description": "执行广泛任务的能力。"
       },
       "la": {
-        "title": "Language",
-        "description": "The ability to understand and generate human language."
+        "title": "语言",
+        "description": "理解和生成人类语言的能力。"
       },
       "ma": {
-        "title": "Mathematics",
-        "description": "The ability to perform mathematical calculations."
+        "title": "数学",
+        "description": "执行数学计算的能力。"
       },
       "pp": {
-        "title": "Paraphrasing",
-        "description": "Demonstrated rewriting ability to rephrase any given text."
+        "title": "改写",
+        "description": "改写任何给定文本的展示能力。"
       },
       "ra": {
-        "title": "Reasoning",
-        "description": "Critical Thinking - the ability to reason and make decisions."
+        "title": "推理",
+        "description": "批判性思维 - 推理和决策的能力。"
       },
       "sim": {
-        "title": "Simplification",
-        "description": "The ability to simplify any given complex text."
+        "title": "简化",
+        "description": "简化任何给定复杂文本的能力。"
       },
       "stg": {
-        "title": "Story Generation",
-        "description": "The ability to generate stories or narratives."
+        "title": "故事生成",
+        "description": "生成故事或叙述的能力。"
       },
       "sum": {
-        "title": "Summarization",
-        "description": "The ability of summarizing textual and numerical information."
+        "title": "总结",
+        "description": "总结文本和数字信息的能力。"
       },
       "tu": {
-        "title": "Tools Usage",
-        "description": "The ability to call and use external tools."
+        "title": "工具使用",
+        "description": "调用和使用外部工具的能力。"
       },
       "mit": {
-        "title": "Max Input Tokens",
-        "description": "The max no. of tokens accepted in one call."
+        "title": "最大输入 Token",
+        "description": "一次调用接受的最大 Token 数。"
       },
       "mot": {
-        "title": "Max Output Tokens",
-        "description": "The max no. of tokens generated in one call."
+        "title": "最大输出 Token",
+        "description": "一次调用生成的最大 Token 数。"
       },
       "ics": {
-        "title": "Input Tokens Savings",
-        "costTitle": "Input Cost/Million Tokens",
-        "description": "The cost savings of generating input tokens."
+        "title": "输入 Token 节省",
+        "costTitle": "输入成本/百万 Token",
+        "description": "生成输入 Token 的成本节省。"
       },
       "ocs": {
-        "title": "Output Tokens Savings",
-        "costTitle": "Output Cost/Million Tokens",
-        "description": "The cost savings of generating output tokens."
+        "title": "输出 Token 节省",
+        "costTitle": "输出成本/百万 Token",
+        "description": "生成输出 Token 的成本节省。"
       }
     },
-    "normalizedScore": "Normalized Score",
-    "resetStrengths": "Reset Strengths",
+    "normalizedScore": "归一化分数",
+    "resetStrengths": "重置优势",
     "savePresetForm": {
       "title": "@:save Strengths As @:preset",
       "errorMessage": {
-        "detail": "Failed to save strengths preset."
+        "detail": "保存优势预设失败。"
       },
       "successMessage": {
-        "detail": "Strengths preset saved."
+        "detail": "优势预设已保存。"
       },
       "loadedMessage": {
-        "detail": "Strengths preset loaded."
+        "detail": "优势预设已加载。"
       }
     },
     "deletePresetConfirm": {
       "title": "Delete @:preset",
       "message": "Are you sure you want to delete {presetName}?",
       "errorMessage": {
-        "detail": "Failed to delete strengths preset."
+        "detail": "删除优势预设失败。"
       },
       "successMessage": {
-        "detail": "Strengths preset deleted."
+        "detail": "优势预设已删除。"
       }
     }
   },
   "costCalculator": {
-    "title": "Model Cost Calculator",
-    "description": "Calculate and compare costs for AI models from OpenAI, Anthropic, Google, and more. Estimate your expenses based on input/output token usage and model pricing. These are estimates only and actual costs may vary.",
-    "tokenInputs": "Token Inputs",
-    "filters": "Filters",
-    "ctaIntro": "Found your model?",
-    "ctaMessage": "Test and compare in Msty Studio."
+    "title": "模型成本计算器",
+    "description": "计算和比较 OpenAI, Anthropic, Google 等 AI 模型的成本。根据输入/输出 Token 使用情况和模型定价估算您的费用。这些仅为估算值，实际成本可能有所不同。",
+    "tokenInputs": "Token 输入",
+    "filters": "筛选器",
+    "ctaIntro": "找到您的模型了吗？",
+    "ctaMessage": "在 Msty Studio 中测试和比较。"
   },
   "vramCalculator": {
-    "title": "VRAM Calculator",
-    "description": "Check to see if a model fits your device's VRAM before downloading or running it. This calculator provides estimated VRAM requirements based on model architecture and size. Select one of the options below to get started.",
-    "ctaIntro": "Found your model?",
-    "ctaMessage": "Test and compare in Msty Studio."
+    "title": "VRAM 计算器",
+    "description": "在下载或运行模型之前，检查模型是否适合您设备的 VRAM。此计算器根据模型架构和大小提供 VRAM 需求估算。选择下方的一个选项开始。",
+    "ctaIntro": "找到您的模型了吗？",
+    "ctaMessage": "在 Msty Studio 中测试和比较。"
   },
   "copyOrMoveItemToWorkspace": {
     "copyTitle": "Copy {item} to Workspaces",
@@ -2659,58 +2659,58 @@
     "existingCopiesInfo": "Some workspaces({workspaces}) were skipped because {item} already exists in them",
     "skippingExistingCopies": "Already existing copies of {item} will be skipped."
   },
-  "assignment": "Assignment | Assignments",
+  "assignment": "分配 | 分配",
   "modelSquad": {
-    "title": "Model Squad",
-    "description": "@:modelSquad.title is a collection of specialized AI models, where each models is assigned to perform a specific task, such as Auto Title Generation, @:context Summary Generation, etc. When it's time to perform that specific task, the assigned model is selected automatically.",
-    "addNewAssignment": "Add New @:assignment",
-    "noTask": "No more tasks available",
+    "title": "模型特遣队",
+    "description": "@:modelSquad.title是一组专用 AI 模型，其中每个模型都被分配执行特定任务，如自动标题生成、@:context摘要生成等。当需要执行该特定任务时，将自动选择分配的模型。",
+    "addNewAssignment": "添加新@:assignment",
+    "noTask": "没有更多可用任务",
     "tasks": {
-      "autoTitleGeneration": "Auto Title Generation",
-      "contextShieldSummaryGeneration": "@:contextShield.title Summary Generation",
-      "realTimeDataPromptSynthesis": "@:rtd.title Prompt Synthesis",
-      "forgeContentGeneration": "Forge Content Generation",
+      "autoTitleGeneration": "自动标题生成",
+      "contextShieldSummaryGeneration": "@:contextShield.title摘要生成",
+      "realTimeDataPromptSynthesis": "@:rtd.title提示词合成",
+      "forgeContentGeneration": "锻造内容生成",
       "piiScrubbing": "@:pii.scrubbing.title"
     },
     "save": {
       "successMessage": {
-        "detail": "@:assignment saved"
+        "detail": "@:assignment已保存"
       },
       "errorMessage": {
-        "detail": "@:assignment failed to save"
+        "detail": "@:assignment保存失败"
       }
     },
     "assignment": {
       "dialog": {
-        "title": "Assign Model for {task}",
-        "description": "Select a model to assign to the {task} task in ModelSquad.",
-        "selectModel": "Select Model",
-        "selectModelPlaceholder": "Choose a model...",
-        "currentlyAssigned": "Currently assigned: {model}",
-        "unknownModel": "Unknown model",
-        "assignButton": "Assign Model",
-        "changeButton": "Change Model",
-        "helpText": "This model will be used automatically when the {task} task is performed."
+        "title": "为 {task} 分配模型",
+        "description": "选择一个模型以分配给 ModelSquad 中的 {task} 任务。",
+        "selectModel": "选择模型",
+        "selectModelPlaceholder": "选择一个模型...",
+        "currentlyAssigned": "当前已分配：{model}",
+        "unknownModel": "未知模型",
+        "assignButton": "分配模型",
+        "changeButton": "更改模型",
+        "helpText": "当执行 {task} 任务时，将自动使用此模型。"
       },
-      "success": "Model assigned to {task} successfully!",
+      "success": "模型已成功分配给 {task}！",
       "errors": {
-        "noModelSelected": "Please select a model to assign.",
-        "saveFailed": "Failed to save model assignment. Please try again."
+        "noModelSelected": "请选择要分配的模型。",
+        "saveFailed": "保存模型分配失败。请重试。"
       }
     }
   },
   "pii": {
-    "title": "PII (Personally Identifiable Information)",
+    "title": "PII (个人身份信息)",
     "scrubbing": {
-      "title": "PII Scrubbing",
-      "description": "Automatically detect and remove personally identifiable information from Knowledge Stack content before displaying it in conversations.",
+      "title": "PII 清洗",
+      "description": "在对话中显示之前，自动检测并从知识库内容中移除个人身份信息。",
       "info": {
-        "modelAssigned": "Using {model} for PII detection and removal."
+        "modelAssigned": "正在使用 {model} 进行 PII 检测和移除。"
       },
       "warning": {
-        "noModel": "No model assigned for @:pii.scrubbing.title in ModelSquad. Knowledge Stack retrieval will fail until a model is assigned.",
-        "configurationError": "@:pii.scrubbing.title configuration error - aborting Knowledge Stack retrieval for security",
-        "setupError": "Error setting up @:pii.scrubbing.title - aborting Knowledge Stack retrieval"
+        "noModel": "未在 ModelSquad 中为@:pii.scrubbing.title分配模型。在分配模型之前，知识库检索将失败。",
+        "configurationError": "@:pii.scrubbing.title配置错误 - 为安全起见中止知识库检索",
+        "setupError": "设置@:pii.scrubbing.title出错 - 中止知识库检索"
       },
       "placeholders": {
         "personName": "[PERSON_NAME]",
@@ -2724,197 +2724,197 @@
         "dateOfBirth": "[DATE_OF_BIRTH]"
       },
       "categories": {
-        "personalIdentifiers": "Personal Identifiers",
-        "contactInformation": "Contact Information",
-        "financialInformation": "Financial Information",
-        "medicalInformation": "Medical Information",
-        "digitalIdentifiers": "Digital Identifiers",
-        "biometricData": "Biometric Data",
-        "locationData": "Location Data"
+        "personalIdentifiers": "个人标识符",
+        "contactInformation": "联系信息",
+        "financialInformation": "财务信息",
+        "medicalInformation": "医疗信息",
+        "digitalIdentifiers": "数字标识符",
+        "biometricData": "生物识别数据",
+        "locationData": "位置数据"
       }
     }
   },
   "persona": {
-    "title": "Persona | Personas",
-    "newPersona": "New @:persona.title",
-    "activePersona": "Active @:persona.title",
+    "title": "角色 | 角色",
+    "newPersona": "新@:persona.title",
+    "activePersona": "活动@:persona.title",
     "empty": {
-      "title": "No @:persona.title Available.",
-      "description": "Get started by adding or importing a new @:persona.title{'.'} You can also import default Personas to get started."
+      "title": "没有可用的@:persona.title。",
+      "description": "通过添加或导入新@:persona.title开始。您也可以导入默认角色以开始。"
     },
-    "contextShieldPosition": "@:contextShield.title Position",
+    "contextShieldPosition": "@:contextShield.title位置",
     "save": {
       "successMessage": {
-        "detail": "@:persona.title saved"
+        "detail": "@:persona.title已保存"
       },
       "errorMessage": {
-        "detail": "@:persona.title failed to save"
+        "detail": "@:persona.title保存失败"
       }
     },
     "update": {
       "successMessage": {
-        "detail": "@:persona.title updated"
+        "detail": "@:persona.title已更新"
       },
       "errorMessage": {
-        "detail": "Could not update @:persona.title"
+        "detail": "无法更新@:persona.title"
       }
     },
     "delete": {
-      "selected": "Delete Selected @:persona.title",
+      "selected": "删除选中的@:persona.title",
       "deleteConfirmation": {
-        "header": "Delete @:persona.title",
-        "description": "Are you sure you want to delete {personaName}? | Are you sure you want to delete {count} @:persona.title{'?'}"
+        "header": "删除@:persona.title",
+        "description": "您确定要删除 {personaName} 吗？ | 您确定要删除 {count} 个@:persona.title吗？"
       },
       "successMessage": {
-        "detail": "@:persona.title deleted | @:persona.title deleted"
+        "detail": "@:persona.title已删除 | @:persona.title已删除"
       },
       "errorMessage": {
-        "detail": "Could not delete @:persona.title | Could not delete @:persona.title"
+        "detail": "无法删除@:persona.title | 无法删除@:persona.title"
       }
     },
     "import": {
-      "title": "Import @:persona.title",
-      "dragAndDropMessage": "Drag and drop a zipped Msty @:persona.title to import and create new Personas. In case of duplicate names, the imported Personas will be renamed. You can change it later.",
+      "title": "导入@:persona.title",
+      "dragAndDropMessage": "拖放压缩的 Msty @:persona.title以导入并创建新角色。如果名称重复，导入的角色将被重命名。您可以稍后更改它。",
       "successMessage": {
-        "detail": "Personas imported"
+        "detail": "角色已导入"
       },
       "errorMessage": {
-        "detail": "Failed to import Personas"
+        "detail": "导入角色失败"
       }
     },
     "export": {
-      "title": "Export @:persona.title",
-      "selected": "Export Selected @:persona.title | Export Selected @:persona.title",
+      "title": "导出@:persona.title",
+      "selected": "导出选中的@:persona.title | 导出选中的@:persona.title",
       "successMessage": {
-        "detail": "@:persona.title exported as {fileName} | @:persona.title exported as {fileName}"
+        "detail": "@:persona.title已导出为 {fileName} | @:persona.title已导出为 {fileName}"
       },
       "errorMessage": {
-        "detail": "Failed to export @:persona.title | Failed to export @:persona.title"
+        "detail": "导出@:persona.title失败 | 导出@:persona.title失败"
       }
     },
     "messages": {
-      "deleteSuccess": "@:persona.title deleted | @:persona.title deleted"
+      "deleteSuccess": "@:persona.title已删除 | @:persona.title已删除"
     },
     "deleteConfirmation": {
-      "header": "Delete @:persona.title",
-      "message": "Are you sure you want to delete {personaName}? | Are you sure you want to delete {count} @:persona.title{'?'}",
+      "header": "删除@:persona.title",
+      "message": "您确定要删除 {personaName} 吗？ | 您确定要删除 {count} 个@:persona.title吗？",
       "errorMessage": {
-        "detail": "Could not delete @:persona.title | Could not delete @:persona.title"
+        "detail": "无法删除@:persona.title | 无法删除@:persona.title"
       }
     },
-    "addTitle": "Add @:persona.title",
-    "createRootFolder": "New Folder at Root",
-    "setDefaultFolder": "Set as Default Folder",
-    "unsetDefaultFolder": "Unset Default Folder",
+    "addTitle": "添加@:persona.title",
+    "createRootFolder": "在根目录新建文件夹",
+    "setDefaultFolder": "设为默认文件夹",
+    "unsetDefaultFolder": "取消设为默认文件夹",
     "folderForm": {
       "updateSuccessMessage": {
-        "detail": "@:folder updated"
+        "detail": "@:folder已更新"
       },
       "updateErrorMessage": {
         "detail": "更新@:folder失败"
       },
       "createSuccessMessage": {
-        "detail": "@:folder created"
+        "detail": "@:folder已创建"
       },
       "createErrorMessage": {
         "detail": "创建@:folder失败"
       },
       "deleteConfirmation": {
         "header": "删除@:folder",
-        "message": "Are you sure you want to delete {folderName} with all its @:persona.title{'?'}",
+        "message": "您确定要删除 {folderName} 及其所有@:persona.title吗？",
         "successMessage": {
-          "detail": "@:folder deleted"
+          "detail": "@:folder已删除"
         },
         "errorMessage": {
           "detail": "删除@:folder失败"
         }
       }
     },
-    "selectPlaceholder": "@:select a @:persona.title",
+    "selectPlaceholder": "选择一个@:persona.title",
     "autoResponder": {
-      "turnOn": "Turn Auto Responder On",
-      "turnOff": "Turn Auto Responder Off"
+      "turnOn": "开启自动回复",
+      "turnOff": "关闭自动回复"
     },
     "contextMessageCount": {
-      "title": "Context Count",
-      "description": "Set the number of recent messages to use as context for the @:persona.title{'.'}"
+      "title": "上下文数量",
+      "description": "设置用于@:persona.title上下文的最近消息数量"
     }
   },
   "fewShotPrompts": {
-    "title": "Few-Shot Prompts",
-    "description": "Few-shot learning is a machine learning technique that allows you to train a model with a small amount of data. You can use few-shot prompts to provide examples to the model to help it understand the context and generate better responses.",
-    "addNewShot": "Add New Shot"
+    "title": "Few-Shot 提示词",
+    "description": "Few-shot learning 是一种机器学习技术，允许您使用少量数据训练模型。您可以使用 few-shot 提示词为模型提供示例，以帮助其理解上下文并生成更好的响应。",
+    "addNewShot": "添加新 Shot"
   },
-  "insights": "Insights",
-  "cost": "Cost",
-  "costInUSD": "Cost in USD",
-  "promptTokens": "Prompt Tokens",
-  "completionTokens": "Completion Tokens",
-  "totalTokens": "Total Tokens",
-  "usage": "Usage",
-  "tokens": "Tokens",
-  "tokensProcessed": "Tokens Processed",
-  "selectProvider": "@:select a provider | @:select providers",
-  "tokensProcessedForProvider": "Tokens Processed for {provider}",
-  "totalUsage": "Total Usage",
-  "fromTo": "From {from} to {to}",
-  "crunchingTheNumbers": "Crunching the numbers",
+  "insights": "洞察",
+  "cost": "成本",
+  "costInUSD": "美元成本",
+  "promptTokens": "提示词 Token",
+  "completionTokens": "补全 Token",
+  "totalTokens": "总 Token",
+  "usage": "使用量",
+  "tokens": "Token",
+  "tokensProcessed": "已处理 Token",
+  "selectProvider": "@:select提供方 | @:select提供方",
+  "tokensProcessedForProvider": "{provider} 已处理的 Token",
+  "totalUsage": "总使用量",
+  "fromTo": "从 {from} 到 {to}",
+  "crunchingTheNumbers": "正在计算数据",
   "throughputForModel": {
-    "title": "Throughput for {model}",
+    "title": "{model} 的吞吐量",
     "unit": {
-      "description": "Measured in tokens per second"
+      "description": "单位：Token/秒"
     }
   },
   "latencyForModel": {
-    "title": "Latency for {model}",
+    "title": "{model} 的延迟",
     "unit": {
-      "description": "Measured in seconds"
+      "description": "单位：秒"
     }
   },
-  "total": "Total",
-  "min": "Min",
-  "max": "Max",
-  "avg": "Avg",
-  "summary": "Summary",
+  "total": "总计",
+  "min": "最小",
+  "max": "最大",
+  "avg": "平均",
+  "summary": "摘要",
   "dates": {
-    "today": "Today",
-    "last7Days": "Last 7 days",
-    "last14Days": "Last 14 days",
-    "last30Days": "Last 30 days",
-    "last3Months": "Last 3 months",
-    "last6Months": "Last 6 months",
-    "last12Months": "Last 12 months",
-    "monthToDate": "Month to date",
-    "yearToDate": "Year to date",
-    "allTime": "All time",
-    "selectDateRange": "@:select date range",
-    "month": "Month",
-    "year": "Year",
-    "day": "Day",
-    "week": "Week"
+    "today": "今天",
+    "last7Days": "最近 7 天",
+    "last14Days": "最近 14 天",
+    "last30Days": "最近 30 天",
+    "last3Months": "最近 3 个月",
+    "last6Months": "最近 6 个月",
+    "last12Months": "最近 12 个月",
+    "monthToDate": "本月至今",
+    "yearToDate": "本年至今",
+    "allTime": "全部时间",
+    "selectDateRange": "@:select日期范围",
+    "month": "月",
+    "year": "年",
+    "day": "日",
+    "week": "周"
   },
   "insightsSummary": {
     "emptyState": {
-      "title": "Insights Summary",
-      "description": "No data available for the selected date range and providers."
+      "title": "洞察摘要",
+      "description": "选定的日期范围和提供方没有可用数据。"
     }
   },
   "insightsProviderTokensProcessed": {
     "emptyState": {
-      "title": "Tokens Processed",
-      "description": "No data available for the selected date range and provider."
+      "title": "已处理 Token",
+      "description": "选定的日期范围和提供方没有可用数据。"
     }
   },
   "insightsProviderThroughput": {
     "emptyState": {
-      "title": "Throughput",
-      "description": "No data available for the selected date range, provider and model."
+      "title": "吞吐量",
+      "description": "选定的日期范围、提供方和模型没有可用数据。"
     }
   },
   "insightsProviderLatency": {
     "emptyState": {
-      "title": "Latency",
-      "description": "No data available for the selected date range, provider and model."
+      "title": "延迟",
+      "description": "选定的日期范围、提供方和模型没有可用数据。"
     }
   },
   "hideItem": {
@@ -2927,38 +2927,38 @@
       "detail": "无法隐藏{item}"
     },
     "unhideParent": "取消隐藏父级{item}",
-    "hiddenParentContentTitle": "Hidden Parent Content. Click to unhide."
+    "hiddenParentContentTitle": "隐藏的父级内容。点击以取消隐藏。"
   },
   "showItem": {
     "action": "显示{item}"
   },
   "licenseVerification": {
-    "errorMessage": "Failed to verify license. Please try again.",
-    "enterLicenseKey": "Enter Aurum License Key",
-    "licenseTypeInfo": "You are using the {licenseType} license.",
-    "licenseKey": "License Key",
-    "logout": "Logout",
-    "licenseTypeInfoForAdmin": "You are using the {licenseType} license and logged in as Owner."
+    "errorMessage": "验证许可证失败。请重试。",
+    "enterLicenseKey": "输入 Aurum 许可证密钥",
+    "licenseTypeInfo": "您正在使用 {licenseType} 许可证。",
+    "licenseKey": "许可证密钥",
+    "logout": "登出",
+    "licenseTypeInfoForAdmin": "您正在使用 {licenseType} 许可证并以所有者身份登录。"
   },
   "aurum": {
-    "activateLicense": "Activate Aurum License",
-    "activateLicenseDescription": "Enter your license key to unlock premium features",
-    "manageLicense": "Manage License",
-    "lifetimeLicense": "Aurum Lifetime",
-    "lifetimeLicenseDescription": "One-time purchase with lifetime access to premium features",
-    "annualLicense": "Aurum Annual",
-    "annualLicenseDescription": "Yearly subscription with continuous updates and premium features",
-    "oneTimePurchase": "One-time purchase",
-    "yearlySubscription": "Yearly subscription",
-    "enterLicenseKey": "License Key",
-    "verifyAndActivate": "Verify & Activate",
-    "deactivateLicense": "Deactivate License",
-    "licensedTo": "Licensed to",
-    "expiresOn": "Expires on",
-    "expired": "Expired",
-    "expiresInDays": "Expires in {days} days",
-    "needLicense": "Need a license?",
-    "purchaseLicense": "Purchase at msty.ai"
+    "activateLicense": "激活 Aurum 许可证",
+    "activateLicenseDescription": "输入您的许可证密钥以解锁高级功能",
+    "manageLicense": "管理许可证",
+    "lifetimeLicense": "Aurum 终身",
+    "lifetimeLicenseDescription": "一次性购买，终身访问高级功能",
+    "annualLicense": "Aurum 年度",
+    "annualLicenseDescription": "年度订阅，持续更新和高级功能",
+    "oneTimePurchase": "一次性购买",
+    "yearlySubscription": "年度订阅",
+    "enterLicenseKey": "许可证密钥",
+    "verifyAndActivate": "验证并激活",
+    "deactivateLicense": "停用许可证",
+    "licensedTo": "授权给",
+    "expiresOn": "过期日期",
+    "expired": "已过期",
+    "expiresInDays": "{days}天后过期",
+    "needLicense": "需要许可证？",
+    "purchaseLicense": "在 msty.ai 购买"
   },
   "cloneItem": {
     "action": "克隆{item}",
@@ -2984,161 +2984,161 @@
     "fileTitle": "从 JSON 文件导入{item}",
     "successMessage": {
       "detail": "{count} 个{item}已导入成功",
-      "detailDestination": "@:importJson.successMessage.detail {item} 到 {destination}"
+      "detailDestination": "已将 {item} 导入到 {destination}"
     },
     "successMessageWithToolsets": {
       "detail": "{count} 个{item}已导入成功并自动创建了相应的工具集"
     },
     "invalidConfig": {
-      "detail": "Invalid config or nothing to import. Please make sure the JSON is valid and try again."
+      "detail": "配置无效或无内容导入。请确保 JSON 有效并重试。"
     },
     "errorMessage": {
-      "detail": "Failed to import. Please check the JSON and try again."
+      "detail": "导入失败。请检查 JSON 并重试。"
     },
     "partialError": {
-      "detail": "Failed to import {failed} items: {items}"
+      "detail": "导入 {failed} 个项目失败: {items}"
     },
     "dragAndDropMessage": "拖放 JSON 文件以导入{item}。"
   },
   "team": {
-    "label": "Team | Teams",
+    "label": "团队 | 团队",
     "createTeam": "@:create @:team.label",
-    "inviteUserLabel": "Invite User",
-    "overview": "Overview",
-    "usersLabel": "Users",
-    "allTeamLabel": "All Teams",
-    "createSuccess": "Team {teamName} successfully created.",
-    "member": "Member|Members",
-    "allUsers": "All Users",
-    "addTeamFormHeader": "Create New Team",
-    "updateTeamFormHeader": "Edit Team",
-    "addUsers": "Add Users",
-    "updateUsers": "Update Users",
-    "addUserToTeam": "Add Users to Team",
-    "teamNameLabel": "Team Name",
-    "teamNamePlaceholder": "Enter the new team name",
-    "addTeamDescription": "Create a new team to manage resources.",
-    "noUserInTeam": "No users assigned to this team.",
-    "editTeam": "Edit Team",
-    "invited": "Invited",
-    "shortDescription": "Manage your teams and users.",
+    "inviteUserLabel": "邀请用户",
+    "overview": "概览",
+    "usersLabel": "用户",
+    "allTeamLabel": "所有团队",
+    "createSuccess": "团队 {teamName} 创建成功。",
+    "member": "成员 | 成员",
+    "allUsers": "所有用户",
+    "addTeamFormHeader": "创建新团队",
+    "updateTeamFormHeader": "编辑团队",
+    "addUsers": "添加用户",
+    "updateUsers": "更新用户",
+    "addUserToTeam": "添加用户到团队",
+    "teamNameLabel": "团队名称",
+    "teamNamePlaceholder": "输入新团队名称",
+    "addTeamDescription": "创建新团队以管理资源。",
+    "noUserInTeam": "此团队未分配用户。",
+    "editTeam": "编辑团队",
+    "invited": "已邀请",
+    "shortDescription": "管理您的团队和用户。",
     "empty": {
-      "description": "A team is used to manage resources. You can add users to the team to collaborate and share access to resources."
+      "description": "团队用于管理资源。您可以将用户添加到团队以协作和共享资源访问权限。"
     },
     "deleteConfirmation": {
-      "header": "Delete Team",
-      "message": "Are you sure you want to delete",
-      "inputPlaceholder": "Please type {name} to confirm deletion.",
+      "header": "删除团队",
+      "message": "您确定要删除",
+      "inputPlaceholder": "请输入 {name} 以确认删除。",
       "rejectLabel": "@:cancel",
       "acceptLabel": "@:delete"
     },
     "policies": {
-      "title": "Policy | Policies",
+      "title": "策略 | 策略",
       "toolbox": {
         "title": "@:toolbox.title",
-        "description": "Allow user to use Toolbox feature"
+        "description": "允许用户使用工具箱功能"
       },
       "promptsLibrary": {
         "title": "@:promptsLibrary.title",
-        "description": "Allow user to use Prompts Library feature"
+        "description": "允许用户使用提示词库功能"
       },
       "persona": {
         "title": "@:persona.title",
-        "description": "Allow user to use Persona feature"
+        "description": "允许用户使用角色功能"
       },
       "turnstile": {
         "title": "@:turnstile.title",
-        "description": "Allow user to use Turnstile feature"
+        "description": "允许用户使用转门功能"
       },
       "knowledgeStack": {
         "title": "@:knowledgeStack.title",
-        "description": "Allow user to use Knowledge Stack feature"
+        "description": "允许用户使用知识库功能"
       },
       "remoteToolsConnector": {
         "title": "@:remoteToolsConnector.title",
-        "description": "Allow user to use @:remoteToolsConnector.title feature"
+        "description": "允许用户使用@:remoteToolsConnector.title功能"
       },
       "rtd": {
         "title": "@:rtd.title",
-        "description": "Allow user to use @:rtd.title feature"
+        "description": "允许用户使用@:rtd.title功能"
       },
       "attachments": {
         "title": "@:attachments.title",
-        "description": "Allow user to use @:attachments.title feature"
+        "description": "允许用户使用@:attachments.title功能"
       },
       "forgeMode": {
         "title": "@:forge.forgeMode.title",
-        "description": "Allow user to use @:forge.forgeMode.title feature"
+        "description": "允许用户使用@:forge.forgeMode.title功能"
       },
       "insights": {
         "title": "@:insights",
-        "description": "Allow user to use @:insights feature"
+        "description": "允许用户使用@:insights功能"
       },
       "platformWeb": {
-        "title": "Msty Studio Web Access",
-        "description": "Allow user to access Msty Studio from web browser"
+        "title": "Msty Studio Web 访问",
+        "description": "允许用户从 Web 浏览器访问 Msty Studio"
       },
       "platformDesktop": {
-        "title": "Msty Studio Desktop Access",
-        "description": "Allow user to access Msty Studio from desktop application"
+        "title": "Msty Studio Desktop 访问",
+        "description": "允许用户从桌面应用程序访问 Msty Studio"
       },
-      "platformAccess": "Platform Access",
+      "platformAccess": "平台访问",
       "modelHub": {
-        "description": "Manage access to specific model providers."
+        "description": "管理特定模型提供方的访问权限。"
       }
     },
     "user": {
-      "noAvailableSeats": "You have reached your limit to invite users.",
+      "noAvailableSeats": "您已达到邀请用户的限制。",
       "licenceAndAccess": {
-        "loggedInAsLabel": "Logged In As",
-        "useSignInWithEmail": "A secure login link will be sent to the provided email address. Aurum license holders must verify their license key before using this feature.",
-        "continueWithlicenseLabel": "continue with License Key",
-        "sendLoginLink": "Send Login Link"
+        "loggedInAsLabel": "登录身份",
+        "useSignInWithEmail": "安全登录链接将发送到提供的电子邮件地址。Aurum 许可证持有者必须在使用此功能之前验证其许可证密钥。",
+        "continueWithlicenseLabel": "使用许可证密钥继续",
+        "sendLoginLink": "发送登录链接"
       },
-      "teamUserFormHeader": "Team Users",
+      "teamUserFormHeader": "团队用户",
       "invitationVerification": {
-        "inProgress": "Verifying you request to access. Please wait",
-        "info": "You have been invited to join an account on Msty Studio. ",
-        "error": "Something went wrong, please contact you account Admin."
+        "inProgress": "正在验证您的访问请求。请稍候",
+        "info": "您已被邀请加入 Msty Studio 的帐户。",
+        "error": "出现问题，请联系您的帐户管理员。"
       },
-      "invitationInfo": "A login link will be sent to the email provided above.",
+      "invitationInfo": "登录链接将发送到上面提供的电子邮件。",
       "invitation": {
         "successMessage": {
-          "detail": "User {email} invited."
+          "detail": "已邀请用户 {email}。"
         },
         "invalidEmail": "@:invalid @:email",
-        "errorMessageUserExist": "User already exists",
+        "errorMessageUserExist": "用户已存在",
         "errorMessage": {
           "summary": "@:error",
-          "detail": "Failed to invite {email}."
+          "detail": "邀请 {email} 失败。"
         }
       },
       "fetch": {
         "errorMessage": {
           "summary": "@:error",
-          "detail": "Unable to load users list"
+          "detail": "无法加载用户列表"
         }
       },
       "delete": {
         "successMessage": {
-          "detail": "User {email} delete successfully."
+          "detail": "用户 {email} 删除成功。"
         },
         "errorMessage": {
           "summary": "@:error",
-          "detail": "Unable to delete user {email}"
+          "detail": "无法删除用户 {email}"
         }
       },
       "deleteConfirmation": {
-        "header": "Delete User",
-        "message": "Are you sure you want to delete {email}?",
+        "header": "删除用户",
+        "message": "您确定要删除 {email} 吗？",
         "rejectLabel": "@:cancel",
         "acceptLabel": "@:delete"
       },
-      "assignUserToTeamLabel": "Assign users to team {teamName}",
-      "assignUserToTeamSuccess": "Successfully assigned {user} to team {teamName}",
-      "unassignUserToTeamLabel": "Remove user from team",
-      "unassignUserToTeamMessage": "Drop {user} from team {teamName}",
-      "selectUserToAddToTeamPlaceholder": "@:select users to add"
+      "assignUserToTeamLabel": "将用户分配到团队 {teamName}",
+      "assignUserToTeamSuccess": "已成功将 {user} 分配到团队 {teamName}",
+      "unassignUserToTeamLabel": "从团队中移除用户",
+      "unassignUserToTeamMessage": "从团队 {teamName} 中移除 {user}",
+      "selectUserToAddToTeamPlaceholder": "选择要添加的用户"
     }
   },
   "updateItem": {
@@ -3152,72 +3152,72 @@
     }
   },
   "modelPurpose": {
-    "text": "Text",
-    "tools": "Tools",
-    "vision": "Vision",
-    "coding": "Coding",
-    "embedding": "Embedding",
-    "streaming": "Streaming",
-    "image": "Image",
-    "thinking": "Thinking"
+    "text": "文本",
+    "tools": "工具",
+    "vision": "视觉",
+    "coding": "编码",
+    "embedding": "嵌入",
+    "streaming": "流式",
+    "image": "图像",
+    "thinking": "思考"
   },
   "editModel": {
     "inputLabels": {
-      "label": "Label",
-      "purpose": "Purpose"
+      "label": "标签",
+      "purpose": "用途"
     }
   },
   "environment": {
-    "selectPlaceholder": "@:select an @:environment.title",
-    "new": "New @:environment.title",
-    "title": "Environment | Environments",
+    "selectPlaceholder": "选择一个@:environment.title",
+    "new": "新@:environment.title",
+    "title": "环境 | 环境",
     "empty": {
-      "description": "Add new environments to get started."
+      "description": "添加新环境以开始。"
     },
     "save": {
       "successMessage": {
-        "detail": "@:environment.title saved"
+        "detail": "@:environment.title已保存"
       },
       "errorMessage": {
-        "detail": "@:environment.title failed to save"
+        "detail": "@:environment.title保存失败"
       }
     },
     "delete": {
-      "title": "@:delete @:environment.title | Delete @:environment.title",
-      "selected": "@:delete Selected @:environment.title | Delete Selected @:environment.title",
+      "title": "删除@:environment.title | 删除@:environment.title",
+      "selected": "删除选中的@:environment.title | 删除选中的@:environment.title",
       "deleteConfirmation": {
-        "header": "@:delete @:environment.title",
-        "description": "Are you sure you want to delete {environmentName}? | Are you sure you want to delete {count} environments?"
+        "header": "删除@:environment.title",
+        "description": "您确定要删除 {environmentName} 吗？ | 您确定要删除 {count} 个环境吗？"
       },
       "successMessage": {
-        "detail": "@:environment.title deleted | @:environment.title deleted"
+        "detail": "@:environment.title已删除 | @:environment.title已删除"
       },
       "errorMessage": {
-        "detail": "Could not delete @:environment.title | Could not delete @:environment.title"
+        "detail": "无法删除@:environment.title | 无法删除@:environment.title"
       }
     },
     "backup": {
-      "title": "Backup @:environment.title",
+      "title": "备份@:environment.title",
       "successMessage": {
-        "detail": "@:environment.title backed up"
+        "detail": "@:environment.title已备份"
       },
       "errorMessage": {
-        "detail": "Failed to backup @:environment.title"
+        "detail": "备份@:environment.title失败"
       }
     },
     "restore": {
-      "title": "Restore @:environment.title",
-      "dragAndDropMessage": "Drag and drop a Msty Environment file to restore Environments. Note: All existing environments will be deleted and replaced with the imported ones.",
+      "title": "恢复@:environment.title",
+      "dragAndDropMessage": "拖放 Msty 环境文件以恢复环境。注意：所有现有环境将被删除并替换为导入的环境。",
       "successMessage": {
-        "detail": "@:environment.title restored"
+        "detail": "@:environment.title已恢复"
       },
       "errorMessage": {
-        "detail": "Failed to restore @:environment.title"
+        "detail": "恢复@:environment.title失败"
       }
     },
     "quickSelect": {
-      "title": "Quick @:select Environment Variable",
-      "selectPlaceholder": "Search or select a variable to copy it to the clipboard"
+      "title": "快速选择环境变量",
+      "selectPlaceholder": "搜索或选择变量以复制到剪切板"
     }
   },
   "makeActive": {
@@ -3245,8 +3245,8 @@
     "errrorMessage": {
       "detail": "无法移动{item}"
     },
-    "cannotDetermineTargetProject": "Could not determine the target project.",
-    "cannotDetermineTargetFolder": "Could not determine the target folder."
+    "cannotDetermineTargetProject": "无法确定目标项目。",
+    "cannotDetermineTargetFolder": "无法确定目标文件夹。"
   },
   "deleteItem": {
     "action": "删除{item}",
@@ -3259,60 +3259,60 @@
     }
   },
   "promptsLibrary": {
-    "title": "@:prompts Library",
-    "newPrompt": "New @:prompt",
+    "title": "@:prompts库",
+    "newPrompt": "新@:prompt",
     "search": "@:search @:prompt",
-    "quickPrompt": "Quick @:prompt",
-    "saveToQuickPrompts": "Save to Quick @:prompts",
-    "copyPrompt": "Copy @:prompt to Clipboard",
-    "shortcutUsage": "Type / to search the @:promptsLibrary.title",
-    "setDefaultFolder": "Set as Default Folder",
-    "unsetDefaultFolder": "Unset Default Folder",
-    "createRootFolder": "New Folder at Root",
+    "quickPrompt": "快捷@:prompt",
+    "saveToQuickPrompts": "保存到快捷@:prompts",
+    "copyPrompt": "复制@:prompt到剪切板",
+    "shortcutUsage": "输入 / 搜索@:promptsLibrary.title",
+    "setDefaultFolder": "设为默认文件夹",
+    "unsetDefaultFolder": "取消设为默认文件夹",
+    "createRootFolder": "在根目录新建文件夹",
     "folder": "@:folder",
     "prompt": "@:prompt",
     "deleteAllPrompt": {
-      "title": "Delete all @:prompt and @:folders",
-      "description": "This will clear entire @:promptsLibrary.title and @:folder@:folders. There is no way to recover them after deletion.",
+      "title": "删除所有@:prompt和@:folders",
+      "description": "这将清除整个@:promptsLibrary.title和@:folder@:folders。删除后无法恢复。",
       "successMessage": {
-        "detail": "All @:prompt deleted"
+        "detail": "所有@:prompt已删除"
       }
     },
     "empty": {
-      "title": "No @:persona.title Available.",
-      "description": "Get started by adding or importing a new @:prompt{'.'} You can also import default @:prompts to get started."
+      "title": "没有可用的@:persona.title。",
+      "description": "通过添加或导入新@:prompt开始。您也可以导入默认@:prompts以开始。"
     },
     "import": {
-      "title": "Import Default @:prompts",
+      "title": "导入默认@:prompts",
       "successMessage": {
-        "detail": "You can now use the imported prompts in your conversations."
+        "detail": "您现在可以在对话中使用导入的提示词。"
       },
-      "copyMultiplePrompts": "Copy {count} @:prompts to clipboard",
+      "copyMultiplePrompts": "复制 {count} 个@:prompts到剪切板",
       "errorMessage": {
-        "detail": "Failed to import default @:prompts"
+        "detail": "导入默认@:prompts失败"
       },
       "copyErrorMessage": {
-        "detail": "Failed to copy @:prompt{'.'} Please try again."
+        "detail": "复制@:prompt失败。请重试。"
       }
     },
     "folderForm": {
       "updateSuccessMessage": {
-        "detail": "@:folder updated"
+        "detail": "@:folder已更新"
       },
       "updateErrorMessage": {
         "detail": "更新@:folder失败"
       },
       "createSuccessMessage": {
-        "detail": "@:folder created"
+        "detail": "@:folder已创建"
       },
       "createErrorMessage": {
         "detail": "创建@:folder失败"
       },
       "deleteConfirmation": {
         "header": "删除@:folder",
-        "message": "Are you sure you want to delete {folderName} with all its sub-folders and prompts?",
+        "message": "您确定要删除 {folderName} 及其所有子文件夹和提示词吗？",
         "successMessage": {
-          "detail": "@:folder deleted"
+          "detail": "@:folder已删除"
         },
         "errorMessage": {
           "detail": "删除@:folder失败"
@@ -3320,30 +3320,30 @@
       }
     },
     "promptForm": {
-      "addTitle": "Add New @:prompt",
-      "editTitle": "Edit @:prompt",
-      "promptName": "@:prompt Name",
+      "addTitle": "添加新@:prompt",
+      "editTitle": "编辑@:prompt",
+      "promptName": "@:prompt名称",
       "promptDescription": "@:description",
       "updateSuccessMessage": {
-        "detail": "@:prompt updated"
+        "detail": "@:prompt已更新"
       },
       "updateErrorMessage": {
-        "detail": "Failed to update @:prompt"
+        "detail": "更新@:prompt失败"
       },
       "createSuccessMessage": {
-        "detail": "@:prompt created"
+        "detail": "@:prompt已创建"
       },
       "createErrorMessage": {
-        "detail": "Failed to create @:prompt"
+        "detail": "创建@:prompt失败"
       },
       "deleteConfirmation": {
-        "header": "Delete {count} @:prompt",
-        "message": "Are you sure you want to delete?",
+        "header": "删除 {count} 个@:prompt",
+        "message": "您确定要删除吗？",
         "successMessage": {
-          "detail": "@:prompt deleted"
+          "detail": "@:prompt已删除"
         },
         "errorMessage": {
-          "detail": "Failed to delete @:prompt"
+          "detail": "删除@:prompt失败"
         }
       }
     }
@@ -3351,246 +3351,246 @@
   "importDefault": {
     "title": "导入默认{item}",
     "successMessage": {
-      "detail": "已导入默认{item}"
+      "detail": "默认{item}已导入"
     },
     "errorMessage": {
       "detail": "导入默认{item}失败"
     }
   },
   "contextIsolation": {
-    "isolate": "Isolate @:context",
-    "unIsolate": "Remove @:context Isolation",
-    "label": "Isolated @:context",
+    "isolate": "隔离@:context",
+    "unIsolate": "移除@:context隔离",
+    "label": "已隔离的@:context",
     "clearAll": {
-      "title": "Clear All @:context Isolations",
+      "title": "清除所有@:context隔离",
       "successMessage": {
-        "detail": "All @:context Isolations cleared"
+        "detail": "所有@:context隔离已清除"
       }
     }
   },
   "responseMetrics": {
-    "title": "Response Metrics",
-    "longPressOrAltClickToCycle": "Long press or Alt click to cycle metrics"
+    "title": "响应指标",
+    "longPressOrAltClickToCycle": "长按或 Alt 点击以循环显示指标"
   },
-  "quickView": "Quick View",
-  "detailsView": "Details View",
-  "input": "Input | Inputs",
-  "output": "Output | Outputs",
-  "think": "Think",
+  "quickView": "快速查看",
+  "detailsView": "详细查看",
+  "input": "输入 | 输入",
+  "output": "输出 | 输出",
+  "think": "思考",
   "reasoning": {
-    "emptyNotice": "The model performed internal thinking but didn’t return a summary. To enable thinking summaries, apply the 'Thinking' tag to this model by clicking on the edit icon next to the model selection."
+    "emptyNotice": "模型执行了内部思考但未返回摘要。要启用思考摘要，请通过点击模型选择旁边的编辑图标为该模型应用 'Thinking' 标签。"
   },
-  "service": "Service | Services",
+  "service": "服务 | 服务",
   "localAIService": "本地AI服务",
-  "version": "Version | Versions",
-  "invalidConfig": "Invalid config. Please enter a valid JSON object.",
-  "unsavedChanges": "Unsaved Changes",
-  "saveChanges": "Save Changes",
-  "day": "Day | Days",
-  "every": "Every",
-  "files": "Files",
-  "file": "File | @:files",
-  "reallyDelete": "Really Delete?",
-  "similarity": "Similarity",
-  "saveAsDraft": "Save as Draft",
-  "compose": "Compose",
-  "embeddingModel": "Embedding Model",
-  "document": "Document | Documents",
-  "matched": "Matched",
-  "active": "Active",
-  "inactive": "Inactive",
-  "folderName": "@:folder Name",
-  "addNewFolder": "Add New @:folder",
-  "editFolder": "Edit @:folder",
-  "errorGeneric": "An error occurred. Please try again later. Check logs for more details.",
+  "version": "版本 | 版本",
+  "invalidConfig": "配置无效。请输入有效的 JSON 对象。",
+  "unsavedChanges": "未保存的更改",
+  "saveChanges": "保存更改",
+  "day": "天 | 天",
+  "every": "每",
+  "files": "文件",
+  "file": "文件 | @:files",
+  "reallyDelete": "真的要删除吗？",
+  "similarity": "相似度",
+  "saveAsDraft": "保存为草稿",
+  "compose": "组合",
+  "embeddingModel": "嵌入模型",
+  "document": "文档 | 文档",
+  "matched": "匹配",
+  "active": "活动",
+  "inactive": "非活动",
+  "folderName": "@:folder名称",
+  "addNewFolder": "添加新@:folder",
+  "editFolder": "编辑@:folder",
+  "errorGeneric": "发生错误。请稍后重试。检查日志以获取更多详细信息。",
   "sharedService": {
     "modelsPath": {
-      "title": "Models Path",
-      "description": "This is where {service} downloads and looks for models. You can update the path to use a custom folder.",
+      "title": "模型路径",
+      "description": "这是 {service} 下载和查找模型的地方。您可以更新路径以使用自定义文件夹。",
       "edit": {
-        "title": "Edit Models Path",
-        "description": "Set your preferred location.",
-        "willRestartWarning": "Note: Changing the models path will restart the {service} for the changes to take effect.",
-        "selectModelsPath": "Select Models Path",
+        "title": "编辑模型路径",
+        "description": "设置您的首选位置。",
+        "willRestartWarning": "注意：更改模型路径将重启 {service} 以使更改生效。",
+        "selectModelsPath": "选择模型路径",
         "successMessage": {
-          "detail": "Models path updated"
+          "detail": "模型路径已更新"
         },
         "errorMessage": {
-          "detail": "Failed to update models path"
+          "detail": "更新模型路径失败"
         }
       }
     },
     "quickPromptDialog": {
-      "title": "Save to Quick @:prompts",
-      "description": "Give your system prompt a short title. It will be added to Quick Prompts for easy reuse.",
-      "nameLabel": "Quick @:prompt Name",
-      "successMessage": "System prompt saved to Quick Prompts.",
-      "errorMessage": "Failed to save system prompt to Quick Prompts.",
-      "emptyPromptMessage": "Add some system prompt text before saving to Quick Prompts."
+      "title": "保存到快捷@:prompts",
+      "description": "给您的系统提示词一个简短的标题。它将被添加到快捷提示词以便轻松重用。",
+      "nameLabel": "快捷@:prompt名称",
+      "successMessage": "系统提示词已保存到快捷提示词。",
+      "errorMessage": "保存系统提示词到快捷提示词失败。",
+      "emptyPromptMessage": "在保存到快捷提示词之前，请添加一些系统提示词文本。"
     },
     "serviceHealth": {
-      "title": "Service Health",
-      "description": "Status of the {service}. Having trouble? Try restarting or reviewing the logs.",
+      "title": "服务健康",
+      "description": "{service} 的状态。遇到问题？尝试重启或查看日志。",
       "serviceAction": {
-        "restartService": "Restart Service",
-        "stopService": "Stop Service",
-        "startService": "Start Service",
+        "restartService": "重启服务",
+        "stopService": "停止服务",
+        "startService": "启动服务",
         "errorMessage": {
-          "detail": "Failed to perform {action} on {service}. Please check the logs for more details."
+          "detail": "在 {service} 上执行 {action} 失败。请检查日志以获取更多详细信息。"
         },
         "restartSuccessMessage": {
-          "detail": "{service} Restarted"
+          "detail": "{service} 已重启"
         }
       },
       "serviceStatus": {
-        "starting": "Starting",
-        "running": "Running",
-        "stopped": "Stopped"
+        "starting": "正在启动",
+        "running": "正在运行",
+        "stopped": "已停止"
       }
     },
     "serviceEndpoint": {
-      "title": "Service Endpoint | Service Endpoints",
+      "title": "服务端点 | 服务端点",
       "description": {
-        "base": "Local endpoint for {service}. Use this to connect from other applications running locally on device.",
-        "serviceIsNotRunning": "Once the service is running, the address will be displayed here.",
-        "serviceIsAvailableOnNetwork": "Because the service is available on the network, you can also connect to it using the Network Service URL from other devices."
+        "base": "{service} 的本地端点。使用此端点从设备上运行的其他应用程序连接。",
+        "serviceIsNotRunning": "一旦服务运行，地址将显示在这里。",
+        "serviceIsAvailableOnNetwork": "因为服务在网络上可用，您也可以使用网络服务 URL 从其他设备连接到它。"
       },
-      "copyNetworkURL": "Copy Network URL"
+      "copyNetworkURL": "复制网络 URL"
     },
     "serviceVersion": {
-      "title": "Service Version",
-      "description": "Shows the current version of {service}. To ensure optimal performance and access to new features, keep it up to date. Reinstallation is also available if needed.",
+      "title": "服务版本",
+      "description": "显示 {service} 的当前版本。为确保最佳性能和访问新功能，请保持其更新。如果需要，也可以重新安装。",
       "forceUpdate": {
-        "title": "Force Update {service}",
-        "forCuda": "Force Update {service} for CUDA",
-        "forROCm": "Force Update {service} for ROCm",
+        "title": "强制更新 {service}",
+        "forCuda": "为 CUDA 强制更新 {service}",
+        "forROCm": "为 ROCm 强制更新 {service}",
         "successMessage": {
-          "detail": "{service} is updated to the latest version {version}"
+          "detail": "{service} 已更新到最新版本 {version}"
         },
         "errorMessage": {
-          "detail": "Failed to update {service}. Please check the logs for more details."
+          "detail": "更新 {service} 失败。请检查日志以获取更多详细信息。"
         }
       },
       "removeService": {
-        "title": "Remove {service}",
-        "confirmationHeader": "Remove {service}",
-        "confirmationMessage": "Are you sure you want to remove {service}? This will delete the service binary and all its configurations. You can reinstall it later from the settings page.",
-        "confirmationAccept": "Remove",
+        "title": "移除 {service}",
+        "confirmationHeader": "移除 {service}",
+        "confirmationMessage": "您确定要移除 {service} 吗？这将删除服务二进制文件及其所有配置。您可以稍后从设置页面重新安装。",
+        "confirmationAccept": "移除",
         "successMessage": {
-          "detail": "{service} has been removed successfully"
+          "detail": "{service} 已成功移除"
         },
         "errorMessage": {
-          "detail": "Failed to remove {service}. Please check the logs for more details."
+          "detail": "移除 {service} 失败。请检查日志以获取更多详细信息。"
         }
       }
     },
     "serviceConfigurations": {
-      "title": "Service Configurations",
-      "description": "These configurations are applied to the {service} when it starts. {service} will automatically restart after you save any changes.",
+      "title": "服务配置",
+      "description": "这些配置在 {service} 启动时应用。保存任何更改后，{service} 将自动重启。",
       "enableNetworkAccess": {
-        "title": "Enable Network Access",
-        "description": "Allow other devices on your network to access this {service} through this device's IP address."
+        "title": "启用网络访问",
+        "description": "允许网络上的其他设备通过此设备的 IP 地址访问此 {service}。"
       },
       "allowMstyStudioAccess": {
-        "title": "Allow Access from Msty Studio",
-        "description": "Allow connections from Msty Studio Web to this app so it can access {service}."
+        "title": "允许从 Msty Studio 访问",
+        "description": "允许从 Msty Studio Web 连接到此应用以访问 {service}。"
       },
       "captureServiceLogs": {
-        "title": "Capture Service Logs",
-        "description": "Enable logging to capture service data for debugging. Use this option only when necessary."
+        "title": "捕获服务日志",
+        "description": "启用日志记录以捕获服务数据进行调试。仅在必要时使用此选项。"
       },
       "unsavedChanges": {
-        "message": "You have unsaved changes in the {service} Configurations. Once you save, {service} will be restarted with the new configurations.",
-        "saveChanges": "Save Changes and Restart Service",
+        "message": "您在 {service} 配置中有未保存的更改。保存后，{service} 将使用新配置重启。",
+        "saveChanges": "保存更改并重启服务",
         "successMessage": {
-          "detail": "{service} Configurations saved and service restarted"
+          "detail": "{service} 配置已保存且服务已重启"
         },
         "errorMessage": {
-          "detail": "Failed to save {service} Configurations. Please check the logs for more details."
+          "detail": "保存 {service} 配置失败。请检查日志以获取更多详细信息。"
         }
       }
     }
   },
   "keyboardShortcuts": {
-    "title": "Keyboard Shortcuts",
-    "description": "Customize keyboard shortcuts for quick access to features",
-    "search": "Search shortcuts...",
-    "searchByShortcut": "Search by shortcut",
-    "searchByName": "Search by name",
-    "pressShortcut": "Press any key combination...",
-    "pressKeys": "Press keys...",
-    "notSet": "Not set",
-    "edit": "Edit shortcut",
-    "clear": "Clear",
-    "global": "Global",
-    "saved": "Shortcut saved",
-    "error": "Error saving shortcut",
-    "reset": "Shortcut reset",
-    "resetToDefault": "Reset to default",
-    "resetAll": "Reset all shortcuts",
-    "allReset": "All shortcuts reset to defaults",
-    "noResults": "No shortcuts found",
-    "conflictWith": "Conflicts with: {name}",
+    "title": "键盘快捷键",
+    "description": "自定义快捷键以快速访问功能",
+    "search": "搜索快捷键...",
+    "searchByShortcut": "按快捷键搜索",
+    "searchByName": "按名称搜索",
+    "pressShortcut": "按任意组合键...",
+    "pressKeys": "按键...",
+    "notSet": "未设置",
+    "edit": "编辑快捷键",
+    "clear": "清除",
+    "global": "全局",
+    "saved": "快捷键已保存",
+    "error": "保存快捷键出错",
+    "reset": "快捷键已重置",
+    "resetToDefault": "重置为默认",
+    "resetAll": "重置所有快捷键",
+    "allReset": "所有快捷键已重置为默认",
+    "noResults": "未找到快捷键",
+    "conflictWith": "与 {name} 冲突",
     "categories": {
-      "all": "All",
-      "general": "General",
-      "navigation": "Navigation",
+      "all": "全部",
+      "general": "常规",
+      "navigation": "导航",
       "appearance": "@:settings.appearance",
-      "conversation": "Conversation"
+      "conversation": "对话"
     },
     "resetAllConfirm": {
-      "title": "Reset All Shortcuts",
-      "message": "Are you sure you want to reset all keyboard shortcuts to their default values?"
+      "title": "重置所有快捷键",
+      "message": "您确定要将所有键盘快捷键重置为其默认值吗？"
     },
     "help": {
-      "title": "Keyboard Shortcuts",
-      "customizeButton": "Customize Shortcuts"
+      "title": "键盘快捷键",
+      "customizeButton": "自定义快捷键"
     },
-    "contextual": "Contextual",
-    "systemWide": "System Wide",
-    "macOptionHint": "Option key shortcuts work in Msty. If they produce special characters instead, check System Settings > Keyboard > Input Sources",
+    "contextual": "上下文相关",
+    "systemWide": "系统范围",
+    "macOptionHint": "Option 键快捷键在 Msty 中有效。如果它们产生特殊字符，请检查 系统设置 > 键盘 > 输入法",
     "example": {
-      "title": "Keyboard Shortcuts Example",
-      "description": "This component demonstrates how to register and use keyboard shortcuts in your components.",
-      "registeredShortcuts": "Registered Shortcuts:",
-      "exampleAction1": "Example Action 1",
-      "scopedAction": "Scoped Action",
-      "actions": "Actions:",
-      "updateFirstShortcut": "Update First Shortcut",
-      "testConflictDetection": "Test Conflict Detection",
-      "actionLog": "Action Log:",
-      "noActionsYet": "No actions yet. Try pressing the shortcuts!",
+      "title": "键盘快捷键示例",
+      "description": "此组件演示如何在您的组件中注册和使用键盘快捷键。",
+      "registeredShortcuts": "已注册快捷键：",
+      "exampleAction1": "示例操作 1",
+      "scopedAction": "作用域操作",
+      "actions": "操作：",
+      "updateFirstShortcut": "更新第一个快捷键",
+      "testConflictDetection": "测试冲突检测",
+      "actionLog": "操作日志：",
+      "noActionsYet": "暂无操作。尝试按快捷键！",
       "developerNotes": {
-        "title": "Developer Notes:",
+        "title": "开发者说明：",
         "items": [
-          "Shortcuts are automatically cleaned up when the component unmounts",
-          "Use component-scoped shortcuts to avoid ID conflicts",
-          "Platform-specific bindings are handled automatically (Cmd on Mac, Ctrl on Windows)",
-          "Check for conflicts before registering shortcuts that might collide with existing ones",
-          "Shortcuts can be global (work everywhere) or context-specific"
+          "组件卸载时自动清理快捷键",
+          "使用组件作用域的快捷键以避免 ID 冲突",
+          "自动处理特定平台的绑定（Mac 上的 Cmd，Windows 上的 Ctrl）",
+          "在注册可能与现有快捷键冲突的快捷键之前检查冲突",
+          "快捷键可以是全局的（随处工作）或特定于上下文的"
         ]
       }
     },
     "splitRemoval": {
-      "selectSplitToRemove": "Select split to remove",
-      "pressKeysToCancel": "Press",
-      "remove": "Remove"
+      "selectSplitToRemove": "选择要移除的拆分",
+      "pressKeysToCancel": "按",
+      "remove": "移除"
     }
   },
   "miniMapActions": {
     "noMessageSelectedWarning": {
-      "summary": "No Messages Selected",
-      "detail": "Select at least one message to perform any actions"
+      "summary": "未选择消息",
+      "detail": "选择至少一条消息以执行任何操作"
     },
     "exportOrCopyMessage": {
-      "exportMessage": "Export Message | Export Messages",
-      "copyMessage": "Copy Message | Copy Messages",
-      "asJson": "As JSON",
-      "asMarkdown": "As Markdown",
-      "successMessage": "Successfully {action} messages as {format}",
+      "exportMessage": "导出消息 | 导出消息",
+      "copyMessage": "复制消息 | 复制消息",
+      "asJson": "为 JSON",
+      "asMarkdown": "为 Markdown",
+      "successMessage": "已成功将消息{action}为 {format}",
       "action": {
-        "export": "exported",
-        "copy": "copied"
+        "export": "导出",
+        "copy": "复制"
       }
     }
   },
@@ -3604,858 +3604,858 @@
     },
     "confirmationMessage": "您确定要重新索引{item}吗？"
   },
-  "recent": "Recent|Recents",
+  "recent": "最近 | 最近",
   "knowledgeStack": {
-    "title": "Knowledge Stack | Knowledge Stacks",
-    "contexts": "@:knowledgeStack.title Contexts",
+    "title": "知识库 | 知识库",
+    "contexts": "@:knowledgeStack.title上下文",
     "composeProgress": {
-      "processing": "Processing: {fileName}",
-      "composing": "Composing",
-      "composingEllipsis": "Composing…",
-      "files": "Files",
-      "notes": "Notes",
+      "processing": "正在处理：{fileName}",
+      "composing": "正在组合",
+      "composingEllipsis": "正在组合…",
+      "files": "文件",
+      "notes": "笔记",
       "youtube": "YouTube",
-      "folders": "Folders",
-      "overallProgress": "Overall progress",
-      "inFlight": "In-flight:"
+      "folders": "文件夹",
+      "overallProgress": "总体进度",
+      "inFlight": "处理中："
     },
     "itemStatus": {
-      "ignoredForRetrieval": "Ignored for retrieval"
+      "ignoredForRetrieval": "检索时已忽略"
     },
     "cloudShare": {
-      "importingFolder": "Importing folder: {name}",
-      "processingCount": "Processing {count} knowledge stack(s)"
+      "importingFolder": "正在导入文件夹：{name}",
+      "processingCount": "正在处理 {count} 个知识库"
     },
     "saveEdits": {
-      "title": "Save Edits",
+      "title": "保存编辑",
       "confirmation": {
-        "header": "Save Edits and Mark as Draft",
-        "message": "Are you sure you want to save your edits? This will mark the Knowledge Stack as a draft and prevent it from being used in production until processed again."
+        "header": "保存编辑并标记为草稿",
+        "message": "您确定要保存编辑吗？这会将知识库标记为草稿，并防止在再次处理之前在生产中使用它。"
       }
     },
-    "selectFolderForImport": "Choose where to import the @:knowledgeStack.title",
-    "newKnowledgeStack": "New @:knowledgeStack.title",
-    "addDescription": "Add description",
-    "editDescription": "Edit description",
-    "descriptionPlaceholder": "Add a description for this Knowledge Stack...",
-    "autoSaving": "Saving...",
-    "autoSaved": "Saved {time}",
-    "basicInfo": "Basic Information",
-    "similarityThreshold": "@:similarity Threshold",
-    "similarityMatch": "@:similarity Match",
+    "selectFolderForImport": "选择导入@:knowledgeStack.title的位置",
+    "newKnowledgeStack": "新@:knowledgeStack.title",
+    "addDescription": "添加描述",
+    "editDescription": "编辑描述",
+    "descriptionPlaceholder": "为此知识库添加描述...",
+    "autoSaving": "正在保存...",
+    "autoSaved": "已保存 {time}",
+    "basicInfo": "基本信息",
+    "similarityThreshold": "@:similarity阈值",
+    "similarityMatch": "@:similarity匹配",
     "unsavedChanges": {
-      "confirmNavigation": "You have unsaved changes. Are you sure you want to leave this page? Your changes will be lost.",
-      "confirmReload": "You have unsaved changes that will be lost if you reload the page."
+      "confirmNavigation": "您有未保存的更改。您确定要离开此页面吗？您的更改将丢失。",
+      "confirmReload": "如果您重新加载页面，您的未保存更改将丢失。"
     },
     "empty": {
-      "title": "No @:knowledgeStack.title selected",
-      "description": "Knowledge Stack lets you bring in files, folders, notes, and YouTube transcripts, making them searchable and chat-ready through Retrieval-Augmented Generation (RAG)"
+      "title": "未选择@:knowledgeStack.title",
+      "description": "知识库让您可以引入文件、文件夹、笔记和 YouTube 字幕，使它们通过检索增强生成 (RAG) 可搜索并可用于聊天"
     },
-    "selectOrCreate": "Select a @:knowledgeStack.title",
-    "selectFromTreeOrCreate": "Select a @:knowledgeStack.title from the tree or create a new one",
+    "selectOrCreate": "选择一个@:knowledgeStack.title",
+    "selectFromTreeOrCreate": "从树中选择一个@:knowledgeStack.title或创建一个新的",
     "folderForm": {
-      "addTitle": "Add New @:folder",
-      "editTitle": "Edit @:folder",
-      "editIgnoreRules": "Edit Ignore Rules",
-      "editIgnoreRulesTitle": "Ignore Rules",
-      "ignoreRulesDescription": "Define patterns to exclude files and folders from processing.",
-      "ignoreRulesHierarchySimple": "Priority: Local .mstyignore/.gitignore → Folder rules → System defaults",
-      "ignoreRulesPlaceholder": "# Enter patterns here, one per line\n# Example: *.log, node_modules/, !important.txt",
-      "showExamples": "Show examples & help",
-      "ignoreExample1": "Log files",
-      "ignoreExample2": "Temp files in all dirs",
-      "ignoreExample3": "Entire directory",
-      "ignoreExample4": "Exception pattern",
-      "ignoreExample5": "Multiple image types",
-      "ignoreExample6": "All files in test & subdirs",
-      "ignoreExample7": "Case-insensitive match",
-      "ignoreExample8": "Files starting with secret-",
-      "insertTemplate": "Use template",
-      "clearContent": "Clear all",
-      "ignoreRulesUpdated": "Ignore rules updated successfully",
-      "ignoreRulesUpdateError": "Failed to update ignore rules",
+      "addTitle": "添加新@:folder",
+      "editTitle": "编辑@:folder",
+      "editIgnoreRules": "编辑忽略规则",
+      "editIgnoreRulesTitle": "忽略规则",
+      "ignoreRulesDescription": "定义模式以排除文件和文件夹。",
+      "ignoreRulesHierarchySimple": "优先级：本地 .mstyignore/.gitignore → 文件夹规则 → 系统默认",
+      "ignoreRulesPlaceholder": "# 在此输入模式，每行一个\\n# 示例: *.log, node_modules/, !important.txt",
+      "showExamples": "显示示例和帮助",
+      "ignoreExample1": "日志文件",
+      "ignoreExample2": "所有目录中的临时文件",
+      "ignoreExample3": "整个目录",
+      "ignoreExample4": "例外模式",
+      "ignoreExample5": "多种图像类型",
+      "ignoreExample6": "test 及其子目录中的所有文件",
+      "ignoreExample7": "不区分大小写的匹配",
+      "ignoreExample8": "以 secret- 开头的文件",
+      "insertTemplate": "使用模板",
+      "clearContent": "全部清除",
+      "ignoreRulesUpdated": "忽略规则已更新",
+      "ignoreRulesUpdateError": "更新忽略规则失败",
       "deleteConfirmation": {
-        "header": "Delete @:folder '{folderName}'",
-        "message": "Are you sure you want to delete this folder? All Knowledge Stacks inside it will be removed. There is no undo for this action.",
+        "header": "删除@:folder '{folderName}'",
+        "message": "您确定要删除此文件夹吗？其中的所有知识库都将被移除。此操作无法撤销。",
         "successMessage": {
-          "detail": "@:folder deleted"
+          "detail": "@:folder已删除"
         },
         "errorMessage": {
-          "detail": "Failed to delete @:folder"
+          "detail": "删除@:folder失败"
         }
       },
       "updateErrorMessage": {
-        "detail": "Failed to update @:folder"
+        "detail": "更新@:folder失败"
       },
       "createSuccessMessage": {
-        "detail": "@:folder created"
+        "detail": "@:folder已创建"
       },
       "createErrorMessage": {
-        "detail": "Failed to create @:folder"
+        "detail": "创建@:folder失败"
       }
     },
-    "setDefaultFolder": "Set as Default Folder",
-    "unsetDefaultFolder": "Unset Default Folder",
-    "createRootFolder": "New Folder at Root",
+    "setDefaultFolder": "设为默认文件夹",
+    "unsetDefaultFolder": "取消设为默认文件夹",
+    "createRootFolder": "在根目录新建文件夹",
     "knowledgeStackForm": {
-      "addTitle": "Add New @:knowledgeStack.title",
+      "addTitle": "添加新@:knowledgeStack.title",
       "deleteConfirmation": {
-        "header": "Delete @:knowledgeStack.title",
-        "message": "Are you sure you want to delete this Knowledge Stack? All items inside it will be removed. There is no undo for this action."
+        "header": "删除@:knowledgeStack.title",
+        "message": "您确定要删除此知识库吗？其中的所有项目都将被移除。此操作无法撤销。"
       }
     },
     "deleteAllKnowledgeStack": {
-      "title": "Delete All @:knowledgeStack.title",
-      "description": "This will clear entire @:knowledgeStack.title{'.'} There is no way to recover them after deletion.",
+      "title": "删除所有@:knowledgeStack.title",
+      "description": "这将清除整个@:knowledgeStack.title{'.'} 删除后无法恢复。",
       "successMessage": {
-        "detail": "All @:knowledgeStack.title deleted"
+        "detail": "所有@:knowledgeStack.title已删除"
       },
       "errorMessage": {
-        "detail": "Failed to delete all @:knowledgeStack.title"
+        "detail": "删除所有@:knowledgeStack.title失败"
       }
     },
     "chunksConsole": {
-      "chunk": "Chunk | @:knowledgeStack.chunksConsole.chunks",
-      "chunks": "Chunks",
-      "title": "@:knowledgeStack.chunksConsole.chunks Console",
-      "description": "Use this console to understand how your Knowledge Stack, { title }, is being used and what chunks are being sent to a model when chatting. You can also delete a chunk if you think it's not relevant or useful.",
-      "queryText": "Query Text",
+      "chunk": "块 | @:knowledgeStack.chunksConsole.chunks",
+      "chunks": "块",
+      "title": "@:knowledgeStack.chunksConsole.chunks控制台",
+      "description": "使用此控制台了解您的知识库 { title } 如何被使用，以及聊天时哪些块被发送给模型。如果您认为某个块不相关或无用，也可以将其删除。",
+      "queryText": "查询文本",
       "similarityFilter": {
         "title": "@:similarity",
-        "all": "All",
-        "highest": "Highest",
-        "high": "High",
-        "medium": "Medium",
-        "low": "Low"
+        "all": "全部",
+        "highest": "最高",
+        "high": "高",
+        "medium": "中",
+        "low": "低"
       },
-      "matchCount": "# of @:knowledgeStack.chunksConsole.chunks",
-      "sourceFile": "Source File",
-      "sourceNote": "Source Note",
-      "sourceVideo": "Source Video",
-      "source": "Source",
-      "score": "Score",
-      "searchResults": "Search Results",
-      "noResultsFound": "No search results found. Try adjusting your query or search settings.",
-      "noResultsAfterFilter": "No results match the current similarity filter. Try adjusting the filter to show more results.",
+      "matchCount": "@:knowledgeStack.chunksConsole.chunks数量",
+      "sourceFile": "源文件",
+      "sourceNote": "源笔记",
+      "sourceVideo": "源视频",
+      "source": "来源",
+      "score": "得分",
+      "searchResults": "搜索结果",
+      "noResultsFound": "未找到搜索结果。尝试调整您的查询或搜索设置。",
+      "noResultsAfterFilter": "没有结果匹配当前的相似度过滤器。尝试调整过滤器以显示更多结果。",
       "deleteChunk": {
         "successMessage": {
-          "detail": "@:knowledgeStack.chunksConsole.chunk has been deleted"
+          "detail": "@:knowledgeStack.chunksConsole.chunk已删除"
         }
       },
       "searchType": {
-        "title": "Search Type",
-        "hybrid": "Hybrid Search",
-        "semantic": "Semantic Search",
-        "keyword": "Keyword Search"
+        "title": "搜索类型",
+        "hybrid": "混合搜索",
+        "semantic": "语义搜索",
+        "keyword": "关键词搜索"
       },
-      "filterDisclaimer": "This filter only affects which results are displayed below. It does not change the actual query.",
+      "filterDisclaimer": "此过滤器仅影响下方显示的结果。它不会更改实际查询。",
       "tooltip": {
-        "scrubbed": "Content has been scrubbed for PII removal",
-        "cached": "Used cached scrubbed version",
-        "fresh": "Freshly scrubbed content"
+        "scrubbed": "内容已清洗以移除 PII",
+        "cached": "使用了缓存的清洗版本",
+        "fresh": "刚清洗的内容"
       },
-      "runQuery": "Run Query"
+      "runQuery": "运行查询"
     },
     "addon": {
       "title": "@:knowledgeStack.title",
-      "selectedCount": "{count} selected",
-      "selectedStacks": "Selected Stacks",
-      "searchPlaceholder": "Search Knowledge Stacks...",
-      "recentlyUpdated": "Recently Updated",
-      "searchResults": "Search Results",
-      "noResults": "No Knowledge Stacks found",
-      "noStacks": "No Knowledge Stacks available",
-      "noDescription": "No description",
-      "numberOfChunks": "Number of @:knowledgeStack.chunksConsole.chunks",
-      "searchType": "Search Type",
-      "synthesizePrompt": "Synthesize Query",
-      "enablePiiScrubbing": "Enable PII Scrubbing",
-      "fullContentContextLimit": "Max Full Content Contexts",
-      "fullContentContextWarning": "Full Content Contexts can significantly increase token usage and may impact performance",
-      "manageStacks": "Manage Stacks",
-      "onlyCompletedStacks": "Only completed stacks can be selected"
+      "selectedCount": "已选 {count} 个",
+      "selectedStacks": "已选知识库",
+      "searchPlaceholder": "搜索知识库...",
+      "recentlyUpdated": "最近更新",
+      "searchResults": "搜索结果",
+      "noResults": "未找到知识库",
+      "noStacks": "没有可用的知识库",
+      "noDescription": "无描述",
+      "numberOfChunks": "@:knowledgeStack.chunksConsole.chunks数量",
+      "searchType": "搜索类型",
+      "synthesizePrompt": "合成查询",
+      "enablePiiScrubbing": "启用 PII 清洗",
+      "fullContentContextLimit": "最大完整内容上下文",
+      "fullContentContextWarning": "完整内容上下文会显著增加 Token 使用量并可能影响性能",
+      "manageStacks": "管理知识库",
+      "onlyCompletedStacks": "只能选择已完成的知识库"
     },
-    "totalFiles": "Total Files",
-    "vectorDimensions": "Vector Dimensions",
-    "wordCount": "Word Count",
-    "readingTime": "Reading Time",
+    "totalFiles": "总文件数",
+    "vectorDimensions": "向量维度",
+    "wordCount": "字数",
+    "readingTime": "阅读时间",
     "embeddingModel": {
-      "title": "Embedding Model",
-      "noModel": "No embedding model configured",
-      "modelMissing": "Model {modelId} not found",
-      "providerRemapped": "Model provider was automatically remapped",
-      "changeModel": "Change Query Embedding model",
-      "selectModel": "Select Query Embedding Model",
-      "missingModelWarning": "The original embedding model for this Knowledge Stack is not available. Please select a new model.",
-      "providerRemappedInfo": "The embedding model provider was automatically remapped to a compatible provider.",
-      "currentModel": "Current Model",
-      "noModelConfigured": "No model configured",
-      "selectNewModel": "Select New Model",
-      "defaultLocal": "Default (Local)"
+      "title": "嵌入模型",
+      "noModel": "未配置嵌入模型",
+      "modelMissing": "未找到模型 {modelId}",
+      "providerRemapped": "模型提供方已自动重新映射",
+      "changeModel": "更改查询嵌入模型",
+      "selectModel": "选择查询嵌入模型",
+      "missingModelWarning": "此知识库的原始嵌入模型不可用。请选择新模型。",
+      "providerRemappedInfo": "嵌入模型提供方已自动重新映射到兼容的提供方。",
+      "currentModel": "当前模型",
+      "noModelConfigured": "未配置模型",
+      "selectNewModel": "选择新模型",
+      "defaultLocal": "默认 (本地)"
     },
     "buckets": {
       "files": {
         "title": "@:files",
-        "description": "Add .pdf, .csv, .md, .json, .jsonl, .xlsx, .docx, .rtf, .txt, .pptx or any other supported file types.",
-        "dropZoneText": "Drag and drop files here",
-        "browseFiles": "Browse Files",
-        "dropHint": "Drop files here"
+        "description": "添加 .pdf, .csv, .md, .json, .jsonl, .xlsx, .docx, .rtf, .txt, .pptx 或任何其他支持的文件类型。",
+        "dropZoneText": "拖放文件到此处",
+        "browseFiles": "浏览文件",
+        "dropHint": "拖放文件到此处"
       },
       "folders": {
-        "title": "@:folders & Obsidian Vaults",
-        "description": "Add folders containing files. You can drop Obsidian Vaults as well.",
-        "dropZoneText": "Drag and drop folders here",
-        "browseFolders": "Browse Folders",
-        "liveMode": "Live Mode",
-        "liveModeDescription": "Folders are monitored for changes and automatically update the Knowledge Stack",
-        "duplicateFolder": "Duplicate Folder",
-        "alreadyAdded": "Folder Already Added",
-        "folderAlreadyExists": "This folder has already been added to the @:knowledgeStack.title",
-        "folderAlreadyAdded": "The folder '{path}' has already been added",
-        "folderProcessed": "Folder Processed",
-        "filesAdded": "{count} files added successfully",
-        "onlyFoldersAllowed": "Only folders can be added here. Please select a folder instead of individual files.",
-        "selectFolder": "Select Folder",
-        "useDirectoryPicker": "Please use the Browse button to select a folder in web mode",
-        "processed": "Processed",
-        "processingError": "Error Processing Folder",
-        "folderExplorer": "Folder Explorer",
-        "showIgnoredFiles": "Show Ignored Files",
-        "noFolders": "No folders added yet",
-        "refresh": "Refresh",
-        "showInFileManager": "Show in File Manager",
-        "remove": "Remove",
-        "loadError": "Failed to Load Folder",
-        "removed": "Folder Removed",
-        "folderRemoved": "'{name}' has been removed from the Knowledge Stack",
-        "removeError": "Failed to Remove Folder",
-        "ignored": "Ignored",
-        "loading": "Loading...",
-        "loadingContents": "Loading folder contents...",
-        "confirmRemove": "Are you sure you want to remove \"{name}\" from this Knowledge Stack? The folder and its files will remain on your system.",
-        "expandFolder": "Expand folder",
-        "collapseFolder": "Collapse folder",
-        "folderIgnored": "This folder is ignored based on .mstyignore or .gitignore rules",
-        "fileIgnored": "This file is ignored based on .mstyignore or .gitignore rules",
-        "actionMenu": "Actions menu",
-        "emptyFolder": "Empty folder",
-        "itemCount": "{count} item | {count} items",
-        "hiddenItemCount": "{count} hidden item | {count} hidden items"
+        "title": "@:folders 和 Obsidian 仓库",
+        "description": "添加包含文件的文件夹。您也可以拖放 Obsidian 仓库。",
+        "dropZoneText": "拖放文件夹到此处",
+        "browseFolders": "浏览文件夹",
+        "liveMode": "实时模式",
+        "liveModeDescription": "文件夹受监控，更改将自动更新知识库",
+        "duplicateFolder": "重复文件夹",
+        "alreadyAdded": "文件夹已添加",
+        "folderAlreadyExists": "此文件夹已添加到@:knowledgeStack.title",
+        "folderAlreadyAdded": "文件夹 '{path}' 已添加",
+        "folderProcessed": "文件夹已处理",
+        "filesAdded": "{count} 个文件添加成功",
+        "onlyFoldersAllowed": "此处只能添加文件夹。请选择文件夹而不是单个文件。",
+        "selectFolder": "选择文件夹",
+        "useDirectoryPicker": "在 Web 模式下，请使用浏览按钮选择文件夹",
+        "processed": "已处理",
+        "processingError": "处理文件夹出错",
+        "folderExplorer": "文件夹资源管理器",
+        "showIgnoredFiles": "显示忽略的文件",
+        "noFolders": "尚未添加文件夹",
+        "refresh": "刷新",
+        "showInFileManager": "在文件管理器中显示",
+        "remove": "移除",
+        "loadError": "加载文件夹失败",
+        "removed": "文件夹已移除",
+        "folderRemoved": "'{name}' 已从知识库中移除",
+        "removeError": "移除文件夹失败",
+        "ignored": "已忽略",
+        "loading": "正在加载...",
+        "loadingContents": "正在加载文件夹内容...",
+        "confirmRemove": "您确定要从知识库中移除 \"{name}\" 吗？文件夹及其文件将保留在您的系统中。",
+        "expandFolder": "展开文件夹",
+        "collapseFolder": "折叠文件夹",
+        "folderIgnored": "根据 .mstyignore 或 .gitignore 规则，此文件夹已被忽略",
+        "fileIgnored": "根据 .mstyignore 或 .gitignore 规则，此文件已被忽略",
+        "actionMenu": "操作菜单",
+        "emptyFolder": "空文件夹",
+        "itemCount": "{count} 个项目 | {count} 个项目",
+        "hiddenItemCount": "{count} 个隐藏项目 | {count} 个隐藏项目"
       },
       "obsidianVaults": {
-        "title": "Obsidian Vaults",
-        "description": "Add Obsidian Vaults to your Knowledge Stack. Msty will index all the notes in the vault.",
-        "dropZoneText": "Drag and drop Obsidian Vaults here",
-        "browseVaults": "Browse Obsidian Vaults"
+        "title": "Obsidian 仓库",
+        "description": "将 Obsidian 仓库添加到您的知识库。Msty 将索引仓库中的所有笔记。",
+        "dropZoneText": "拖放 Obsidian 仓库到此处",
+        "browseVaults": "浏览 Obsidian 仓库"
       },
       "notes": {
-        "title": "Notes",
-        "description": "Add your own notes to the Knowledge Stack. These notes will be chunked and embedded for semantic search.",
-        "addNote": "Add Note",
-        "titlePlaceholder": "Enter note title...",
-        "contentPlaceholder": "Enter note content...",
-        "empty": "No notes added yet. Click 'Add Note' to get started.",
-        "unsaved": "Not saved yet"
+        "title": "笔记",
+        "description": "添加您的笔记到知识库。这些笔记将被分块并嵌入以便进行语义搜索。",
+        "addNote": "添加笔记",
+        "titlePlaceholder": "输入笔记标题...",
+        "contentPlaceholder": "输入笔记内容...",
+        "empty": "尚未添加笔记。点击 '添加笔记' 开始。",
+        "unsaved": "尚未保存"
       },
       "youTubeLinks": {
-        "title": "YouTube Links",
-        "description": "Add YouTube video links to index their transcripts. Msty will fetch transcripts and make them searchable.",
-        "dropZoneText": "Drag and drop YouTube links here or paste them below",
-        "inputPlaceholder": "Paste YouTube URLs here (space or comma separated)...",
-        "inputPlaceholderWithDetected": "Paste YouTube URLs here ({count} detected) | Paste YouTube URLs here ({count} detected)",
-        "autoDetection": "Auto-pull detected URLs",
-        "detectedCount": "{count} URL detected | {count} URLs detected",
-        "detectedUnpulledUrls": "{count} YouTube URL detected but not pulled yet | {count} YouTube URLs detected but not pulled yet"
+        "title": "YouTube 链接",
+        "description": "添加 YouTube 视频链接以索引其字幕。Msty 将获取字幕并使其可搜索。",
+        "dropZoneText": "拖放 YouTube 链接到此处或在下方粘贴",
+        "inputPlaceholder": "在此粘贴 YouTube URL (空格或逗号分隔)...",
+        "inputPlaceholderWithDetected": "在此粘贴 YouTube URL (检测到 {count} 个) | 在此粘贴 YouTube URL (检测到 {count} 个)",
+        "autoDetection": "自动拉取检测到的 URL",
+        "detectedCount": "检测到 {count} 个 URL | 检测到 {count} 个 URL",
+        "detectedUnpulledUrls": "检测到 {count} 个 YouTube URL 但尚未拉取 | 检测到 {count} 个 YouTube URL 但尚未拉取"
       }
     },
     "itemActions": {
-      "markForReprocessing": "Mark for Reprocessing",
-      "lockTemporary": "Lock Temporarily",
-      "lockPermanent": "Lock Permanently",
-      "unlock": "Unlock",
-      "ignoreRetrieval": "Ignore for Retrieval",
-      "unignoreRetrieval": "Include in Retrieval",
-      "moreActions": "More actions"
+      "markForReprocessing": "标记为重新处理",
+      "lockTemporary": "临时锁定",
+      "lockPermanent": "永久锁定",
+      "unlock": "解锁",
+      "ignoreRetrieval": "忽略检索",
+      "unignoreRetrieval": "包含在检索中",
+      "moreActions": "更多操作"
     },
     "loadMode": {
-      "title": "Load Mode",
-      "dialogTitle": "Select Load Mode",
-      "distribution": "Distribution",
-      "dialogDescription": "Choose how this file should be loaded during Knowledge Stack composition.",
-      "staticFiles": "Static Files",
-      "dynamicFiles": "Dynamic Files",
-      "syncFiles": "Sync Files",
-      "totalFiles": "Total Files",
-      "specialModes": "Special Modes",
-      "specialModesRatio": "Special Modes Ratio",
+      "title": "加载模式",
+      "dialogTitle": "选择加载模式",
+      "distribution": "分布",
+      "dialogDescription": "选择在知识库组合期间应如何加载此文件。",
+      "staticFiles": "静态文件",
+      "dynamicFiles": "动态文件",
+      "syncFiles": "同步文件",
+      "totalFiles": "总文件数",
+      "specialModes": "特殊模式",
+      "specialModesRatio": "特殊模式比例",
       "static": {
-        "label": "Static Mode",
-        "description": "Uses the cached version from when the file was added. Fast and predictable, but doesn't reflect recent changes.",
-        "shortDescription": "Cached content loaded from initial indexing",
-        "badge": "Default"
+        "label": "静态模式",
+        "description": "使用文件添加时的缓存版本。快速且可预测，但不反映最近的更改。",
+        "shortDescription": "从初始索引加载缓存内容",
+        "badge": "默认"
       },
       "dynamic": {
-        "label": "Dynamic Mode",
-        "description": "Loads the latest file content on each composition. Slightly slower but always up-to-date.",
-        "shortDescription": "Fresh content loaded on each composition",
-        "badge": "Recommended"
+        "label": "动态模式",
+        "description": "每次组合时加载最新文件内容。稍慢但始终最新。",
+        "shortDescription": "每次组合加载新鲜内容",
+        "badge": "推荐"
       },
       "sync": {
-        "label": "Sync Mode",
-        "description": "Watches for file changes and automatically recomposes. Best for small, frequently updated files.",
-        "shortDescription": "Auto-recomposes when files change",
-        "badge": "Expensive"
+        "label": "同步模式",
+        "description": "监视文件更改并自动重新组合。最适合小型、频繁更新的文件。",
+        "shortDescription": "文件更改时自动重新组合",
+        "badge": "昂贵"
       }
     },
     "syncMode": {
-      "start": "Start Sync Mode",
-      "pause": "Pause Sync Mode",
-      "pauseAll": "Pause All",
-      "started": "Sync Mode Started",
-      "startedDetail": "Now watching file changes for {name}",
-      "stopped": "Sync Mode Paused",
-      "stoppedDetail": "File watching has been paused",
-      "startFailed": "Failed to Start Sync Mode",
-      "startFailedDetail": "Please ensure the Knowledge Stack has files marked for Sync Mode",
-      "allPaused": "All Sync Modes Paused",
-      "allPausedDetail": "File watching has been stopped for all knowledge stacks",
-      "active": "{count} Active | {count} Active",
-      "activeTitle": "Active Sync Modes",
-      "filesWatching": "{count} file | {count} files",
-      "filesCount": "{count} file | {count} files",
-      "startedTime": "Started {time}",
-      "totalStats": "{stacks} stack, {files} files | {stacks} stacks, {files} files",
-      "hoursAgo": "{hours}h ago",
-      "daysAgo": "{days}d ago"
+      "start": "启动同步模式",
+      "pause": "暂停同步模式",
+      "pauseAll": "全部暂停",
+      "started": "同步模式已启动",
+      "startedDetail": "正在监视 {name} 的文件更改",
+      "stopped": "同步模式已暂停",
+      "stoppedDetail": "文件监视已暂停",
+      "startFailed": "启动同步模式失败",
+      "startFailedDetail": "请确保知识库中有标记为同步模式的文件",
+      "allPaused": "所有同步模式已暂停",
+      "allPausedDetail": "所有知识库的文件监视已停止",
+      "active": "{count} 个活动 | {count} 个活动",
+      "activeTitle": "活动同步模式",
+      "filesWatching": "{count} 个文件 | {count} 个文件",
+      "filesCount": "{count} 个文件 | {count} 个文件",
+      "startedTime": "开始于 {time}",
+      "totalStats": "{stacks} 个知识库，{files} 个文件 | {stacks} 个知识库，{files} 个文件",
+      "hoursAgo": "{hours}小时前",
+      "daysAgo": "{days}天前"
     },
     "analytics": {
-      "title": "Analytics and Insights",
-      "lastComposed": "Last Composed",
-      "sections": "Analytics Sections",
-      "performanceTimings": "Performance Timings",
-      "summaryStatistics": "Summary Statistics",
-      "contentBreakdown": "Content Breakdown",
-      "querySettings": "Query Settings",
-      "readingStatistics": "Reading Statistics",
-      "noAnalyticsAvailable": "No Analytics Available",
-      "noAnalyticsDescription": "Analytics will be available after composing this Knowledge Stack.",
-      "noSectionsSelected": "No Analytics Sections Selected",
-      "noSectionsSelectedDescription": "Please select one or more analytics sections above to view insights about your Knowledge Stack.",
-      "selectAllSections": "Select All Sections",
+      "title": "分析与洞察",
+      "lastComposed": "上次组合",
+      "sections": "分析部分",
+      "performanceTimings": "性能计时",
+      "summaryStatistics": "摘要统计",
+      "contentBreakdown": "内容细分",
+      "querySettings": "查询设置",
+      "readingStatistics": "阅读统计",
+      "noAnalyticsAvailable": "无可用分析",
+      "noAnalyticsDescription": "组合此知识库后将提供分析。",
+      "noSectionsSelected": "未选择分析部分",
+      "noSectionsSelectedDescription": "请选择上方的一个或多个分析部分以查看关于您知识库的见解。",
+      "selectAllSections": "选择所有部分",
       "timings": {
-        "loadingItems": "Loading Items",
-        "splittingChunks": "Splitting @:knowledgeStack.chunksConsole.chunks",
-        "embeddingChunks": "Embedding @:knowledgeStack.chunksConsole.chunks",
-        "composingStack": "Composing Stack",
-        "totalTime": "Total Time",
-        "parallelNote": "Some operations may run in parallel, so individual times may not sum to total time",
-        "fileReading": "File Reading",
-        "databaseWrite": "Database Write"
+        "loadingItems": "正在加载项目",
+        "splittingChunks": "正在拆分@:knowledgeStack.chunksConsole.chunks",
+        "embeddingChunks": "正在嵌入@:knowledgeStack.chunksConsole.chunks",
+        "composingStack": "正在组合知识库",
+        "totalTime": "总时间",
+        "parallelNote": "某些操作可能并行运行，因此单个时间之和可能不等于总时间",
+        "fileReading": "文件读取",
+        "databaseWrite": "数据库写入"
       },
       "stats": {
-        "numberOfItems": "# of Items",
-        "totalChunks": "Total @:knowledgeStack.chunksConsole.chunks",
-        "availableChunks": "Available @:knowledgeStack.chunksConsole.chunks",
-        "skippedChunks": "Skipped @:knowledgeStack.chunksConsole.chunks",
-        "wordCount": "Word Count",
-        "characterCount": "Character Count",
-        "readingTime": "Reading Time"
+        "numberOfItems": "项目数量",
+        "totalChunks": "总@:knowledgeStack.chunksConsole.chunks",
+        "availableChunks": "可用@:knowledgeStack.chunksConsole.chunks",
+        "skippedChunks": "跳过的@:knowledgeStack.chunksConsole.chunks",
+        "wordCount": "字数",
+        "characterCount": "字符数",
+        "readingTime": "阅读时间"
       },
-      "ignoredItems": "Ignored Items",
-      "ignoredForRetrieval": "Ignored for Retrieval",
-      "ignoredItemsDescription": "These items are excluded from search and retrieval operations",
-      "ignoredPercentage": "Percentage of items ignored",
-      "ofTotal": "of {total}",
-      "files": "Files",
-      "notes": "Notes",
-      "youTubeLinks": "YouTube Videos",
-      "noIgnoredItems": "No Ignored Items",
-      "allItemsIncluded": "All items in this Knowledge Stack are included in search and retrieval",
-      "recommendation": "Recommendation",
+      "ignoredItems": "已忽略项目",
+      "ignoredForRetrieval": "检索时已忽略",
+      "ignoredItemsDescription": "这些项目在搜索和检索操作中被排除",
+      "ignoredPercentage": "忽略项目的百分比",
+      "ofTotal": "共 {total}",
+      "files": "文件",
+      "notes": "笔记",
+      "youTubeLinks": "YouTube 视频",
+      "noIgnoredItems": "无忽略项目",
+      "allItemsIncluded": "此知识库中的所有项目都包含在搜索和检索中",
+      "recommendation": "建议",
       "contentTypes": {
-        "files": "FILES",
-        "obsidianVaults": "OBSIDIAN VAULTS",
-        "folders": "FOLDERS",
-        "notes": "NOTES",
-        "youTubeLinks": "YOUTUBE LINKS"
+        "files": "文件",
+        "obsidianVaults": "OBSIDIAN 仓库",
+        "folders": "文件夹",
+        "notes": "笔记",
+        "youTubeLinks": "YOUTUBE 链接"
       },
       "piiScrubbing": {
-        "title": "PII Scrubbing",
-        "totalChunks": "Total @:knowledgeStack.chunksConsole.chunks",
-        "scrubbedChunks": "Scrubbed @:knowledgeStack.chunksConsole.chunks",
-        "cachedChunks": "Cached @:knowledgeStack.chunksConsole.chunks",
-        "coverage": "Coverage",
-        "progress": "Scrubbing Progress",
-        "loadAnalytics": "Load Analytics",
-        "failedToLoadAnalytics": "Failed to load PII analytics data",
-        "analyticsNotLoaded": "PII Analytics Not Loaded",
-        "clickToViewAnalytics": "Click \"Load Analytics\" to view PII scrubbing statistics",
-        "scoreTooltip": "This score reflects how comprehensively PII scrubbing is applied to your Knowledge Stack. A higher score means more chunks have been processed for PII removal.",
-        "optionalDescription": "PII scrubbing is optional. Enable it in query settings only if your content contains sensitive personal information.",
-        "protectionDescription": "Measures how well sensitive information is protected in your Knowledge Stack",
+        "title": "PII 清洗",
+        "totalChunks": "总@:knowledgeStack.chunksConsole.chunks",
+        "scrubbedChunks": "已清洗@:knowledgeStack.chunksConsole.chunks",
+        "cachedChunks": "缓存@:knowledgeStack.chunksConsole.chunks",
+        "coverage": "覆盖率",
+        "progress": "清洗进度",
+        "loadAnalytics": "加载分析",
+        "failedToLoadAnalytics": "加载 PII 分析数据失败",
+        "analyticsNotLoaded": "PII 分析未加载",
+        "clickToViewAnalytics": "点击“加载分析”以查看 PII 清洗统计信息",
+        "scoreTooltip": "此分数反映了 PII 清洗对您的知识库的应用程度。分数越高意味着更多块已被处理以移除 PII。",
+        "optionalDescription": "PII 清洗是可选的。仅当您的内容包含敏感个人信息时，才在查询设置中启用它。",
+        "protectionDescription": "衡量知识库中敏感信息的保护程度",
         "status": {
-          "notEnabled": "Not Enabled",
-          "wellProtected": "Well Protected",
-          "partiallyProtected": "Partially Protected",
-          "limitedProtection": "Limited Protection",
-          "minimalProtection": "Minimal Protection"
+          "notEnabled": "未启用",
+          "wellProtected": "保护良好",
+          "partiallyProtected": "部分保护",
+          "limitedProtection": "有限保护",
+          "minimalProtection": "最低保护"
         },
         "insights": {
-          "excellentPrivacy": "Excellent privacy protection - nearly all content secured",
-          "goodPrivacy": "Good privacy protection - most content is secured",
-          "partialPrivacy": "Partial privacy protection - consider reviewing settings",
-          "limitedPrivacy": "Limited privacy protection - review sensitive content",
-          "notEnabled": "PII scrubbing is not enabled. This is completely fine if your content doesn't contain sensitive personal information.",
-          "whenToEnable": "Consider enabling PII scrubbing only if your Knowledge Stack contains names, addresses, phone numbers, emails, or other personal data.",
-          "significantReduction": "Significant content reduction ({percentage}%) - extensive PII found",
-          "moderateReduction": "Moderate content reduction ({percentage}%) - some PII removed",
-          "minimalReduction": "Minimal content reduction ({percentage}%) - low PII detected",
-          "noContentChange": "No content size change - no PII detected or removed",
-          "allChunksProcessed": "All chunks processed successfully",
-          "nearlyAllProcessed": "Nearly all chunks processed successfully",
-          "mostProcessed": "Most chunks processed - some may need attention",
-          "incompleteProcessing": "Incomplete processing - check PII scrubbing configuration",
-          "largeKnowledgeBase": "Large knowledge base - consider increasing PII detection coverage",
-          "manyUnprocessed": "Many unprocessed chunks - review PII scrubbing settings",
-          "optionalFeature": "PII scrubbing is optional. Enable it in query settings if your content contains sensitive information like names, emails, or phone numbers.",
-          "privacyOption": "PII scrubbing helps protect sensitive information. It's optional and can be enabled in query settings if needed."
+          "excellentPrivacy": "优秀的隐私保护 - 几乎所有内容都已安全",
+          "goodPrivacy": "良好的隐私保护 - 大多数内容已安全",
+          "partialPrivacy": "部分隐私保护 - 考虑检查设置",
+          "limitedPrivacy": "有限的隐私保护 - 检查敏感内容",
+          "notEnabled": "PII 清洗未启用。如果您的内容不包含敏感个人信息，这完全没问题。",
+          "whenToEnable": "仅当您的知识库包含姓名、地址、电话号码、电子邮件或其他个人数据时，才考虑启用 PII 清洗。",
+          "significantReduction": "显著的内容减少 ({percentage}%) - 发现大量 PII",
+          "moderateReduction": "中度的内容减少 ({percentage}%) - 移除了一些 PII",
+          "minimalReduction": "极少的内容减少 ({percentage}%) - 检测到少量 PII",
+          "noContentChange": "无内容大小变化 - 未检测到或移除 PII",
+          "allChunksProcessed": "所有块已成功处理",
+          "nearlyAllProcessed": "几乎所有块已成功处理",
+          "mostProcessed": "大多数块已处理 - 一些可能需要关注",
+          "incompleteProcessing": "处理不完整 - 检查 PII 清洗配置",
+          "largeKnowledgeBase": "大型知识库 - 考虑增加 PII 检测覆盖率",
+          "manyUnprocessed": "许多未处理的块 - 检查 PII 清洗设置",
+          "optionalFeature": "PII 清洗是可选的。如果您的内容包含敏感信息（如姓名、电子邮件或电话号码），请在查询设置中启用它。",
+          "privacyOption": "PII 清洗有助于保护敏感信息。它是可选的，如果需要，可以在查询设置中启用。"
         },
         "labels": {
-          "securityStatus": "Security Status",
-          "privacyStatus": "Privacy Status",
-          "whenToEnable": "When to Enable",
-          "contentImpact": "Content Impact",
-          "processingEfficiency": "Processing Efficiency",
-          "scaleRecommendation": "Scale Recommendation",
-          "coverageRecommendation": "Coverage Recommendation",
-          "optionalFeature": "Optional Feature",
-          "privacyOption": "Privacy Option"
+          "securityStatus": "安全状态",
+          "privacyStatus": "隐私状态",
+          "whenToEnable": "何时启用",
+          "contentImpact": "内容影响",
+          "processingEfficiency": "处理效率",
+          "scaleRecommendation": "规模建议",
+          "coverageRecommendation": "覆盖率建议",
+          "optionalFeature": "可选功能",
+          "privacyOption": "隐私选项"
         }
       },
       "querySettingsDetails": {
-        "searchType": "Search Type",
-        "numberOfChunks": "Number of @:knowledgeStack.chunksConsole.chunks",
-        "promptPrefix": "Prompt Prefix"
+        "searchType": "搜索类型",
+        "numberOfChunks": "@:knowledgeStack.chunksConsole.chunks数量",
+        "promptPrefix": "提示词前缀"
       },
-      "privacyOptimizationScore": "Privacy Optimization Score",
-      "piiProtectionLevel": "PII Protection Level",
-      "piiScrubbingStatus": "PII Scrubbing Status",
-      "unscrubbedChunks": "Unscrubbed @:knowledgeStack.chunksConsole.chunks",
-      "originalSize": "Original Size",
-      "processedSize": "Processed Size",
-      "sizeReduction": "Size Reduction",
-      "privacyInsights": "Privacy @:insgiths",
-      "dataModified": "Data has been modified",
-      "showOutdatedData": "Show outdated data anyway",
-      "contentDistribution": "Content Distribution",
-      "contentContribution": "{label} contribute {percentage}% of all chunks",
-      "processingIssue": "Processing Issue",
-      "lowEfficiency": "{label} have low efficiency ({efficiency}%)",
-      "dataQualityIssue": "Data Quality Issue",
-      "highSkipRates": "{count} content type(s) have high skip rates",
-      "contentDiversity": "Content Diversity",
-      "singleContentType": "Single content type - consider diversifying sources",
-      "excellentDiversity": "Excellent content diversity across multiple source types",
-      "optimizationTip": "Optimization Tip",
-      "reduceChunkSize": "Reduce chunk size to 800-1200 characters for better content granularity",
-      "increaseChunkSize": "Increase chunk size to 1500-2000 characters for better efficiency",
-      "embeddingThroughput": "Embedding Throughput",
-      "chunksPerSecond": "{rate} chunks/sec ({time}ms each)",
-      "searchStrategy": "Search Strategy",
-      "balancedSearch": "Balanced approach combining keyword + semantic search",
-      "semanticSearch": "AI-powered semantic search - best for conceptual queries",
-      "keywordSearch": "Traditional keyword search - best for exact terms",
-      "retrievalVolume": "Retrieval Volume",
-      "lowChunkCount": "Very low chunk count may miss relevant information",
-      "highChunkCount": "High chunk count may include noise and slow responses",
-      "optimalChunkCount": "Optimal chunk count for balanced retrieval",
-      "contentFiltering": "Content Filtering",
-      "relaxedFiltering": "Relaxed filtering - may include loosely related content",
-      "strictFiltering": "Strict filtering - highly focused results",
-      "moderateFiltering": "Balanced filtering for relevant content",
-      "guidedContext": "Guided Context",
-      "customPromptPrefix": "Custom prompt prefix will guide query interpretation",
-      "lockIndicator": "Lock Indicator",
-      "allItemsCanBeReprocessed": "All items can be reprocessed",
-      "itemsPartiallyLocked": "{percentage}% of items are locked",
-      "mostItemsLocked": "Most items are locked - limited reprocessing capability",
-      "privacySecurity": "Privacy & Security",
-      "privacyProtectionEnabled": "Privacy protection enabled for sensitive data",
-      "noPiiScrubbing": "No PII scrubbing - ensure content is not sensitive",
-      "scaleOptimization": "Scale Optimization",
-      "largeKnowledgeBase": "Large knowledge base - increase chunk count for better coverage",
-      "smallKnowledgeBase": "Small knowledge base - consider reducing chunk count",
-      "performanceProfile": "Performance Profile",
-      "optimizedForSpeed": "Configuration optimized for fast responses",
-      "optimizedForQuality": "Configuration optimized for high-quality results",
-      "highLockRate": "High Lock Rate",
-      "lockedItemsPercentage": "{percentage}% of items are locked and won't be reprocessed",
-      "unlockRecommendation": "Consider unlocking temporarily locked items if they need updates",
-      "overHalfLocked": "Over 50% of items are locked. This may significantly reduce the knowledge base's ability to stay updated.",
-      "lockStatus": "Lock Status",
-      "totalItems": "Total Items",
-      "unlocked": "Unlocked",
-      "temporarilyLocked": "Temporarily Locked",
-      "permanentlyLocked": "Permanently Locked",
-      "lockStatusByContentType": "Lock Status by Content Type",
-      "tempLocked": "Temp. Locked",
-      "permLocked": "Perm. Locked",
-      "lockStatusInsights": "Lock Status @:insights",
-      "processingEfficiency": "Processing Efficiency",
-      "contentInsights": "Content @:insights",
-      "compositionOptimizationScore": "Composition Optimization Score",
-      "compositionInsights": "Composition @:insights",
-      "performanceInsights": "Performance @:insights",
-      "processingPhaseDetails": "Processing Phase Details",
-      "loadingItems": "Loading Items",
-      "splittingChunks": "Splitting @:knowledgeStack.chunksConsole.chunks",
-      "embeddingChunks": "Embedding @:knowledgeStack.chunksConsole.chunks",
-      "fileReading": "File Reading",
-      "databaseWrite": "Database Write",
-      "composingStack": "Composing Stack",
-      "totalProcessingTime": "Total Processing Time",
-      "totalLockedItems": "Total Locked Items",
-      "efficiency": "Efficiency",
+      "privacyOptimizationScore": "隐私优化得分",
+      "piiProtectionLevel": "PII 保护级别",
+      "piiScrubbingStatus": "PII 清洗状态",
+      "unscrubbedChunks": "未清洗的@:knowledgeStack.chunksConsole.chunks",
+      "originalSize": "原始大小",
+      "processedSize": "处理后大小",
+      "sizeReduction": "大小减少",
+      "privacyInsights": "隐私@:insgiths",
+      "dataModified": "数据已修改",
+      "showOutdatedData": "仍显示过时数据",
+      "contentDistribution": "内容分布",
+      "contentContribution": "{label} 贡献了所有块的 {percentage}%",
+      "processingIssue": "处理问题",
+      "lowEfficiency": "{label} 效率低 ({efficiency}%) ",
+      "dataQualityIssue": "数据质量问题",
+      "highSkipRates": "{count} 种内容类型跳过率高",
+      "contentDiversity": "内容多样性",
+      "singleContentType": "单一内容类型 - 考虑多样化来源",
+      "excellentDiversity": "跨多种来源类型的优秀内容多样性",
+      "optimizationTip": "优化提示",
+      "reduceChunkSize": "将块大小减少到 800-1200 个字符以获得更好的内容粒度",
+      "increaseChunkSize": "将块大小增加到 1500-2000 个字符以获得更好的效率",
+      "embeddingThroughput": "嵌入吞吐量",
+      "chunksPerSecond": "{rate} 块/秒 ({time}毫秒/块)",
+      "searchStrategy": "搜索策略",
+      "balancedSearch": "结合关键词+语义搜索的平衡方法",
+      "semanticSearch": "AI 驱动的语义搜索 - 最适合概念查询",
+      "keywordSearch": "传统关键词搜索 - 最适合精确术语",
+      "retrievalVolume": "检索量",
+      "lowChunkCount": "极低的块数量可能会错过相关信息",
+      "highChunkCount": "高块数量可能包含噪音并减慢响应速度",
+      "optimalChunkCount": "平衡检索的最佳块数量",
+      "contentFiltering": "内容过滤",
+      "relaxedFiltering": "宽松过滤 - 可能包含关系不大的内容",
+      "strictFiltering": "严格过滤 - 高度集中的结果",
+      "moderateFiltering": "相关内容的平衡过滤",
+      "guidedContext": "引导上下文",
+      "customPromptPrefix": "自定义提示词前缀将引导查询解释",
+      "lockIndicator": "锁定指示器",
+      "allItemsCanBeReprocessed": "所有项目均可重新处理",
+      "itemsPartiallyLocked": "{percentage}% 的项目已锁定",
+      "mostItemsLocked": "大多数项目已锁定 - 重新处理能力有限",
+      "privacySecurity": "隐私与安全",
+      "privacyProtectionEnabled": "已为敏感数据启用隐私保护",
+      "noPiiScrubbing": "无 PII 清洗 - 确保内容不敏感",
+      "scaleOptimization": "规模优化",
+      "largeKnowledgeBase": "大型知识库 - 增加块数量以获得更好的覆盖率",
+      "smallKnowledgeBase": "小型知识库 - 考虑减少块数量",
+      "performanceProfile": "性能概况",
+      "optimizedForSpeed": "针对快速响应优化的配置",
+      "optimizedForQuality": "针对高质量结果优化的配置",
+      "highLockRate": "高锁定率",
+      "lockedItemsPercentage": "{percentage}% 的项目已锁定且不会重新处理",
+      "unlockRecommendation": "如果需要更新，请考虑解锁临时锁定的项目",
+      "overHalfLocked": "超过 50% 的项目已锁定。这可能会显著降低知识库保持更新的能力。",
+      "lockStatus": "锁定状态",
+      "totalItems": "总项目",
+      "unlocked": "已解锁",
+      "temporarilyLocked": "临时锁定",
+      "permanentlyLocked": "永久锁定",
+      "lockStatusByContentType": "按内容类型的锁定状态",
+      "tempLocked": "临时锁定",
+      "permLocked": "永久锁定",
+      "lockStatusInsights": "锁定状态@:insights",
+      "processingEfficiency": "处理效率",
+      "contentInsights": "内容@:insights",
+      "compositionOptimizationScore": "组合优化得分",
+      "compositionInsights": "组合@:insights",
+      "performanceInsights": "性能@:insights",
+      "processingPhaseDetails": "处理阶段详情",
+      "loadingItems": "正在加载项目",
+      "splittingChunks": "正在拆分@:knowledgeStack.chunksConsole.chunks",
+      "embeddingChunks": "正在嵌入@:knowledgeStack.chunksConsole.chunks",
+      "fileReading": "文件读取",
+      "databaseWrite": "数据库写入",
+      "composingStack": "正在组合知识库",
+      "totalProcessingTime": "总处理时间",
+      "totalLockedItems": "总锁定项目",
+      "efficiency": "效率",
       "loadMode": {
-        "title": "Load Mode Analytics",
-        "description": "File loading behavior across your Knowledge Stack",
-        "distribution": "Load Mode Distribution",
-        "totalFiles": "Total Files",
-        "staticFiles": "Static Mode",
-        "dynamicFiles": "Dynamic Mode",
-        "syncFiles": "Sync Mode",
-        "specialModes": "Special Modes",
-        "specialModesRatio": "Special Modes %",
-        "status": "Status",
-        "active": "Active",
-        "inactive": "Inactive",
-        "breakdown": "Visual Breakdown",
-        "noFiles": "No files in this Knowledge Stack",
-        "desktopOnly": "Load Mode options are only available in the desktop application",
-        "notAvailable": "Load Mode options are only available in the desktop application",
-        "noSpecialModes": "All files are using Static Mode. Enable Dynamic or Sync Mode for files to use the latest content.",
-        "syncActive": "Sync Mode Active",
-        "syncActiveDetails": "Watching {files} • Started {time}",
-        "staticDescription": "Cached content loaded from initial indexing",
-        "dynamicDescription": "Fresh content loaded on each composition",
-        "syncDescription": "Auto-recomposes when files change",
-        "staticBadge": "Default",
-        "dynamicBadge": "Fresh",
-        "syncBadge": "Live",
+        "title": "加载模式分析",
+        "description": "知识库中的文件加载行为",
+        "distribution": "加载模式分布",
+        "totalFiles": "总文件数",
+        "staticFiles": "静态模式",
+        "dynamicFiles": "动态模式",
+        "syncFiles": "同步模式",
+        "specialModes": "特殊模式",
+        "specialModesRatio": "特殊模式 %",
+        "status": "状态",
+        "active": "活动",
+        "inactive": "非活动",
+        "breakdown": "可视化细分",
+        "noFiles": "此知识库中没有文件",
+        "desktopOnly": "加载模式选项仅在桌面应用程序中可用",
+        "notAvailable": "加载模式选项仅在桌面应用程序中可用",
+        "noSpecialModes": "所有文件都使用静态模式。为文件启用动态或同步模式以使用最新内容。",
+        "syncActive": "同步模式活动",
+        "syncActiveDetails": "正在监视 {files} • 开始于 {time}",
+        "staticDescription": "从初始索引加载缓存内容",
+        "dynamicDescription": "每次组合加载新鲜内容",
+        "syncDescription": "文件更改时自动重新组合",
+        "staticBadge": "默认",
+        "dynamicBadge": "新鲜",
+        "syncBadge": "实时",
         "insights": {
           "highSyncCount": {
-            "title": "High Sync File Count",
-            "description": "{count} files are in Sync Mode",
-            "recommendation": "Consider using Dynamic Mode for less frequently updated files to reduce resource usage"
+            "title": "高同步文件数",
+            "description": "{count} 个文件处于同步模式",
+            "recommendation": "考虑对更新频率较低的文件使用动态模式以减少资源使用"
           },
           "syncEnabled": {
-            "title": "Sync Mode Enabled",
-            "description": "{count} files are automatically updating when changed"
+            "title": "同步模式已启用",
+            "description": "{count} 个文件在更改时自动更新"
           },
           "highDynamicUsage": {
-            "title": "High Dynamic Mode Usage",
-            "description": "{percentage}% of files are using Dynamic Mode",
-            "recommendation": "Static Mode may be sufficient for files that rarely change"
+            "title": "高动态模式使用率",
+            "description": "{percentage}% 的文件正在使用动态模式",
+            "recommendation": "对于很少更改的文件，静态模式可能已足够"
           },
           "dynamicEnabled": {
-            "title": "Dynamic Mode Active",
-            "description": "{count} files are loading fresh content on each composition"
+            "title": "动态模式活动",
+            "description": "{count} 个文件在每次组合时加载新鲜内容"
           },
           "staticOnly": {
-            "title": "Static Mode Only",
-            "description": "All files are using cached content from initial indexing",
-            "recommendation": "Enable Dynamic or Sync Mode for frequently updated files to ensure fresh content"
+            "title": "仅静态模式",
+            "description": "所有文件都使用初始索引的缓存内容",
+            "recommendation": "为频繁更新的文件启用动态或同步模式以确保内容新鲜"
           },
           "mixedModes": {
-            "title": "Mixed Load Modes",
-            "description": "{percentage}% of files are using special load modes"
+            "title": "混合加载模式",
+            "description": "{percentage}% 的文件正在使用特殊加载模式"
           }
         }
       }
     },
     "composeSettings": {
-      "title": "Compose Settings",
-      "chunkOverlapping": "@:knowledgeStack.chunksConsole.chunk Overlapping",
+      "title": "组合设置",
+      "chunkOverlapping": "@:knowledgeStack.chunksConsole.chunk重叠",
       "embeddingModel": {
-        "title": "Embedding Model",
-        "warning": "Changing the embedding model will require recomposing the entire Knowledge Stack and even then there is a chance that recomposition will fail.",
-        "learnMore": "Learn more about embedding model compatibility",
-        "defaultPlaceholder": "Default (Local)"
+        "title": "嵌入模型",
+        "warning": "更改嵌入模型将需要重新组合整个知识库，即使那样，重新组合也可能会失败。",
+        "learnMore": "了解有关嵌入模型兼容性的更多信息",
+        "defaultPlaceholder": "默认 (本地)"
       },
       "placeholders": {
-        "selectEmbeddingModel": "Select an embedding model",
-        "selectChunkOverlapping": "Select chunk overlapping",
-        "selectChunkSize": "Select chunk size"
+        "selectEmbeddingModel": "选择嵌入模型",
+        "selectChunkOverlapping": "选择块重叠",
+        "selectChunkSize": "选择块大小"
       },
       "chunkingMethod": {
-        "title": "Chunking Method",
-        "recursiveCharacter": "Recursive Character",
-        "sentence": "Sentence",
-        "description": "Choose how documents should be chunked into smaller pieces for better search and retrieval."
+        "title": "分块方法",
+        "recursiveCharacter": "递归字符",
+        "sentence": "句子",
+        "description": "选择如何将文档分块为更小的部分以获得更好的搜索和检索。"
       },
       "overlapping": {
-        "title": "Overlapping",
-        "description": "Choose how much overlap should be between chunks. Higher overlap can improve context but increase token usage."
+        "title": "重叠",
+        "description": "选择块之间应有多少重叠。较高的重叠可以改善上下文，但会增加 Token 使用量。"
       },
       "chunkSize": {
-        "title": "@:knowledgeStack.chunksConsole.chunk Size",
-        "description": "Set the maximum size of each chunk in characters. Smaller chunks can improve search accuracy but increase token usage."
+        "title": "@:knowledgeStack.chunksConsole.chunk大小",
+        "description": "以字符为单位设置每个块的最大大小。较小的块可以提高搜索准确性，但会增加 Token 使用量。"
       },
       "chunkSizesToIgnore": {
-        "title": "@:knowledgeStack.chunksConsole.chunk Sizes To Ignore",
-        "description": "Specify chunk sizes that should be ignored during processing. Useful for excluding very small or very large chunks."
+        "title": "要忽略的@:knowledgeStack.chunksConsole.chunk大小",
+        "description": "指定处理过程中应忽略的块大小。用于排除非常小或非常大的块。"
       }
     },
     "querySettings": {
-      "title": "Query Settings",
-      "numberOfChunks": "Number of @:knowledgeStack.chunksConsole.chunks",
-      "promptPrefix": "Prompt Prefix",
+      "title": "查询设置",
+      "numberOfChunks": "@:knowledgeStack.chunksConsole.chunks数量",
+      "promptPrefix": "提示词前缀",
       "similarityThreshold": {
-        "low": "Low",
-        "medium": "Medium",
-        "high": "High",
-        "highest": "Highest"
+        "low": "低",
+        "medium": "中",
+        "high": "高",
+        "highest": "最高"
       },
       "searchTypes": {
-        "semantic": "Semantic Search",
-        "keyword": "Keyword Search",
-        "hybrid": "Hybrid Search"
+        "semantic": "语义搜索",
+        "keyword": "关键词搜索",
+        "hybrid": "混合搜索"
       },
       "modes": {
-        "push": "Push Mode",
-        "pull": "Pull Mode"
+        "push": "推送模式",
+        "pull": "拉取模式"
       },
       "chunks": {
-        "title": "Knowledge Stack Context",
-        "loadError": "Failed to load Knowledge Stack chunks. Please try again.",
-        "searchSettings": "Search Settings",
-        "searchType": "Search Type",
-        "searchQuery": "Search Query",
-        "source": "Source",
-        "content": "Content",
-        "fullContent": "Full Content",
-        "chunkInfo": "@:knowledgeStack.chunksConsole.chunk Information",
-        "knowledgeStack": "Knowledge Stack",
-        "chunks": "chunks",
-        "maxChunks": "Max @:knowledgeStack.chunksConsole.chunks"
+        "title": "知识库上下文",
+        "loadError": "加载知识库块失败。请重试。",
+        "searchSettings": "搜索设置",
+        "searchType": "搜索类型",
+        "searchQuery": "搜索查询",
+        "source": "来源",
+        "content": "内容",
+        "fullContent": "完整内容",
+        "chunkInfo": "@:knowledgeStack.chunksConsole.chunk信息",
+        "knowledgeStack": "知识库",
+        "chunks": "块",
+        "maxChunks": "最大@:knowledgeStack.chunksConsole.chunks"
       },
       "retrievalMode": {
-        "title": "@:knowledgeStack.chunksConsole.chunk Retrieval Mode",
-        "description": "Choose between Push mode where chunks are pre-fetched, or Pull Mode where the model can query Knowledge Stacks directly"
+        "title": "@:knowledgeStack.chunksConsole.chunk检索模式",
+        "description": "在预取块的推送模式或模型可以直接查询知识库的拉取模式之间选择"
       }
     },
     "chunks": {
-      "coverage": "Coverage",
-      "skippedChunks": "Skipped @:knowledgeStack.chunksConsole.chunks",
-      "availableChunks": "Available @:knowledgeStack.chunksConsole.chunks",
-      "numberOfChunks": "Number of @:knowledgeStack.chunksConsole.chunks",
-      "promptPrefix": "Prompt Prefix",
-      "chunkingMethod": "Chunking Method",
-      "chunkSize": "@:knowledgeStack.chunksConsole.chunk Size",
-      "chunkOverlap": "@:knowledgeStack.chunksConsole.chunk Overlap",
-      "totalChunks": "Total @:knowledgeStack.chunksConsole.chunks",
-      "cachedChunks": "Cached @:knowledgeStack.chunksConsole.chunks",
-      "scrubbedChunks": "Scrubbed @:knowledgeStack.chunksConsole.chunks",
-      "loadError": "Failed to load Knowledge Stack chunks. Please try again.",
-      "searchSettings": "Search Settings",
-      "searchType": "Search Type",
-      "maxChunks": "Max @:knowledgeStack.chunksConsole.chunks",
-      "searchQuery": "Search Query",
-      "synthesizedQuery": "Synthesized Query",
-      "chunks": "chunk | chunks",
-      "source": "Source",
-      "content": "Content",
-      "viewFull": "View Full Content",
-      "fullContent": "Full @:knowledgeStack.chunksConsole.chunk Content",
-      "chunkInfo": "@:knowledgeStack.chunksConsole.chunk Information",
-      "knowledgeStack": "Knowledge Stack",
-      "scrubbed": "Scrubbed",
-      "original": "Original",
+      "coverage": "覆盖率",
+      "skippedChunks": "跳过的@:knowledgeStack.chunksConsole.chunks",
+      "availableChunks": "可用的@:knowledgeStack.chunksConsole.chunks",
+      "numberOfChunks": "@:knowledgeStack.chunksConsole.chunks数量",
+      "promptPrefix": "提示词前缀",
+      "chunkingMethod": "分块方法",
+      "chunkSize": "@:knowledgeStack.chunksConsole.chunk大小",
+      "chunkOverlap": "@:knowledgeStack.chunksConsole.chunk重叠",
+      "totalChunks": "总@:knowledgeStack.chunksConsole.chunks",
+      "cachedChunks": "缓存@:knowledgeStack.chunksConsole.chunks",
+      "scrubbedChunks": "已清洗@:knowledgeStack.chunksConsole.chunks",
+      "loadError": "加载知识库块失败。请重试。",
+      "searchSettings": "搜索设置",
+      "searchType": "搜索类型",
+      "maxChunks": "最大@:knowledgeStack.chunksConsole.chunks",
+      "searchQuery": "搜索查询",
+      "synthesizedQuery": "合成查询",
+      "chunks": "块 | 块",
+      "source": "来源",
+      "content": "内容",
+      "viewFull": "查看完整内容",
+      "fullContent": "完整@:knowledgeStack.chunksConsole.chunk内容",
+      "chunkInfo": "@:knowledgeStack.chunksConsole.chunk信息",
+      "knowledgeStack": "知识库",
+      "scrubbed": "已清洗",
+      "original": "原始",
       "chunkId": "@:knowledgeStack.chunksConsole.chunk ID",
-      "piiStatus": "PII Status",
-      "piiScrubbed": "PII Scrubbed",
-      "piiUnscrubbed": "PII Un-scrubbed",
+      "piiStatus": "PII 状态",
+      "piiScrubbed": "PII 已清洗",
+      "piiUnscrubbed": "PII 未清洗",
       "tooltip": {
-        "scrubbed": "Content has been scrubbed for PII removal",
-        "cached": "Used cached scrubbed version",
-        "fresh": "Freshly scrubbed content",
-        "original": "Original content without @:pii.scrubbing.title"
+        "scrubbed": "内容已清洗以移除 PII",
+        "cached": "使用了缓存的清洗版本",
+        "fresh": "刚清洗的内容",
+        "original": "无@:pii.scrubbing.title的原始内容"
       },
-      "queryAnalysis": "Query Analysis",
-      "fullContentRetrieved": "Full Content Context Active",
-      "documentsRetrieved": "Documents Retrieved",
-      "contentContext": "Content Context",
-      "keywords": "Keywords",
-      "fullDoc": "Full Doc",
-      "type": "Type",
-      "fullDocument": "Full Document"
+      "queryAnalysis": "查询分析",
+      "fullContentRetrieved": "完整内容上下文已激活",
+      "documentsRetrieved": "已检索文档",
+      "contentContext": "内容上下文",
+      "keywords": "关键词",
+      "fullDoc": "完整文档",
+      "type": "类型",
+      "fullDocument": "完整文档"
     },
     "chunksVisualizer": {
-      "title": "@:knowledgeStack.chunksConsole.chunks Visualizer",
-      "description": "Visualize how documents are chunked",
-      "openStitcher": "Open Visualizer",
-      "viewStitcher": "View Visualizer",
-      "stitchableFiles": "Available Files",
-      "loading": "Loading files...",
-      "noFiles": "No files found",
-      "selectFile": "Select a File",
-      "selectFileDescription": "Choose a file from the left to visualize its chunks and content",
-      "mimeType": "MIME Type",
+      "title": "@:knowledgeStack.chunksConsole.chunks可视化器",
+      "description": "可视化文档如何分块",
+      "openStitcher": "打开可视化器",
+      "viewStitcher": "查看可视化器",
+      "stitchableFiles": "可用文件",
+      "loading": "正在加载文件...",
+      "noFiles": "未找到文件",
+      "selectFile": "选择一个文件",
+      "selectFileDescription": "从左侧选择一个文件以可视化其块和内容",
+      "mimeType": "MIME 类型",
       "chunks": "@:knowledgeStack.chunksConsole.chunks",
-      "overlaps": "Overlaps",
-      "stitchedSize": "Stitched Size",
-      "showOverlaps": "Show Overlaps",
-      "hideOverlaps": "Hide Overlaps",
-      "showChunks": "Show @:knowledgeStack.chunksConsole.chunks",
-      "showStitched": "Show Stitched",
-      "copyContent": "Copy Content",
-      "stitchedContent": "Stitched Content",
-      "scrubbedChunks": "Scrubbed @:knowledgeStack.chunksConsole.chunks",
-      "unScrubbedChunks": "Un-scrubbed @:knowledgeStack.chunksConsole.chunks",
-      "overlapRemoved": "Overlaps have been removed for clean text reconstruction",
+      "overlaps": "重叠",
+      "stitchedSize": "拼接大小",
+      "showOverlaps": "显示重叠",
+      "hideOverlaps": "隐藏重叠",
+      "showChunks": "显示@:knowledgeStack.chunksConsole.chunks",
+      "showStitched": "显示拼接",
+      "copyContent": "复制内容",
+      "stitchedContent": "拼接内容",
+      "scrubbedChunks": "已清洗@:knowledgeStack.chunksConsole.chunks",
+      "unScrubbedChunks": "未清洗@:knowledgeStack.chunksConsole.chunks",
+      "overlapRemoved": "重叠部分已被移除以进行干净的文本重建",
       "chunkNumber": "@:knowledgeStack.chunksConsole.chunk {number}",
-      "overlapPrevious": "Overlap Previous",
-      "overlapNext": "Overlap Next",
-      "overlapWithPrevious": "This text overlaps with the previous chunk",
-      "overlapWithNext": "This text overlaps with the next chunk",
-      "chunkIndices": "Character positions in file",
-      "coreIndices": "Core content without overlaps",
-      "chunkCount": "{count} chunks",
-      "showOriginal": "Show Original",
-      "showScrubbed": "Show Scrubbed",
-      "showScrubbedOnly": "Show Scrubbed Only",
-      "showAllChunks": "Show All @:knowledgeStack.chunksConsole.chunks",
+      "overlapPrevious": "重叠上一个",
+      "overlapNext": "重叠下一个",
+      "overlapWithPrevious": "此文本与上一个块重叠",
+      "overlapWithNext": "此文本与下一个块重叠",
+      "chunkIndices": "文件中的字符位置",
+      "coreIndices": "无重叠的核心内容",
+      "chunkCount": "{count} 个块",
+      "showOriginal": "显示原始",
+      "showScrubbed": "显示已清洗",
+      "showScrubbedOnly": "仅显示已清洗",
+      "showAllChunks": "显示所有@:knowledgeStack.chunksConsole.chunks",
       "tooltip": {
-        "scrubbed": "Content has been scrubbed for PII removal",
-        "cached": "Used cached scrubbed version",
-        "fresh": "Freshly scrubbed content"
+        "scrubbed": "内容已清洗以移除 PII",
+        "cached": "使用了缓存的清洗版本",
+        "fresh": "刚清洗的内容"
       },
-      "itemsPerPage": "Per Page",
-      "showingChunks": "{start}-{end} of {total} chunks",
-      "loadingChunks": "Loading chunks...",
-      "noItems": "No items found",
-      "selectItem": "Select an Item",
-      "selectItemDescription": "Choose a file or note from the left to visualize its chunks and content",
-      "openConsole": "Open Console",
-      "selectedChunks": "{count} @:knowledgeStack.chunksConsole.chunk Selected",
-      "deleteSelected": "Delete Selected",
-      "clearSelection": "Clear Selection",
-      "confirmDelete": "Confirm Delete",
-      "confirmDeleteMessage": "Are you sure you want to delete {count} selected chunks? This action cannot be undone.",
-      "deleteSuccess": "@:knowledgeStack.chunksConsole.chunks Deleted",
-      "deleteSuccessDetail": "Successfully deleted {count} chunks",
-      "deletedChunksCount": "{count} @:knowledgeStack.chunksConsole.chunk deleted successfully",
-      "deleteError": "Delete Failed"
+      "itemsPerPage": "每页",
+      "showingChunks": "{total} 个块中的 {start}-{end}",
+      "loadingChunks": "正在加载块...",
+      "noItems": "未找到项目",
+      "selectItem": "选择一个项目",
+      "selectItemDescription": "从左侧选择文件或笔记以可视化其块和内容",
+      "openConsole": "打开控制台",
+      "selectedChunks": "已选 {count} 个@:knowledgeStack.chunksConsole.chunk",
+      "deleteSelected": "删除已选",
+      "clearSelection": "清除选择",
+      "confirmDelete": "确认删除",
+      "confirmDeleteMessage": "您确定要删除 {count} 个选中的块吗？此操作无法撤销。",
+      "deleteSuccess": "@:knowledgeStack.chunksConsole.chunks已删除",
+      "deleteSuccessDetail": "成功删除 {count} 个块",
+      "deletedChunksCount": "{count} 个@:knowledgeStack.chunksConsole.chunk已成功删除",
+      "deleteError": "删除失败"
     },
     "export": {
-      "forceCompose": "Force Compose",
-      "overallProgress": "Overall Progress",
-      "itemsExported": "{count} items exported",
-      "items": "Items",
-      "skip": "Skip",
-      "exportCompleted": "Export completed successfully!",
-      "savedTo": "Saved to: {path}",
-      "cancelAll": "Cancel All",
-      "done": "Done",
-      "export": "Export",
-      "exporting": "Exporting",
-      "knowledgeStack": "Knowledge Stack",
-      "folder": "Folder",
-      "exportFailed": "Export failed",
-      "importFailed": "Import failed"
+      "forceCompose": "强制组合",
+      "overallProgress": "总体进度",
+      "itemsExported": "{count} 个项目已导出",
+      "items": "项目",
+      "skip": "跳过",
+      "exportCompleted": "导出成功完成！",
+      "savedTo": "保存至：{path}",
+      "cancelAll": "取消所有",
+      "done": "完成",
+      "export": "导出",
+      "exporting": "正在导出",
+      "knowledgeStack": "知识库",
+      "folder": "文件夹",
+      "exportFailed": "导出失败",
+      "importFailed": "导入失败"
     },
     "messages": {
-      "editsSaved": "Your changes to the Knowledge Stack have been saved. You will need to recompose it to apply the changes.",
-      "savedAndProcessing": "Knowledge stack saved and processing started",
-      "cannotForceCompose": "Cannot force compose: Knowledge stack must be saved first",
-      "failedToForceCompose": "Failed to force compose Knowledge Stack",
-      "forceComposeStarted": "Force compose started - all items will be reprocessed",
-      "failedToUpdateQuerySettings": "Failed to update query settings",
-      "querySettingsUpdated": "Query settings updated",
-      "justNow": "just now",
-      "minutesAgo": "{minutes}m ago",
-      "searchPlaceholder": "Search...",
-      "failedToSelectItem": "Failed to select item",
-      "failedToSelectFolder": "Failed to select folder",
-      "processingCompleted": "Knowledge Stack {title} processing completed",
-      "processingFailed": "Knowledge Stack {title} processing failed",
-      "nothingToCompose": "Nothing to compose for Knowledge Stack {title}",
-      "composeError": "Error composing Knowledge Stack {title}",
-      "downloadImportNotAvailableInWeb": "Importing from URL is only available in the desktop application",
-      "deleteSuccess": "{count} @:knowledgeStack.title deleted!",
-      "createError": "Failed to create the @:knowledgeStack.title",
-      "saveEditsError": "Failed to save edits to the @:knowledgeStack.title",
-      "folderAdded": "Folder '{name}' added to the Knowledge Stack"
+      "editsSaved": "您对知识库的更改已保存。您需要重新组合它以应用更改。",
+      "savedAndProcessing": "知识库已保存并开始处理",
+      "cannotForceCompose": "无法强制组合：必须先保存知识库",
+      "failedToForceCompose": "强制组合知识库失败",
+      "forceComposeStarted": "强制组合已开始 - 所有项目将被重新处理",
+      "failedToUpdateQuerySettings": "更新查询设置失败",
+      "querySettingsUpdated": "查询设置已更新",
+      "justNow": "刚刚",
+      "minutesAgo": "{minutes}分钟前",
+      "searchPlaceholder": "搜索...",
+      "failedToSelectItem": "选择项目失败",
+      "failedToSelectFolder": "选择文件夹失败",
+      "processingCompleted": "知识库 {title} 处理完成",
+      "processingFailed": "知识库 {title} 处理失败",
+      "nothingToCompose": "知识库 {title} 无内容可组合",
+      "composeError": "组合知识库 {title} 出错",
+      "downloadImportNotAvailableInWeb": "从 URL 导入仅在桌面应用程序中可用",
+      "deleteSuccess": "{count} 个@:knowledgeStack.title已删除！",
+      "createError": "创建@:knowledgeStack.title失败",
+      "saveEditsError": "保存@:knowledgeStack.title编辑失败",
+      "folderAdded": "文件夹 '{name}' 已添加到知识库"
     },
-    "folderLockedTemporary": "Folder '{name}' locked temporarily",
-    "folderLockedPermanent": "Folder '{name}' locked permanently",
-    "lockFailed": "Failed to lock the folder",
-    "folderUnlocked": "Folder '{name}' unlocked",
-    "unlockFailed": "Failed to unlock the folder",
-    "unlock": "Unlock",
+    "folderLockedTemporary": "文件夹 '{name}' 已临时锁定",
+    "folderLockedPermanent": "文件夹 '{name}' 已永久锁定",
+    "lockFailed": "锁定文件夹失败",
+    "folderUnlocked": "文件夹 '{name}' 已解锁",
+    "unlockFailed": "解锁文件夹失败",
+    "unlock": "解锁",
     "status": {
-      "misc": "Misc",
-      "path": "Path: {path}",
-      "name": "Name: {name}",
-      "unknown": "Unknown",
-      "original": "Original",
-      "loadingPiiAnalytics": "Loading PII analytics...",
-      "allItemsUnlocked": "All items are unlocked and can be reprocessed when needed."
+      "misc": "杂项",
+      "path": "路径：{path}",
+      "name": "名称：{name}",
+      "unknown": "未知",
+      "original": "原始",
+      "loadingPiiAnalytics": "正在加载 PII 分析...",
+      "allItemsUnlocked": "所有项目已解锁，需要时可重新处理。"
     },
-    "abortProcessing": "Abort Processing",
+    "abortProcessing": "中止处理",
     "errors": {
-      "processingFailed": "Processing Failed",
-      "errorMessage": "Error Message",
-      "occurredAt": "Occurred at",
-      "failedFile": "Failed File",
-      "errorSummary": "Error Summary",
-      "technicalDetails": "Technical Details",
-      "stackTrace": "Stack Trace",
-      "copyDetails": "Copy Details",
-      "detailsCopied": "Error details copied to clipboard",
-      "clickToSeeDetails": "Click to see error details",
-      "fileIsNull": "File is null",
-      "checkingPathError": "Error checking if path is directory",
-      "processingFolderError": "Error processing folder",
-      "lockFolderTemporaryFailed": "Failed to lock folder temporarily",
-      "lockFolderPermanentFailed": "Failed to lock folder permanently",
-      "unlockFolderFailed": "Failed to unlock folder",
+      "processingFailed": "处理失败",
+      "errorMessage": "错误消息",
+      "occurredAt": "发生于",
+      "failedFile": "失败文件",
+      "errorSummary": "错误摘要",
+      "technicalDetails": "技术细节",
+      "stackTrace": "堆栈跟踪",
+      "copyDetails": "复制详细信息",
+      "detailsCopied": "错误详细信息已复制到剪切板",
+      "clickToSeeDetails": "点击查看错误详情",
+      "fileIsNull": "文件为空",
+      "checkingPathError": "检查路径是否为目录时出错",
+      "processingFolderError": "处理文件夹出错",
+      "lockFolderTemporaryFailed": "临时锁定文件夹失败",
+      "lockFolderPermanentFailed": "永久锁定文件夹失败",
+      "unlockFolderFailed": "解锁文件夹失败",
       "status": {
-        "completed": "Status: Completed",
-        "processing": "Status: Processing",
-        "pending": "Status: Pending",
-        "draft": "Status: Draft",
-        "needsReprocessing": "Status: Needs Reprocessing",
-        "error": "Status: Error",
-        "lockedTemporary": "Status: Temporarily Locked",
-        "lockedPermanent": "Status: Permanently Locked",
-        "aborted": "Status: Aborted",
-        "unknown": "Status: Unknown"
+        "completed": "状态：已完成",
+        "processing": "状态：正在处理",
+        "pending": "状态：待定",
+        "draft": "状态：草稿",
+        "needsReprocessing": "状态：需要重新处理",
+        "error": "状态：错误",
+        "lockedTemporary": "状态：临时锁定",
+        "lockedPermanent": "状态：永久锁定",
+        "aborted": "状态：已中止",
+        "unknown": "状态：未知"
       }
     }
   },
   "features": {
     "showcase": {
-      "title": "Unlock Aurum Features",
-      "subtitle": "Upgrade to Aurum license for the most powerful AI features and advanced capabilities",
-      "eyebrow": "Everything you need",
-      "viewPricing": "View Pricing",
-      "featureMatrix": "Feature Matrix",
-      "activateLicense": "Activate License",
+      "title": "解锁 Aurum 功能",
+      "subtitle": "升级到 Aurum 许可证以获得最强大的 AI 功能和高级能力",
+      "eyebrow": "您所需要的一切",
+      "viewPricing": "查看定价",
+      "featureMatrix": "功能矩阵",
+      "activateLicense": "激活许可证",
       "licenses": {
         "aurum": "Aurum"
       }
     }
   },
   "images": {
-    "upload": "Upload image…",
-    "onlySupported": "Only image files are supported.",
-    "maxSize": "Image must be 1MB or smaller."
+    "upload": "上传图像...",
+    "onlySupported": "仅支持图像文件。",
+    "maxSize": "图像必须小于 1MB。"
   },
   "userAvatar": {
-    "updated": "Profile image updated.",
-    "updateFailed": "Failed to update image. Please try again.",
-    "changeHint": "Click to change profile image"
+    "updated": "个人资料图片已更新。",
+    "updateFailed": "更新图像失败。请重试。",
+    "changeHint": "点击更改个人资料图片"
   },
   "localModels": {},
   "featured": {},
@@ -4463,5 +4463,141 @@
   "huggingfaceModels": {},
   "modelsLocation": {},
   "modelInstall": {},
-  "errorMessage": {}
+  "errorMessage": {},
+  "alreadyInstalledErrorMessage": {},
+  "abortInstalling": {},
+  "successMessage": {},
+  "deleteConfirmation": {},
+  "mlxModels": {},
+  "abortedMessage": {},
+  "mlxCommunityModels": {},
+  "rankedModels": {},
+  "strengthsLabel": {},
+  "ca": {},
+  "aca": {},
+  "daa": {},
+  "ifa": {},
+  "jak": {},
+  "la": {},
+  "ma": {},
+  "pp": {},
+  "ra": {},
+  "sim": {},
+  "stg": {},
+  "sum": {},
+  "tu": {},
+  "mit": {},
+  "mot": {},
+  "ics": {},
+  "ocs": {},
+  "savePresetForm": {},
+  "loadedMessage": {},
+  "deletePresetConfirm": {},
+  "tasks": {},
+  "dialog": {},
+  "errors": {},
+  "scrubbing": {},
+  "info": {},
+  "categories": {},
+  "empty": {},
+  "messages": {},
+  "folderForm": {},
+  "updateSuccessMessage": {},
+  "updateErrorMessage": {},
+  "createSuccessMessage": {},
+  "createErrorMessage": {},
+  "autoResponder": {},
+  "contextMessageCount": {},
+  "unit": {},
+  "emptyState": {},
+  "successMessageWithToolsets": {},
+  "partialError": {},
+  "policies": {},
+  "forgeMode": {},
+  "platformWeb": {},
+  "platformDesktop": {},
+  "licenceAndAccess": {},
+  "invitationVerification": {},
+  "invitation": {},
+  "fetch": {},
+  "inputLabels": {},
+  "backup": {},
+  "restore": {},
+  "quickSelect": {},
+  "confirmation": {},
+  "errrorMessage": {},
+  "deleteAllPrompt": {},
+  "copyErrorMessage": {},
+  "promptForm": {},
+  "clearAll": {},
+  "modelsPath": {},
+  "quickPromptDialog": {},
+  "serviceHealth": {},
+  "serviceAction": {},
+  "restartSuccessMessage": {},
+  "serviceStatus": {},
+  "serviceEndpoint": {},
+  "serviceVersion": {},
+  "forceUpdate": {},
+  "removeService": {},
+  "serviceConfigurations": {},
+  "enableNetworkAccess": {},
+  "allowMstyStudioAccess": {},
+  "captureServiceLogs": {},
+  "resetAllConfirm": {},
+  "help": {},
+  "example": {},
+  "developerNotes": {},
+  "splitRemoval": {},
+  "noMessageSelectedWarning": {},
+  "exportOrCopyMessage": {},
+  "action": {},
+  "composeProgress": {},
+  "itemStatus": {},
+  "cloudShare": {},
+  "saveEdits": {},
+  "knowledgeStackForm": {},
+  "deleteAllKnowledgeStack": {},
+  "chunksConsole": {},
+  "similarityFilter": {},
+  "deleteChunk": {},
+  "searchType": {},
+  "tooltip": {},
+  "addon": {},
+  "buckets": {},
+  "obsidianVaults": {},
+  "youTubeLinks": {},
+  "itemActions": {},
+  "loadMode": {},
+  "static": {},
+  "dynamic": {},
+  "sync": {},
+  "syncMode": {},
+  "analytics": {},
+  "timings": {},
+  "stats": {},
+  "contentTypes": {},
+  "piiScrubbing": {},
+  "labels": {},
+  "querySettingsDetails": {},
+  "highSyncCount": {},
+  "syncEnabled": {},
+  "highDynamicUsage": {},
+  "dynamicEnabled": {},
+  "staticOnly": {},
+  "mixedModes": {},
+  "composeSettings": {},
+  "placeholders": {},
+  "chunkingMethod": {},
+  "overlapping": {},
+  "chunkSize": {},
+  "chunkSizesToIgnore": {},
+  "querySettings": {},
+  "similarityThreshold": {},
+  "searchTypes": {},
+  "chunks": {},
+  "retrievalMode": {},
+  "chunksVisualizer": {},
+  "showcase": {},
+  "licenses": {}
 }
