@@ -1,2 +1,10 @@
 {
+  "you": "你",
+  "select": "选择",
+  "conversations": "对话",
+  "copyToClipboard": "复制到剪切板",
+  "toCopyMarkdownDirectly": "直接复制为Markdown格式",
+  "clickToCopyMarkdownDirectly": "单击以直接复制为Markdown格式",
+  "toShowMoreOptions": "展示更多选项",
+  "longPressOrAltClickForMoreOptions": "长按或者使用Alt+click以显示更多选项",
 }
